@@ -12,7 +12,7 @@
 	# these are optional
 	$Nav->setLinkList(array());
 	$Nav->addNavSeparator("ATL", 	"/atl");
-	$Nav->addCustomNav("Download", "http://www.eclipse.org/modeling/m2m/downloads/?project=atl", "_self", 3);
+	$Nav->addCustomNav("Download", "/atl/download", "_self", 3);
 	$Nav->addCustomNav("Documentation", "/atl/documentation", "_self", 3);
 	$Nav->addCustomNav("Support", "/atl/support", "_self", 3);
 	$Nav->addCustomNav("Getting Involved", "/atl/developers", "_self", 3);
@@ -23,7 +23,7 @@
 
 	$Menu->setMenuItemList(array());
 	$Menu->addMenuItem("Home", "/atl", "_self");
-	$Menu->addMenuItem("Download", "http://www.eclipse.org/modeling/m2m/downloads/?project=atl", "_self");
+	$Menu->addMenuItem("Download", "/atl/download", "_self");
 	$Menu->addMenuItem("Documentation", "/atl/documentation", "_self");
 	$Menu->addMenuItem("Support", "/atl/support", "_self");
 	$Menu->addMenuItem("Developers", "/atl/developers", "_self");
