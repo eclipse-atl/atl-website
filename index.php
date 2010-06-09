@@ -12,9 +12,9 @@ include("script/rss2html.php");
 	$atlnews = $atlNewsConverter->convert("news/atlNewsArchive.rss", "/atl/news/index.php");
 	$html = str_replace("%%NEWS%%", $atlnews, $html);
 
-	$newsConverter = new RSS2HTML();
-	$headlines = $newsConverter->convert("http://www.acceleo.org/planet/rss20.xml", "http://www.acceleo.org/planet/rss20.xml");
-	$html = str_replace("%%HEADLINES%%", $headlines, $html);
+//	$newsConverter = new RSS2HTML();
+//	$headlines = $newsConverter->convert("http://www.acceleo.org/planet/rss20.xml", "http://www.acceleo.org/planet/rss20.xml");
+//	$html = str_replace("%%HEADLINES%%", $headlines, $html);
 
 	# Generate the web page
 	$App->generatePage($theme, $Menu, null, $pageAuthor, $pageKeywords, $pageTitle, $html);
