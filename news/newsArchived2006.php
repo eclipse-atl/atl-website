@@ -30,7 +30,7 @@
 	include('../script/news.php');
 	
 	function get_atlnews2006_verbose($count=100) {
-		return rss_to_html("atlNewsArchive2006", "/m2m/atl/news/", "long", $count);
+		return rss_to_html("atlNewsArchive2006", "http://www.eclipse.org/atl/news/", "long", $count);
 	}
 	
 	$atlnews = get_atlnews2006_verbose();
