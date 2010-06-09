@@ -1,0 +1,548 @@
+<?xml version="1.0"?>
+ <rss version="2.0">
+  <channel>
+    <title>ATL News</title>
+    <link>http://eclipse.org/gmt/atl/</link>
+    <description>ATL News</description>
+
+    <item>
+		<title>ATL 2006 is available</title>
+		<link>http://wiki.eclipse.org/index.php/ATL_2006</link>
+		<description>
+			<p>The new version of ATL: ATL 2006 is now available.</p>
+
+			<p>ATL 2006 features several improvements, including:
+			<ul>
+			<li>a new, faster, compiler,</li>
+			<li>rule inheritance for standard matched rules,</li>
+			<li>multiple source pattern elements in standard matched rules,</li>
+			<li>support for multiple iterators in iterate, exists, and forAll,</li>
+			<li>etc.</li>
+			</ul>
+			</p>
+
+			<p>Installation and usage instructions are given in the Eclipse wiki:
+			<a href="http://wiki.eclipse.org/index.php/ATL_2006">http://wiki.eclipse.org/index.php/ATL_2006</a></p>
+
+			<p>Transformations written in ATL 2006, which will illustrate its new
+			features, will be made available in the transformation zoo:
+			<a href="http://www.eclipse.org/gmt/atl/atlTransformations/">http://www.eclipse.org/gmt/atl/atlTransformations/</a></p>
+
+			<p>The weaving library (http://www.eclipse.org/gmt/amw/examples/) already
+			contains transformations written in ATL 2006 as part of:
+			<ul>
+			<li>the Matching transformation library</li>
+			<li>the following scenarios:
+				<ul>
+				<li>System Architecture (SA) Management: <a href="http://www.eclipse.org/gmt/amw/examples/#Sys_of_sys">http://www.eclipse.org/gmt/amw/examples/#Sys_of_sys</a></li>
+				<li>Generation of ATL after executing equality and structural matchings: <a href="http://www.eclipse.org/gmt/amw/examples/#AMW_Match_ATL">http://www.eclipse.org/gmt/amw/examples/#AMW_Match_ATL</a></li>
+				<li>Equality matching and similarity flooding: <a href="http://www.eclipse.org/gmt/amw/examples/#AMW_Match_SF">http://www.eclipse.org/gmt/amw/examples/#AMW_Match_SF</a></li>
+				</ul>
+			</li>
+			</ul>
+			</p>
+		</description>
+		<pubDate>Wed, 30 Nov 2006 11:15:00 CET</pubDate>
+	</item>
+
+    <item>
+		<title>New ATL example: Measuring Model Repositories</title>
+		<link>http://eclipse.org/gmt/atl/atlTransformations/#MeasuringModelRepositories</link>
+		<description>
+			The Measuring Model Repositories example generates some measures (graph and table format) on input KM3 models.
+			This example describes three transformations from a KM3 model to a Measure model, from a Measure model to a Measure model and from a Measure model to
+			a Table model. Finally, graphical outputs are generated (SVG and HTML).
+		</description>
+		<pubDate>Mon, 13 Nov 2006 12:15:00 CET</pubDate>
+	</item>
+
+    <item>
+		<title>New ATL doc: ATL Poster and ATL Flyer</title>
+		<link>http://eclipse.org/gmt/atl/doc/</link>
+		<description>
+      		The ATL poster and the ATL flyer give a short presentation of ATL.
+		</description>
+		<pubDate>Wed, 8 Nov 2006 18:45:00 CET</pubDate>
+	</item>
+
+	<item>
+		<title>
+			A new ATL transformations scenario is available: UML Sequence Diagrams to Statechart Diagram
+		</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#UMLSD2STMD</link>
+		<description>
+			These transformations are used by <a href="http://www.st.ewi.tudelft.nl/~basgraaf">Bas Graaf</a> to check
+			the conformance of behavioural specifications. These transformations transform a set of UML Sequence Diagrams into a (hierarchical) UML
+			State Machine. The complete generation of a State Machine from a set of scenarios comprises four consecutive model transformations.<br />
+
+			This contribution was made by <a href="http://www.st.ewi.tudelft.nl/~basgraaf" >Bas Graaf</a>.
+		</description>
+		<pubDate>Thu, 19 Oct 2006 15:00:00 CET</pubDate>
+	</item>
+
+    <item>
+		<title>New ATL doc: ATL Inventory gives an glimpse of the "ATL world" and all the resources available</title>
+		<link>http://eclipse.org/gmt/atl/doc/</link>
+		<description>
+      		The ATL Inventory gives an glimpse of the "ATL world" and all the resources available.
+		</description>
+		<pubDate>Tue, 10 Oct 2006 15:55:00 CET</pubDate>
+	</item>
+
+    <item>
+		<title>New ATL examples are available extracted from a catalogue of model transformations</title>
+		<link>http://eclipse.org/gmt/atl/atlTransformations</link>
+		<description>
+			New ATL examples are available:
+			<ul>
+				<li>Assertion Modification</li>
+				<li>Disaggregation</li>
+				<li>Eliminate Redundant Inheritance</li>
+				<li>Equivalence of attributes and associations</li>
+				<li>Introduce Primary Key</li>
+				<li>Introducing an interface</li>
+				<li>Making partial role total</li>
+				<li>Merging Partial Classes</li>
+				<li>Raise Supplier Abstraction Level</li>
+				<li>Redundant Class Removable</li>
+				<li>Removing a Many Many Association</li>
+				<li>Removing An Association Class</li>
+				<li>Replace association by foreign key</li>
+				<li>Replace inheritance by association</li>
+			</ul>
+			These examples were extracted from the catalogue of model transformations: <a href="http://www.dcs.kcl.ac.uk/staff/kcl/tcat.pdf">http://www.dcs.kcl.ac.uk/staff/kcl/tcat.pdf</a>.
+			They were extracted by <a href="http://www.sciences.univ-nantes.fr/lina/atl/contrib/simon">Eric Simon</a> and <a href="http://www.sciences.univ-nantes.fr/lina/atl/contrib/baudry">Julien Baudry</a>.
+		</description>
+		<pubDate>Thu, 19 Sep 2006 12:00:00 CET</pubDate>
+	</item>
+
+    <item>
+		<title>New ATL examples are available: IEEE1471 to MoDAF, MetaH to ACME, RSS to ATOM, Table to SVG Bar Chart, Table to SVG Pie Chart, Table to Tabular HTML</title>
+		<link>http://eclipse.org/gmt/atl/atlTransformations</link>
+		<description>
+			New ATL examples are available: IEEE1471 to MoDAF, MetaH to ACME, RSS to ATOM, Table to SVG Bar Chart, Table to SVG Pie Chart and, Table to Tabular HTML in the ATL transformations zoo.<br />
+			IEEE1471 to MoDAF was produced by <a href="http://www.sciences.univ-nantes.fr/lina/atl/contrib/jossic">Albin Jossic</a>.<br />
+			MetaH to ACME was produced by <a href="http://www.sciences.univ-nantes.fr/lina/atl/contrib/baudry">Julien Baudry</a>.<br />
+			RSS to ATOM was produced by <a href="http://www.sciences.univ-nantes.fr/lina/atl/contrib/srour">Youssef Srour</a>.<br />
+			Table to SVG Bar Chart, Table to SVG Pie Chart and, Table to Tabular HTML were produced by <a href="http://www.sciences.univ-nantes.fr/lina/atl/contrib/vepa">Eric Vepa</a>.
+		</description>
+		<pubDate>Thu, 19 Sep 2006 10:30:00 CET</pubDate>
+	</item>
+
+    <item>
+		<title>A new release build of ADT is available</title>
+		<link>http://eclipse.org/gmt/atl/download</link>
+		<description>
+			A <a href="http://eclipse.org/gmt/atl/download/">new release build</a> of ADT is available.
+			There are two versions, one for
+			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/gmt/atl/binaries/ADT-20060630/adt20060630_Eclipse3_0.zip">
+			Eclipse 3.0</a> and one for
+			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/gmt/atl/binaries/ADT-20060630/adt20060630_Eclipse3_1.zip">
+			Eclipse 3.1</a>.<br />
+			The driver MDR4ATL is not available is these versions. If you need it, you should download one of the following versions:
+			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/gmt/atl/binaries/ADT-20060630/adt20060630_Eclipse3_0(withMDR4ATL).zip">
+			Eclipse 3.0</a> or
+			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/gmt/atl/binaries/ADT-20060630/adt20060630_Eclipse3_1(withMDR4ATL).zip">
+			Eclipse 3.1</a>.
+		</description>
+		<pubDate>Thu, 29 Jun 2006 14:00:00 CET</pubDate>
+	</item>
+
+	<item>
+		<title>Creation of an ATL page in Eclipse wiki (with a wish list and a troubleshooter)</title>
+		<link>http://wiki.eclipse.org/index.php/ATL</link>
+		<description>
+			Creation of an <a href="http://wiki.eclipse.org/index.php/ATL">ATL page</a> 
+			in <a href="http://wiki.eclipse.org/index.php">Eclipse wiki</a> (with a 
+			<a href="http://wiki.eclipse.org/index.php/ATL_Wish_List">wish list</a> and a 
+			<a href="http://wiki.eclipse.org/index.php/ATL_Language_Troubleshooter">troubleshooter</a>).
+		</description>
+		<pubDate>Wed, 31 May 2006 23:25:00 CET</pubDate>
+	</item>
+
+	<item>
+		<title>New ATL transformation is available: CPL to SPL</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#CPL2SPL</link>
+		<description>
+			The <a href="http://www.eclipse.org/gmt/atl/atlTransformations/#CPL2SPL">CPL2SPL
+			transformation</a> is now on the GMT website.<br />
+			This example handles several aspects of two telephony DSLs: SPL and CPL.
+		</description>
+		<pubDate>Wed, 10 May 2006 13:45:00 CET</pubDate>
+	</item>
+
+	<item>
+		<title>New logo for ATL (Thank you Xavier and Romain)</title>
+		<link>http://www.eclipse.org/gmt/atl/</link>
+		<description>
+			ATL has now a new logo, more sexy.<br />
+			
+			ATLAS team wants to thank Xavier Mehaut and Romain Larcher for their pretty work.
+		</description>
+		<pubDate>Mon, 06 Mar 2006 11:00:00 CET</pubDate>
+	</item>
+
+	<item>
+		<title>New ATL transformation is available: SSL to SDL</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#SSL2SDL</link>
+		<description>
+			New ATL transformation example, &lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#SSL2SDL" &gt;
+			SSL to SDL&lt;/a&gt;, is now available on the
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/" &gt;ATL Transformations page&lt;/a&gt;.
+			<br /><br />
+			This transformation and associated metamodels is a contribution from Irina Dumitrascu and Natalia Rebeja ,
+			<a href="http://www.soluta.net/">Soluta.Net</a>.
+		</description>
+		<pubDate>Fri, 03 Mar 2006 14:00:00 CET</pubDate>
+	</item>
+
+	<item>
+		<title>New ATL transformation is available: Truth Tables to Binary Decision Diagrams</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#TT2BDD</link>
+		<description>
+			New ATL transformation example, &lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#TT2BDD" &gt;
+			Truth Tables to Binary Decision Diagrams&lt;/a&gt;, is now available on the
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/" &gt;ATL Transformations page&lt;/a&gt;.
+			<br /><br />
+			This transformation and associated metamodels is a contribution from Guillaume Savaton, <a href="http://www.eseo.fr/">ESEO/TRAME</a>.
+		</description>
+		<pubDate>Fri, 03 Mar 2006 14:00:00 CET</pubDate>
+	</item>
+
+    <item>
+		<title>A new version of ATL user manual is available (PreRelease version)</title>
+		<link>http://eclipse.org/gmt/atl/doc</link>
+		<description>
+			A <a href="http://eclipse.org/gmt/atl/doc/ATL_User_Manual[v0.7].doc">new version of ATL user manual</a> is available.
+			This is a pre-release version.
+		</description>
+		<pubDate>Fri, 13 Jan 2006 14:00:00 CET</pubDate>
+	</item>
+    
+    <item>
+		<title>A new release build of ADT is available</title>
+		<link>http://eclipse.org/gmt/atl/download</link>
+		<description>
+			A <a href="http://eclipse.org/gmt/atl/download/">new release build</a> of ADT is available.
+			There are two versions, one for
+			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/gmt/atl/binaries/ADT-20060113/adt-20060113(Eclipse_3.0).zip">
+			Eclipse_3.0</a> and one for
+			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/gmt/atl/binaries/ADT-20060113/adt-20060113(Eclipse_3.1).zip">
+			Eclipse_3.1</a>.<br />
+			More details about this release are available <a href="http://eclipse.org/gmt/atl/download/adt-20060113/">here</a>.
+		</description>
+		<pubDate>Fri, 13 Jan 2006 14:00:00 CET</pubDate>
+	</item>
+	
+    <item>
+		<title>An ATL transformation description template is available</title>
+		<link>http://eclipse.org/gmt/atl/doc/</link>
+		<description>
+			The template for describing ATL transformations is now on the GMT website at
+			http://eclipse.org/gmt/atl/doc/ATL_Transformation_Template[v00.01].pdf.
+		</description>
+		<pubDate>Mon, 19 Dec 2005 17:20:00 CET</pubDate>
+	</item>
+    <item>
+		<title>A new ATL transformation is available: EMF to KM3</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#EMF2KM3</link>
+		<description>
+			The <a href="http://www.eclipse.org/gmt/atl/atlTransformations/#EMF2KM3">EMF2KM3
+			transformation</a> is now on the GMT website.
+			A brief description of the transformation was written, including the procedure to follow to
+			replace the default EMF2KM3.asm file by a custom one in the KM3 plugin.
+		</description>
+		<pubDate>Mon, 12 Dec 2005 17:20:00 CET</pubDate>
+	</item>
+	<item>
+		<title>An ATL starter guide is available</title>
+		<link>http://eclipse.org/gmt/atl/doc/</link>
+		<description>
+			An ATL starter's guide has been written and may be found &lt;a href="http://eclipse.org/gmt/atl/doc/ATL_Starter_Guide[v0.1].pdf"&gt;here&lt;/a&gt;.
+		</description>
+		<pubDate>07 Dec 2005</pubDate>
+	</item>
+	<item>
+		<title>A new ATL installation guide is available</title>
+		<link>http://eclipse.org/gmt/atl/doc/</link>
+		<description>
+			A new ATL installation guide has been written and may be found &lt;a href="http://eclipse.org/gmt/atl/doc/ATL_Installation_Guide%5Bv0.1%5D.pdf"&gt;here&lt;/a&gt;.
+		</description>
+		<pubDate>01 Dec 2005</pubDate>
+	</item>
+	<item>
+		<title>
+			New ATL transformations are available: UMLCopyModel, UMLMergeModel, UMLAssociationAttributes, UMLAccessors, UMLObserver, UML Singleton,
+			UMLApplet, UMLDataTypes and UMLAsyncMethods
+		</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#UMLCopyModel</link>
+		<description>New ATL transformation examples,
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#UMLCopyModel" &gt;UML CopyModel, ModelCopy&lt;/a&gt;,
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#UMLMergeModel" &gt;UML ModelMerge, MergeModel&lt;/a&gt;,
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#UMLAssociationAttributes" &gt;UML AssociationAttributes, Java2AssociationAttributes&lt;/a&gt;,
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#UMLAccessors" &gt;UML Accessors, Java2Accessors&lt;/a&gt;,
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#UMLObserver" &gt;UML Observer, JavaObserver&lt;/a&gt;,
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#UMLSingleton" &gt;UML Singleton&lt;/a&gt;,
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#UMLApplet" &gt;UML Applet, MIDlet&lt;/a&gt;,
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#UMLDataTypes" &gt;UML DataTypes, Java2DataTypes&lt;/a&gt; and
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#UMLAsyncMethods" &gt;UML AsyncMethods&lt;/a&gt;
+			, are now available on the &lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/" &gt;ATL Transformations page&lt;/a&gt;.
+			These contributions were made by &lt;a href="http://ssel.vub.ac.be/ssel/about:members:denniswagelaar" &gt;Dennis Wagelaar&lt;/a&gt;.
+		</description>
+		<pubDate>28 Nov 2005</pubDate>
+	</item>
+	<item>
+		<title>New ATL transformations are available: ATL to Tracer, ATL to BindingDebugger and KM3 to ATL Copier</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/</link>
+		<description>
+			New ATL transformation examples, &lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#ATL2Tracer"&gt;ATL to Tracer&lt;/a&gt;,
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#ATL2BindingDebugger" &gt;ATL to BindingDebugger&lt;/a&gt;,
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#KM32ATLCopier" &gt;KM3 to ATL Copier&lt;/a&gt; and
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#SimpleClass2SimpleRDBMS" &gt;Simple Class to Simple RDBMS&lt;/a&gt;, are now available on the
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/" &gt;ATL Transformations page&lt;/a&gt;.</description>
+		<pubDate>28 Nov 2005</pubDate>
+	</item>
+	<item>
+		<title>A new ATL transformation is available: Public to Private</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#Public2Private</link>
+		<description>A new ATL transformation example, &lt;b&gt;Public to Private&lt;/b&gt;, is now available on the
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#Public2Private" &gt;ATL Transformations page&lt;/a&gt;.</description>
+		<pubDate>24 Nov 2005</pubDate>
+	</item>
+	<item>
+		<title>Creation of publication section</title>
+		<link>http://eclipse.org/gmt/atl/publication.php</link>
+		<description>Creation of a &lt;a href="../publication.php" &gt;publications section&lt;/a&gt;.</description>
+		<pubDate>14 Nov 2005</pubDate>
+	</item>
+	<item>
+		<title>A new ATL transformation is available: MySQL to KM3</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#MySQL2KM3</link>
+		<description>A new ATL transformation example, &lt;b&gt;MySQL to KM3&lt;/b&gt;, is now available on the
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#MySQL2KM3"&gt;ATL documentation page&lt;/a&gt;.
+		</description>
+		<pubDate>02 Nov 2005</pubDate>
+	</item>
+	<item>
+		<title>A new ATL transformation is available: DSL-EMF bridge</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#DSL2EMF</link>
+		<description>
+			A new ATL transformation example, the &lt;b&gt;DSL-EMF bridge&lt;/b&gt;, is now available on the
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#DSL2EMF"&gt;ATL documentation page&lt;/a&gt;.
+		</description>
+		<pubDate>26 Oct 2005</pubDate>
+	</item>
+	<item>
+		<title>A new ATL transformation is available: ATL to Problem</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#ATL2Problem</link>
+		<description>
+			A new ATL transformation example, &lt;b&gt;ATL to Problem&lt;/b&gt;, is now available on the
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#ATL2Problem" &gt;ATL documentation page&lt;/a&gt;.
+		</description>
+		<pubDate>18 Oct 2005</pubDate>
+	</item>
+	<item>
+		<title>A new ATL transformation is available: UML to MOF</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#MOF2UML</link>
+		<description>
+			A new couple of ATL transformations, &lt;b&gt;UML to MOF&lt;/b&gt; and &lt;b&gt;MOF to UML&lt;/b&gt;, is now available on the
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#MOF2UML" &gt;ATL documentation page&lt;/a&gt;.
+		</description>
+		<pubDate>26 Sep 2005</pubDate>
+	</item>
+	<item>
+		<title>A new ATL transformation is available: KM3 to Metrics</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#KM32Metrics</link>
+		<description>
+			A new ATL transformation example, &lt;b&gt;KM3 to Metrics&lt;/b&gt;, is now available on the
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#KM32Metrics"&gt;ATL documentation page&lt;/a&gt;.
+		</description>
+		<pubDate>22 Sep 2005</pubDate>
+	</item>
+	<item>
+		<title>Source code of ATL VM is now available</title>
+		<link>http://dev.eclipse.org/viewcvs/indextech.cgi/org.eclipse.gmt/ATL/</link>
+		<description>
+			&lt;b&gt;Source code of ATL virtual machine&lt;/b&gt; is now available on GMT web site. Three new plugins have been added
+			(&lt;a href="http://dev.eclipse.org/viewcvs/indextech.cgi/org.eclipse.gmt/ATL/org.atl.engine.vm/" &gt;vm&lt;/a&gt;,
+			&lt;a href="http://dev.eclipse.org/viewcvs/indextech.cgi/org.eclipse.gmt/ATL/org.atl.engine.repositories.mdr4atl/" &gt;mdr4atl&lt;/a&gt;,
+			&lt;a href="http://dev.eclipse.org/viewcvs/indextech.cgi/org.eclipse.gmt/ATL/org.atl.engine.repositories.emf4atl/" &gt;emf4atl&lt;/a&gt;).
+			Due to these new plugins, there are some modifications in installation process.	This is explained &lt;a
+			href="http://dev.eclipse.org/viewcvs/indextech.cgi/~checkout~/gmt-home/subprojects/ATL/download/index.html#installBinaries"&gt;
+			here&lt;/a&gt;.
+		</description>
+		<pubDate>16 Sep 2005</pubDate>
+	</item>
+	<item>
+		<title>New versions of KM3 and ATL user manuals are available</title>
+		<link>http://eclipse.org/gmt/atl/doc/</link>
+		<description>
+			New versions of the &lt;b&gt;KM3 User Manual&lt;/b&gt; and the &lt;b&gt;ATL User Manual&lt;/b&gt; are now available on the
+			&lt;a href="../doc/" &gt;ATL documentation page&lt;/a&gt;.
+		</description>
+		<pubDate>23 Aug 2005</pubDate>
+	</item>
+	<item>
+		<title>A new ATL transformation is available: Grafcet to PetriNet</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#Grafcet2PetriNet</link>
+		<description>
+			A new ATL transformation example, &lt;b&gt;Grafcet to PetriNet&lt;/b&gt;, is now available on the &lt;a
+			href="http://www.eclipse.org/gmt/atl/atlTransformations/#Grafcet2PetriNet"&gt;ATL documentation page&lt;/a&gt;.
+		</description>
+		<pubDate>18 Aug 2005</pubDate>
+	</item>
+	<item>
+		<title>New ATL transformations are available: Microsoft Office Excel to Software Quality, Software Quality Control to Bugzilla and Software Quality Control to Mantis Bug Tracker</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/</link>
+		<description>
+			Three new ATL transformation examples, &lt;b&gt;&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#MSOfficeExcel2SoftwareQualityControl"&gt;
+			Microsoft Office Excel to Software Quality Control&lt;/a&gt;&lt;/b&gt;, &lt;b&gt;
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#SoftwareQualityControl2Bugzilla" &gt;Software Quality Control to Bugzilla&lt;/a&gt;&lt;/b&gt;,
+			and &lt;b&gt;&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#SoftwareQualityControl2MantisBT" &gt;Software Quality Control to Mantis Bug
+			Tracker&lt;/a&gt;&lt;/b&gt;, are now available on the ATL documentation page.
+		</description>
+		<pubDate>16 Aug 2005</pubDate>
+	</item>
+	<item>
+		<title>New ATL transformations are available: Microsoft Office Excel Injector and Microsoft Office Excel Extractor</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#MSOfficeExcelExtractor</link>
+		<description>
+			Two new ATL transformations, providing &lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#MSOfficeExcelInjector" &gt;injection&lt;/a&gt; and
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#MSOfficeExcelExtractor" &gt;extraction&lt;/a&gt; facilities to/from &lt;b&gt;
+			Microsoft Office Excel&lt;/b&gt; models, are now available on the ATL documentation page.
+		</description>
+		<pubDate>16 Aug 2005</pubDate>
+	</item>
+	<item>
+		<title>New ATL transformations are available: Ant to Maven, Make to Ant and Maven to Ant</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/</link>
+		<description>
+			Three new ATL transformation examples, &lt;b&gt;&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#Ant2Maven" &gt;Ant to Maven&lt;/a&gt;&lt;/b&gt;,
+			&lt;b&gt;&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#Make2Ant" &gt;Make to Ant&lt;/a&gt;&lt;/b&gt;, and &lt;b&gt;
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#Maven2Ant" &gt;Maven to Ant&lt;/a&gt;&lt;/b&gt;, are now available on the ATL documentation page.
+		</description>
+		<pubDate>05 Aug 2005</pubDate>
+	</item>
+	<item>
+		<title>A new ATL transformation is available: KM3 to Problem</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#KM32Problem</link>
+		<description>
+			A new ATL transformation example, &lt;b&gt;KM3 to Problem&lt;/b&gt;, is now available on the
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#KM32Problem" &gt;ATL documentation page&lt;/a&gt;.
+		</description>
+		<pubDate>04 Aug 2005</pubDate>
+	</item>
+	<item>
+		<title>A new ATL transformation is available: Table to Microsoft Office Excel</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#Table2MSOfficeExcel</link>
+		<description>
+			A new ATL transformation example, &lt;b&gt;Table to Microsoft Office Excel&lt;/b&gt;, is now available on the
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#Table2MSOfficeExcel" &gt;ATL documentation page&lt;/a&gt;.
+		</description>
+		<pubDate>27 Jul 2005</pubDate>
+	</item>
+			
+	<item>
+		<title>A new ATL transformation is available: KM3 to DOT</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#KM32Dot</link>
+		<description>
+			A new ATL transformation example, &lt;b&gt;KM3 to DOT&lt;/b&gt;, is now available on the
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#KM32Dot"&gt;ATL documentation page&lt;/a&gt;.
+		</description>
+		<pubDate>21 Jul 2005</pubDate>
+	</item>
+	<item>
+		<title>Specification of the ATL Virtual Machine is now available</title>
+		<link>http://eclipse.org/gmt/atl/doc/</link>
+		<description>
+			The specification of the ATL Virtual Machine is now available on the &lt;a href="http://eclipse.org/gmt/atl/doc/"&gt;ATL documentation page&lt;/a&gt;.
+		</description>
+		<pubDate>20 Jul 2005</pubDate>
+	</item>
+	<item>
+		<title>A new ATL transformation is available: PathExp to PetriNet</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#PathExp2PetriNet</link>
+		<description>
+			A new ATL transformation example, PathExp to PetriNet, is now available on the &lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#PathExp2PetriNet"&gt;
+			ATL documentation page&lt;/a&gt;.
+		</description>
+		<pubDate>19 Jul 2005</pubDate>
+	</item>
+	<item>
+		<title>A new ATL transformation is available: UML to Amble</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#UML2Amble</link>
+		<description>
+			A new ATL transformation example, &lt;b&gt;UML to Amble&lt;/b&gt;, is now available on the
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#UML2Amble"&gt;ATL documentation page&lt;/a&gt;.
+		</description>
+		<pubDate>30 May 2005</pubDate>
+	</item>
+	<item>
+		<title>A new ATL transformation is available: BibTeXML to DocBook</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#BibTeXML2DocBook</link>
+		<description>
+			A new ATL transformation example, BibTeXML to DocBook>, is now available on the
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#BibTeXML2DocBook"&gt;ATL documentation page&lt;/a&gt;.
+		</description>
+		<pubDate>17 May 2005</pubDate>
+	</item>
+	<item>
+		<title>A new ATL transformation is available: Monitor to Semaphore</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#Monitor2Semaphore</link>
+		<description>
+			A new ATL transformation example, &lt;b&gt;Monitor to Semaphore&lt;/b&gt;, is now available on the
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#Monitor2Semaphore" &gt;ATL documentation page&lt;/a&gt;.
+		</description>
+		<pubDate>09 May 2005</pubDate>
+	</item>
+	<item>
+		<title>A new ATL transformation is available: UML Activity Diagram to MSProject</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#UMLActivityDiagram2MSProject</link>
+		<description>
+			A new ATL transformation example, &lt;b&gt;UML Activity Diagram to MSProject&lt;/b&gt;, is now available on the	&lt;a
+			href="http://www.eclipse.org/gmt/atl/atlTransformations/#UMLActivityDiagram2MSProject"
+			&gt;ATL documentation page&lt;/a&gt;.
+		</description>
+		<pubDate>13 Apr 2005</pubDate>
+	</item>
+	<item>
+		<title>A new ATL transformation is available: JavaSource to Table</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#Java2Table</link>
+		<description>
+			A new ATL transformation example, &lt;b&gt;JavaSource to Table&lt;/b&gt;, is now available on the
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#Java2Table"
+			&gt;ATL documentation page&lt;/a&gt;.
+		</description>
+		<pubDate>12 Apr 2005</pubDate>
+	</item>
+	<item>
+		<title>A new ATL transformation is available: UMLDI to SVG</title>
+		<link>http://www.eclipse.org/gmt/atl/atlTransformations/#UMLDI2SVG</link>
+		<description>
+			A new ATL transformation example, &lt;b&gt;UMLDI to SVG&lt;/b&gt;, is available on the
+			&lt;a href="http://www.eclipse.org/gmt/atl/atlTransformations/#UMLDI2SVG"&gt;
+			ATL documentation page&lt;/a&gt;.
+		</description>
+		<pubDate>08 Apr 2005</pubDate>
+	</item>
+	<item>
+		<title>A new plugin is available: KM3</title>
+		<link>http://dev.eclipse.org/viewcvs/indextech.cgi/org.eclipse.gmt/ATL/org.atl.eclipse.km3/</link>
+		<description>
+			A new ATL &lt;a href="http://dev.eclipse.org/viewcvs/indextech.cgi/org.eclipse.gmt/ATL/org.atl.eclipse.km3/"&gt;plugin&lt;/a&gt;
+			is available: &lt;a href="http://eclipse.org/gmt/atl/doc/KernelMetaMetaModel[v00.06].pdf" &gt;KM3&lt;/a&gt;. It provides tools to use a textual concrete
+			syntax that eases the coding of metamodels. KM3 files can be transformed into Ecore metamodels and vice versa.
+		</description>
+		<pubDate>10 Feb 2005</pubDate>
+	</item>
+	<item>
+		<title>ATL IDE is now available on GMT</title>
+		<link>http://eclipse.org/gmt/atl/download/</link>
+		<description>
+			&lt;a href="http://eclipse.org/gmt/atl/doc/ATL_PresentationSheet.pdf" &gt;ATL&lt;/a&gt; IDE is now available on GMT: sources and binaries (see
+			&lt;a href="http://eclipse.org/gmt/atl/download/"&gt;download section&lt;/a&gt;).
+		</description>
+		<pubDate>10 Nov 2004</pubDate>
+	</item>
+  </channel>
+</rss>
