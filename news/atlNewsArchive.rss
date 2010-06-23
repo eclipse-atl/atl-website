@@ -5,6 +5,14 @@
     <link>http://www.eclipse.org/m2m/atl/</link>
     <description>ATL News</description>
     <item>
+		<title>Release: ATL 3.1.0 has been released</title>
+      	<link>http://www.eclipse.org/modeling/m2m/downloads/?project=atl#R201006150240</link>
+		<description>
+			ATL 3.1.0 is out ! Check the major enhancements in the <a href="http://wiki.eclipse.org/ATL_3.1.0_New_and_Noteworthy">News and Noteworthy page</a>.
+		</description>
+		<pubDate>Thu, 23 Jun 2010 15:30:00 CET</pubDate>
+	</item>
+    <item>
 		<title>Release: ATL 3.0.0 has been released</title>
       	<link>http://www.eclipse.org/modeling/m2m/downloads/?project=atl#R200906220943</link>
 		<description>
