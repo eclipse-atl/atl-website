@@ -9,7 +9,7 @@
  *     Obeo - initial API and implementation
  */
 // URL of the feed that is to be converted. Can be either URL or absolute URI
-$feedURL = "http://www.acceleo.org/planet/rss20.xml";
+$feedURL = "/home/data/httpd/writable/acceleo/rss20.xml";
 
 // Limits the number of items that is to be displayed to the first n
 $limitItem = 5;
