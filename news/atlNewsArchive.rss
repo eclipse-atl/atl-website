@@ -6,7 +6,7 @@
     <description>ATL News</description>
     <item>
 		<title>Release: ATL 3.2.0 has been released</title>
-      	<link>http://www.eclipse.org/modeling/m2m/downloads/?project=atl#R201106080518</link>
+      	<link>http://www.eclipse.org/mmt/downloads/?project=atl#R201106080518</link>
 		<description>
 			ATL 3.2.0 is out ! Check the major enhancements in the <a href="http://wiki.eclipse.org/ATL_3.2.0_New_and_Noteworthy">News and Noteworthy page</a>.
 		</description>
@@ -14,7 +14,7 @@
 	</item>
     <item>
 		<title>Release: ATL 3.1.0 has been released</title>
-      	<link>http://www.eclipse.org/modeling/m2m/downloads/?project=atl#R201006150240</link>
+      	<link>http://www.eclipse.org/mmt/downloads/?project=atl#R201006150240</link>
 		<description>
 			ATL 3.1.0 is out ! Check the major enhancements in the <a href="http://wiki.eclipse.org/ATL_3.1.0_New_and_Noteworthy">News and Noteworthy page</a>.
 		</description>
@@ -22,7 +22,7 @@
 	</item>
     <item>
 		<title>Release: ATL 3.0.0 has been released</title>
-      	<link>http://www.eclipse.org/modeling/m2m/downloads/?project=atl#R200906220943</link>
+      	<link>http://www.eclipse.org/mmt/downloads/?project=atl#R200906220943</link>
 		<description>
 			ATL 3.0.0 has just been released, and introduce a lot of improvements at both UI and API level. Consult the <a href="http://wiki.eclipse.org/ATL_3.0.0_New_and_Noteworthy">News and Noteworthy page</a> for more details.
 		</description>
@@ -724,7 +724,7 @@
 				A section "ATL Use Cases" has been opened. The use cases will be updated regularly with improved description, new documentation, and implementation.
 			</p>
 			<p align="justify">
-				Do not hesitate to post messages on the M2M newsgroup (<a href="news://news.eclipse.org/eclipse.modeling.m2m">eclipse.modeling.m2m</a>) if you have any particular interests 
+				Do not hesitate to post messages on the M2M newsgroup (<a href="news://news.eclipse.org/eclipse.modeling.mmt">eclipse.modeling.m2m</a>) if you have any particular interests 
 				and/or questions about any of the presented use cases.
 				Contributions from the community of new use cases will be welcome. We are also always interested by new ideas and proposals of possible other use cases.
 			</p>
@@ -773,7 +773,7 @@
 				ATL web site moved from GMT to M2M. And it is now accessible here: <a href="http://www.eclipse.org/m2m/atl/">http://www.eclipse.org/m2m/atl/</a>.
 			</p>
 			<p align="justify">
-				As a consequence, the old ATL mailing list migrated to the <a href="news://news.eclipse.org/eclipse.modeling.m2m">Eclipse M2M newsgroup</a>.
+				As a consequence, the old ATL mailing list migrated to the <a href="news://news.eclipse.org/eclipse.modeling.mmt">Eclipse MMT newsgroup</a>.
 				For information about accessing Eclipse newsgroups, see: <a href="http://www.eclipse.org/newsgroups/">http://www.eclipse.org/newsgroups/</a>.
 				Last point, for the Eclipse M2M posting. Since we are going to share this newsgroup with the
 				other M2M components, the PMC has asked us to prefix all posts (questions, answers, comments), with the component name.
