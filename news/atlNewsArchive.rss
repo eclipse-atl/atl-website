@@ -2,7 +2,7 @@
  <rss version="2.0">
   <channel>
     <title>ATL News</title>
-    <link>http://www.eclipse.org/m2m/atl/</link>
+    <link>http://www.eclipse.org/atl/</link>
     <description>ATL News</description>
     <item>
 		<title>Release: ATL 3.2.0 has been released</title>
@@ -30,7 +30,7 @@
 	</item>
     <item>
 		<title>New use case available: UML2 activity diagrams to AnyLogic simulation models</title>
-      	<link>http://www.eclipse.org/m2m/atl/usecases/UML2AnyLogic/</link>
+      	<link>http://www.eclipse.org/atl/usecases/UML2AnyLogic/</link>
 		<description>
 			This use case presents a transformation from annotated UML2 activity diagrams to AnyLogic simulation models.
 		</description>
@@ -38,7 +38,7 @@
 	</item>
 	<item>
 		<title>New use case available: Rational Rose to UML2 Tools</title>
-      	<link>http://www.eclipse.org/m2m/atl/usecases/MDL2GMF/</link>
+      	<link>http://www.eclipse.org/atl/usecases/MDL2GMF/</link>
 		<description>
 			This use case shows how we can reuse UML projects created with Rational Rose and import them in GMF (specifically in UML2 Tools) using ATL transformations. In this use case, we 
 			only support UML class diagrams. In practice, this use case was applied to the QVT metamodel available on the OMG site.
@@ -47,7 +47,7 @@
 	</item>
 	<item>
 		<title>New use case available: Visual Representation for Code Clone Tools</title>
-      	<link>http://www.eclipse.org/m2m/atl/usecases/VisualRepCodeClone/</link>
+      	<link>http://www.eclipse.org/atl/usecases/VisualRepCodeClone/</link>
 		<description>
 			The aim of this use case is to realize a uniform visual representation for different code clone detection tools. 
 			Different analysis results provided by different code clone detection tools can be injected into models. These models will be transformed to a generic Code Clone DSL model,
@@ -57,7 +57,7 @@
 	</item>
     <item>
 		<title>New ATL Transformation Scenario: UML Class Diagram to UML Profile</title>
-		<link>http://www.eclipse.org/m2m/atl/atlTransformations/#UMLCD2UMLProfile</link>
+		<link>http://www.eclipse.org/atl/atlTransformations/#UMLCD2UMLProfile</link>
 		<description>
 			<p align="justify">
 				This ATL scenario transforms a UML2 Class Diagram into a UML2 Profile.</p>
@@ -66,7 +66,7 @@
 	</item>
 	<item>
 		<title>New use case available : Modeling Web applications</title>
-      	<link>http://www.eclipse.org/m2m/atl/usecases/webapp.modeling/</link>
+      	<link>http://www.eclipse.org/atl/usecases/webapp.modeling/</link>
 		<description>
 			This use case shows how model weaving is used to help in the development of model transformations. In some cases, the gap between the input and output metamodels makes it 
 			difficult to develop a model transformation that works for every input model. In such cases a weaving model can be used to enrich the input model by annotation. This process 
@@ -77,7 +77,7 @@
 
     <item>
 		<title>New ATL Transformation Scenario: KM3 metamodel to ATL comparison transformation</title>
-		<link>http://www.eclipse.org/m2m/atl/atlTransformations/#KM32CONFATL</link>
+		<link>http://www.eclipse.org/atl/atlTransformations/#KM32CONFATL</link>
 		<description>
 			<p align="justify">
 				This package include a higher-order transformation (HOT) that takes a KM3 metamodel as source model and generates a model of an ATL
@@ -103,21 +103,21 @@
 	</item>
     <item>
 		<title>Update of ATL scenarios of the Models Measurement Use Case</title>
-		<link>http://www.eclipse.org/m2m/atl/atlTransformations/#ModelMeasurement</link>
+		<link>http://www.eclipse.org/atl/atlTransformations/#ModelMeasurement</link>
 		<description>
 			<p align="justify">
 			The 8 scenarios of <b>Model Measurement Use Case</b> have been updated. This set of scenarios shows how to compute and generate measures on KM3 metamodels or UML2 models, and how to display them in different way
 			</p>
 			<ul>
 				Scenarios list:
-				<li><a href="http://www.eclipse.org/m2m/atl/atlTransformations/#ModelMeasurement">Model (KM3 and UML2) Measurement</a></li>
-				<li><a href="http://www.eclipse.org/m2m/atl/atlTransformations/#KM32Measure">KM3 to Measure</a></li>
-				<li><a href="http://www.eclipse.org/m2m/atl/atlTransformations/#Measure2Table">Measure to Table</a></li>
-				<li><a href="http://www.eclipse.org/m2m/atl/atlTransformations/#Measure2XHTML">Measure to XHTML</a></li>
-				<li><a href="http://www.eclipse.org/m2m/atl/atlTransformations/#Table2SVGBarChart">Table to SVGBarChart</a></li>
-				<li><a href="http://www.eclipse.org/m2m/atl/atlTransformations/#Table2SVGBarChart">Table to SVGPieChart</a></li>
-				<li><a href="http://www.eclipse.org/m2m/atl/atlTransformations/#Table2TabularHTML">Table to TabularHTML</a></li>
-				<li><a href="http://www.eclipse.org/m2m/atl/atlTransformations/#UML22Measure">UML2 to Measure</a></li>
+				<li><a href="http://www.eclipse.org/atl/atlTransformations/#ModelMeasurement">Model (KM3 and UML2) Measurement</a></li>
+				<li><a href="http://www.eclipse.org/atl/atlTransformations/#KM32Measure">KM3 to Measure</a></li>
+				<li><a href="http://www.eclipse.org/atl/atlTransformations/#Measure2Table">Measure to Table</a></li>
+				<li><a href="http://www.eclipse.org/atl/atlTransformations/#Measure2XHTML">Measure to XHTML</a></li>
+				<li><a href="http://www.eclipse.org/atl/atlTransformations/#Table2SVGBarChart">Table to SVGBarChart</a></li>
+				<li><a href="http://www.eclipse.org/atl/atlTransformations/#Table2SVGBarChart">Table to SVGPieChart</a></li>
+				<li><a href="http://www.eclipse.org/atl/atlTransformations/#Table2TabularHTML">Table to TabularHTML</a></li>
+				<li><a href="http://www.eclipse.org/atl/atlTransformations/#UML22Measure">UML2 to Measure</a></li>
 			</ul>
 			<p>These scenarios are contributed by Eric Vepa (<a href="http://www.sodius.com">SODIUS</a>).</p>
 		</description>
@@ -125,7 +125,7 @@
 	</item>
     <item>
 		<title>New ATL Transformation Scenario: Measure to XHTML</title>
-		<link>http://www.eclipse.org/m2m/atl/atlTransformations/#Measure2XHTML</link>
+		<link>http://www.eclipse.org/atl/atlTransformations/#Measure2XHTML</link>
 		<description>
 			<p align="justify">
 				The Measure to XHTML example describes a transformation from a Measure model to a XHTML file representing the 
@@ -137,11 +137,11 @@
 	</item>
     <item>
 		<title>ATL 2.0.0RC2 is available</title>
-		<link>http://www.eclipse.org/m2m/atl/download</link>
+		<link>http://www.eclipse.org/atl/downloads</link>
 		<description>
 			<p>
 				ATL 2.0.0RC2 is available. The preferred way of installing is via the Update Manager.
-				More details available here : <a href="http://www.eclipse.org/m2m/atl/download/">http://www.eclipse.org/m2m/atl/download/</a>.
+				More details available here : <a href="http://www.eclipse.org/atl/downloads/">http://www.eclipse.org/atl/downloads/</a>.
 			</p>
 			<p>
 				Additionally, two <b>ATL Ready-To-Use</b> bundles are available:
@@ -158,7 +158,7 @@
 	</item>
     <item>
 		<title>New ATL Transformation Scenario: WSDL to R2ML</title>
-		<link>http://www.eclipse.org/m2m/atl/atlTransformations/#WSDL2R2ML</link>
+		<link>http://www.eclipse.org/atl/atlTransformations/#WSDL2R2ML</link>
 		<description>
 			<p align="justify">
 				The WSDL to R2ML transformation scenario describes a transformation from WSDL (Web Services Description Language) 
@@ -176,7 +176,7 @@
 	</item>
     <item>
 		<title>New ATL use case: Models Measurement</title>
-		<link>http://www.eclipse.org/m2m/atl/usecases/ModelsMeasurement/</link>
+		<link>http://www.eclipse.org/atl/usecases/ModelsMeasurement/</link>
 		<description>
 			<p align="justify">
 				This use case shows how to compute and generate measures on KM3 metamodels or UML2 models, and how to display them in different way (HTML, and SVG).
@@ -185,27 +185,27 @@
 				The online measurement service is available at: <a href="http://www.mdworkbench.com/measuring.php">http://www.mdworkbench.com/measuring.php</a>
 			</p>
 			<p align="justify">
-				The use case is available at: <a href="http://www.eclipse.org/m2m/atl/usecases/ModelsMeasurement/">http://www.eclipse.org/m2m/atl/usecases/ModelsMeasurement/</a>.
+				The use case is available at: <a href="http://www.eclipse.org/atl/usecases/ModelsMeasurement/">http://www.eclipse.org/atl/usecases/ModelsMeasurement/</a>.
 			</p>
 		</description>
 		<pubDate>Fri, 27 July 2007 15:00:00 CET</pubDate>
 	</item>
     <item>
 		<title>7 new and updated scenarios related to model measurement are available</title>
-		<link>http://www.eclipse.org/m2m/atl/atlTransformations/#ModelMeasurement</link>
+		<link>http://www.eclipse.org/atl/atlTransformations/#ModelMeasurement</link>
 		<description>
 			<p align="justify">
 			7 new and updated scenarios are available. This set of scenarios shows how to compute and generate measures on KM3 metamodels or UML2 models, and how to display them in different way
 			</p>
 			<ul>
 				Scenarios list:
-				<li><a href="http://www.eclipse.org/m2m/atl/atlTransformations/#ModelMeasurement">Model (KM3 and UML2) Measurement</a></li>
-				<li><a href="http://www.eclipse.org/m2m/atl/atlTransformations/#KM32Measure">KM3 to Measure</a></li>
-				<li><a href="http://www.eclipse.org/m2m/atl/atlTransformations/#Measure2Table">Measure to Table</a></li>
-				<li><a href="http://www.eclipse.org/m2m/atl/atlTransformations/#Table2SVGBarChart">Table to SVGBarChart</a></li>
-				<li><a href="http://www.eclipse.org/m2m/atl/atlTransformations/#Table2SVGBarChart">Table to SVGPieChart</a></li>
-				<li><a href="http://www.eclipse.org/m2m/atl/atlTransformations/#Table2TabularHTML">Table to TabularHTML</a></li>
-				<li><a href="http://www.eclipse.org/m2m/atl/atlTransformations/#UML22Measure">UML2 to Measure</a></li>
+				<li><a href="http://www.eclipse.org/atl/atlTransformations/#ModelMeasurement">Model (KM3 and UML2) Measurement</a></li>
+				<li><a href="http://www.eclipse.org/atl/atlTransformations/#KM32Measure">KM3 to Measure</a></li>
+				<li><a href="http://www.eclipse.org/atl/atlTransformations/#Measure2Table">Measure to Table</a></li>
+				<li><a href="http://www.eclipse.org/atl/atlTransformations/#Table2SVGBarChart">Table to SVGBarChart</a></li>
+				<li><a href="http://www.eclipse.org/atl/atlTransformations/#Table2SVGBarChart">Table to SVGPieChart</a></li>
+				<li><a href="http://www.eclipse.org/atl/atlTransformations/#Table2TabularHTML">Table to TabularHTML</a></li>
+				<li><a href="http://www.eclipse.org/atl/atlTransformations/#UML22Measure">UML2 to Measure</a></li>
 			</ul>
 			<p>These scenarios are contributed by Eric Vepa (<a href="http://www.sodius.com">SODIUS</a>).</p>
 		</description>
@@ -280,7 +280,7 @@
 	</item>
     <item>
 		<title>New ATL Transformation Scenario: OpenBlueLab to UML</title>
-		<link>http://www.eclipse.org/m2m/atl/atlTransformations/#OBL2UML</link>
+		<link>http://www.eclipse.org/atl/atlTransformations/#OBL2UML</link>
 		<description>
 			<p>
 			<a href="http://www.openbluelab.org">OpenBlueLab</a> project's ambition is to provide an application which you can adapt easily by just updating UML models 
@@ -294,35 +294,35 @@
 	</item>
     <item>
 		<title>New ATL use case: RSM to Topcased UML2 Editor</title>
-		<link>http://www.eclipse.org/m2m/atl/usecases/RSM2Topcased/</link>
+		<link>http://www.eclipse.org/atl/usecases/RSM2Topcased/</link>
 		<description>
 			<p align="justify">
 				TOPCASED currently uses on the ATL model transformation toolkit. Model transformations have been mainly used in order to access models defined using other editors than TOPCASED 
 				one's. This use case presents an operational application of ATL to bridge RSM and TOPCASED.
 			</p>
 			<p align="justify">
-				The use case is available at: <a href="http://www.eclipse.org/m2m/atl/usecases/RSM2Topcased/">http://www.eclipse.org/m2m/atl/usecases/RSM2Topcased/</a>.
+				The use case is available at: <a href="http://www.eclipse.org/atl/usecases/RSM2Topcased/">http://www.eclipse.org/atl/usecases/RSM2Topcased/</a>.
 			</p>
 		</description>
 		<pubDate>Fri, 8 June 2007 10:00:00 CET</pubDate>
 	</item>
     <item>
 		<title>New ATL use case: Verifying UML profiled models</title>
-		<link>http://www.eclipse.org/m2m/atl/usecases/Verifying_UML_profiled_models/</link>
+		<link>http://www.eclipse.org/atl/usecases/Verifying_UML_profiled_models/</link>
 		<description>
 			<p align="justify">
 				This use case shows how to use and integrate a model transformation service in a UML Modeler to verify a UML profiled model.
 				The used UML Modeler is <a href="http://www.papyrusuml.org/">Papyrus</a> (<a href="http://www-list.cea.fr/">CEA LIST</a>).
 			</p>
 			<p align="justify">
-				The use case is available at: <a href="http://www.eclipse.org/m2m/atl/usecases/Verifying_UML_profiled_models/">http://www.eclipse.org/m2m/atl/usecases/Verifying_UML_profiled_models/</a>.
+				The use case is available at: <a href="http://www.eclipse.org/atl/usecases/Verifying_UML_profiled_models/">http://www.eclipse.org/atl/usecases/Verifying_UML_profiled_models/</a>.
 			</p>
 		</description>
 		<pubDate>Thu, 7 June 2007 10:00:00 CET</pubDate>
 	</item>
     <item>
 		<title>New ATL use case: QVT to ATL Virtual Machine Compiler</title>
-		<link>http://www.eclipse.org/m2m/atl/usecases/QVT2ATLVM/</link>
+		<link>http://www.eclipse.org/atl/usecases/QVT2ATLVM/</link>
 		<description>
 			<p align="justify">
 				This work provides a QVT compiler that targets the ATL Virtual Machine (ATL VM), and thus provides executability of QVT programs on top of the ATL VM. The code generator is written 
@@ -331,7 +331,7 @@
 				ACG compiler (both also written in ACG).
 			</p>
 			<p align="justify">
-				The use case is available at: <a href="http://www.eclipse.org/m2m/atl/usecases/QVT2ATLVM/">http://www.eclipse.org/m2m/atl/usecases/QVT2ATLVM/</a>.
+				The use case is available at: <a href="http://www.eclipse.org/atl/usecases/QVT2ATLVM/">http://www.eclipse.org/atl/usecases/QVT2ATLVM/</a>.
 			</p>
 		</description>
 		<pubDate>Wed, 6 June 2007 18:00:00 CET</pubDate>
@@ -339,28 +339,28 @@
 
 	<item>
 		<title>New ATL use case: Measuring UML models</title>
-		<link>http://www.eclipse.org/m2m/atl/usecases/Measuring_UML_models/</link>
+		<link>http://www.eclipse.org/atl/usecases/Measuring_UML_models/</link>
 		<description>
 			<p align="justify">
 				This use case shows how to use and integrate a model transformation service in a UML Modeler to compute and generate quality measures on UML models.
 				The used UML Modeler is <a href="http://www.papyrusuml.org/">Papyrus</a> (<a href="http://www-list.cea.fr/">CEA LIST</a>).
 			</p>
 			<p align="justify">
-				The use case is available at: <a href="http://www.eclipse.org/m2m/atl/usecases/Measuring_UML_models/">http://www.eclipse.org/m2m/atl/usecases/Measuring_UML_models/</a>.
+				The use case is available at: <a href="http://www.eclipse.org/atl/usecases/Measuring_UML_models/">http://www.eclipse.org/atl/usecases/Measuring_UML_models/</a>.
 			</p>
 		</description>
 		<pubDate>Tue, 29 May 2007 0:00:00 CET</pubDate>
 	</item>
     <item>
 		<title>New ATL use case: Using a UML modeler to generate metamodels</title>
-		<link>http://www.eclipse.org/m2m/atl/usecases/UML2MOF/</link>
+		<link>http://www.eclipse.org/atl/usecases/UML2MOF/</link>
 		<description>
 			<p align="justify">
 				This use case shows how to use and integrate a model transformation service in a UML Modeler to generate metamodels conforming to KM3, MOF 1.4, and Ecore.
 				The used UML Modeler is <a href="http://www.papyrusuml.org/">Papyrus</a> (<a href="http://www-list.cea.fr/">CEA LIST</a>).
 			</p>
 			<p align="justify">
-				The use case is available at: <a href="http://www.eclipse.org/m2m/atl/usecases/UML2MOF/">http://www.eclipse.org/m2m/atl/usecases/UML2MOF/</a>.
+				The use case is available at: <a href="http://www.eclipse.org/atl/usecases/UML2MOF/">http://www.eclipse.org/atl/usecases/UML2MOF/</a>.
 			</p>
 		</description>
 		<pubDate>Mon, 28 May 2007 2:00:00 CET</pubDate>
@@ -368,7 +368,7 @@
 
     <item>
 		<title>New ATL use case: A Metamodel Independent Approach to Difference Representation</title>
-		<link>http://www.eclipse.org/m2m/atl/usecases/MMIndApproachtoDiffRep/</link>
+		<link>http://www.eclipse.org/atl/usecases/MMIndApproachtoDiffRep/</link>
 		<description>
 			<p align="justify">
 				This work presents an ATL implementation of a metamodel independent approach to the representation of model differences which is agnostic of
@@ -380,7 +380,7 @@
 				<a href="http://www.di.univaq.it/~alfonso">Alfonso Pierantonio</a> (Universit&#224; dell'Aquila).
 			</p>
 			<p align="justify">
-				The use case is available at: <a href="http://www.eclipse.org/m2m/atl/usecases/MMIndApproachtoDiffRep/">http://www.eclipse.org/m2m/atl/usecases/MMIndApproachtoDiffRep/</a>.
+				The use case is available at: <a href="http://www.eclipse.org/atl/usecases/MMIndApproachtoDiffRep/">http://www.eclipse.org/atl/usecases/MMIndApproachtoDiffRep/</a>.
 			</p>
 		</description>
 		<pubDate>Fri, 6 Apr 2007 16:00:00 CET</pubDate>
@@ -388,7 +388,7 @@
 
     <item>
 		<title>New ATL use case: Sharing Rules Between OCL/UML and SWRL/OWL</title>
-		<link>http://www.eclipse.org/m2m/atl/usecases/SharingRulesBetweenOCLUML_SWRLOWL/</link>
+		<link>http://www.eclipse.org/atl/usecases/SharingRulesBetweenOCLUML_SWRLOWL/</link>
 		<description>
 			<p align="justify">
 		    	This work presents an implementation of sharing rules between two rule languages from different domains: OCL (Object Constraint Language) together with UML and SWRL 
@@ -402,7 +402,7 @@
 		    	<a href="http://www.tu-cottbus.de/">Brandenburg University of Technology at Cottbus</a> in Germany.
 			</p>
 			<p align="justify">
-				The use case is available at: <a href="http://www.eclipse.org/m2m/atl/usecases/SharingRulesBetweenOCLUML_SWRLOWL/">http://www.eclipse.org/m2m/atl/usecases/SharingRulesBetweenOCLUML_SWRLOWL/</a>.
+				The use case is available at: <a href="http://www.eclipse.org/atl/usecases/SharingRulesBetweenOCLUML_SWRLOWL/">http://www.eclipse.org/atl/usecases/SharingRulesBetweenOCLUML_SWRLOWL/</a>.
 			</p>
 		</description>
 		<pubDate>Thu, 29 Mar 2007 18:10:00 CET</pubDate>
@@ -410,7 +410,7 @@
 
 	<item>
 		<title>New ATL scenario: OCL to SWRL</title> 
-		<link>http://www.eclipse.org/m2m/atl/atlTransformations/#OCL2SWRL</link>
+		<link>http://www.eclipse.org/atl/atlTransformations/#OCL2SWRL</link>
 		<description>
 			<p align="justify">
 			The OCL to SWRL transformation scenario describes a transformation from OCL (Object Constraint Language) 
@@ -446,10 +446,10 @@
 
     <item>
 		<title>A new development build of ATL is available</title>
-		<link>http://www.eclipse.org/m2m/atl/download/</link>
+		<link>http://www.eclipse.org/atl/downloads/</link>
 		<description>
 			<p>
-				A <a href="http://www.eclipse.org/m2m/atl/download/">new development build</a> of ATL is available.
+				A <a href="http://www.eclipse.org/atl/downloads/">new development build</a> of ATL is available.
 				This version contains ATL and AM3 (with additional libs).
 			</p>
 			<p>
@@ -463,7 +463,7 @@
 
     <item>
 		<title>New ATL use case: Implementing two business rule languages: PRR and IRL</title>
-		<link>http://www.eclipse.org/m2m/atl/usecases/PRR2IRL/</link>
+		<link>http://www.eclipse.org/atl/usecases/PRR2IRL/</link>
 		<description>
 			<p align="justify">
 				This work presents a case study of implementing two business rule languages: Production Rule Representation (PRR) and ILOG Rule Language (IRL). We show how a pivot 
@@ -472,7 +472,7 @@
 				A <b>web service PRR to IRL</b> is available here: <a href="http://www.sciences.univ-nantes.fr/lina/atl/atldemo/prronline/">http://www.sciences.univ-nantes.fr/lina/atl/atldemo/prronline/</a>.
 			</p>
 			<p align="justify">
-				The use case is available at: <a href="http://www.eclipse.org/m2m/atl/usecases/PRR2IRL/">http://www.eclipse.org/m2m/atl/usecases/PRR2IRL/</a>.
+				The use case is available at: <a href="http://www.eclipse.org/atl/usecases/PRR2IRL/">http://www.eclipse.org/atl/usecases/PRR2IRL/</a>.
 			</p>
 		</description>
 		<pubDate>Mon, 12 Mar 2007 11:50:00 CET</pubDate>
@@ -480,16 +480,16 @@
 
     <item>
 		<title>New ATL use case: From Hoare's Monitors to Dijkstra's Semaphores</title>
-		<link>http://www.eclipse.org/m2m/atl/usecases/MonitorToSemaphore/</link>
+		<link>http://www.eclipse.org/atl/usecases/MonitorToSemaphore/</link>
 		<description>
 			<p align="justify">
-				This is a classic in synchronization. We propose an automatic translation from Hoare's monitors as defined in <a href="http://www.eclipse.org/m2m/atl/usecases/MonitorToSemaphore/#ref1">[1]</a> into Dijkstra's semaphores as 
-				initially introduced in <a href="http://www.eclipse.org/m2m/atl/usecases/MonitorToSemaphore/#ref2">[2]</a>.
-				The ATL transformation code follows the rules given in <a href="http://www.eclipse.org/m2m/atl/usecases/MonitorToSemaphore/#ref1">[1]</a>. A complete reprint of this paper is available at: 
+				This is a classic in synchronization. We propose an automatic translation from Hoare's monitors as defined in <a href="http://www.eclipse.org/atl/usecases/MonitorToSemaphore/#ref1">[1]</a> into Dijkstra's semaphores as 
+				initially introduced in <a href="http://www.eclipse.org/atl/usecases/MonitorToSemaphore/#ref2">[2]</a>.
+				The ATL transformation code follows the rules given in <a href="http://www.eclipse.org/atl/usecases/MonitorToSemaphore/#ref1">[1]</a>. A complete reprint of this paper is available at: 
 				<a href="http://www.acm.org/classics/feb96/">http://www.acm.org/classics/feb96/</a>.
 			</p>
 			<p align="justify">
-				The use case is available at: <a href="http://www.eclipse.org/m2m/atl/usecases/MonitorToSemaphore/">http://www.eclipse.org/m2m/atl/usecases/MonitorToSemaphore/</a>.
+				The use case is available at: <a href="http://www.eclipse.org/atl/usecases/MonitorToSemaphore/">http://www.eclipse.org/atl/usecases/MonitorToSemaphore/</a>.
 			</p>
 		</description>
 		<pubDate>Mon, 12 Mar 2007 11:50:00 CET</pubDate>
@@ -497,7 +497,7 @@
 
     <item>
 		<title>New ATL use case: From UML Activity Diagram to Project Management Software</title>
-		<link>http://www.eclipse.org/m2m/atl/usecases/UML2MsProject/</link>
+		<link>http://www.eclipse.org/atl/usecases/UML2MsProject/</link>
 		<description>
 			<p align="justify">
 				This use case shows the possibility to have interoperability between an UML activity diagram and a project management software like MsProject.
@@ -505,7 +505,7 @@
 				detailed logic of a business rule. Microsoft Project is a project management software program developed by Microsoft.
 			</p>
 			<p align="justify">
-				The use case is available at: <a href="http://www.eclipse.org/m2m/atl/usecases/UML2MsProject/">http://www.eclipse.org/m2m/atl/usecases/UML2MsProject/</a>.
+				The use case is available at: <a href="http://www.eclipse.org/atl/usecases/UML2MsProject/">http://www.eclipse.org/atl/usecases/UML2MsProject/</a>.
 			</p>
 		</description>
 		<pubDate>Mon, 12 Mar 2007 11:50:00 CET</pubDate>
@@ -513,7 +513,7 @@
 
 	<item>
 		<title>New ATL scenario: OCL to R2ML</title> 
-		<link>http://www.eclipse.org/m2m/atl/atlTransformations/#OCL2R2ML</link>
+		<link>http://www.eclipse.org/atl/atlTransformations/#OCL2R2ML</link>
 		<description>
 			<p align="justify">
 			The OCL to R2ML transformation scenario describes a transformation from OCL (Object Constraint Language) metamodel (with EMOF metamodel) into a R2ML (REWERSE I1 Rule Markup 
@@ -529,7 +529,7 @@
 
 	<item>
 		<title>New ATL scenario: R2ML to OCL</title> 
-		<link>http://www.eclipse.org/m2m/atl/atlTransformations/#R2ML2OCL</link>
+		<link>http://www.eclipse.org/atl/atlTransformations/#R2ML2OCL</link>
 		<description>
 			<p align="justify">
 			The R2ML to OCL transformation scenario describes a transformation from R2ML (REWERSE I1 Rule Markup Language) metamodel into a OCL (Object Constraint Language) metamodel (with EMOF 
@@ -545,7 +545,7 @@
 	
 	<item>
 		<title>New ATL scenario: R2ML to SWRL</title> 
-		<link>http://www.eclipse.org/m2m/atl/atlTransformations/#R2ML2SWRL</link> 
+		<link>http://www.eclipse.org/atl/atlTransformations/#R2ML2SWRL</link> 
 		<description>
 			<p align="justify">
 			The R2ML to SWRL transformation scenario describes a transformation from R2ML (REWERSE I1 Markup Language) metamodel into a SWRL (Semantic Web Rule Language) metamodel (RDM). SWRL is a 
@@ -560,7 +560,7 @@
 
 	<item>
 		<title>New ATL scenario: SWRL to R2ML</title>
-		<link>http://www.eclipse.org/m2m/atl/atlTransformations/#SWRL2R2ML</link> 
+		<link>http://www.eclipse.org/atl/atlTransformations/#SWRL2R2ML</link> 
 		<description>
 			<p align="justify">
 			The SWRL to R2ML transformation scenario describes a transformation from SWRL (Semantic Web Rule Language) metamodel (RDM) into a R2ML (REWERSE I1 Markup Language) metamodel. SWRL is 
@@ -575,7 +575,7 @@
 
     <item>
 		<title>New ATL scenario: KM3 to OWL</title>
-		<link>http://www.eclipse.org/m2m/atl/atlTransformations/#KM32OWL</link>
+		<link>http://www.eclipse.org/atl/atlTransformations/#KM32OWL</link>
 		<description>
 			<p align="justify">
 				This ATL scenario shows up a traduction of KM3 into OWL (Web Ontology language) ontology language. 
@@ -592,7 +592,7 @@
 
     <item>
 		<title>New ATL scenario: KM3 to XML</title>
-		<link>http://www.eclipse.org/m2m/atl/atlTransformations/#KM32XML</link>
+		<link>http://www.eclipse.org/atl/atlTransformations/#KM32XML</link>
 		<description>
 			<p align="justify">
 				The KM3 to XML scenario expresses each metamodel written in KM3 textual syntax with a default 
@@ -608,14 +608,14 @@
 
     <item>
 		<title>New ATL use case: Web Syndication Interoperability (RSS and Atom)</title>
-		<link>http://www.eclipse.org/m2m/atl/usecases/WebSyndicationInteroperability/</link>
+		<link>http://www.eclipse.org/atl/usecases/WebSyndicationInteroperability/</link>
 		<description>
 			<p align="justify">
 			People who generate web syndication feeds have a choice of formats. Today, the two most likely candidates are RSS 2.0 and Atom 1.0.
 			The goal of this case study is to provide a bridge between both formats by using a light and flexible interoperability solution.
 			</p>
 			<p align="justify">
-				The use case is available at: <a href="http://www.eclipse.org/m2m/atl/usecases/WebSyndicationInteroperability/">http://www.eclipse.org/m2m/atl/usecases/WebSyndicationInteroperability/</a>.
+				The use case is available at: <a href="http://www.eclipse.org/atl/usecases/WebSyndicationInteroperability/">http://www.eclipse.org/atl/usecases/WebSyndicationInteroperability/</a>.
 			</p>
 		</description>
 		<pubDate>Wed, 21 Feb 2007 14:50:00 CET</pubDate>
@@ -623,7 +623,7 @@
 
     <item>
 		<title>New ATL use case: Models Validation through Petri nets</title>
-		<link>http://www.eclipse.org/m2m/atl/usecases/SimplePDL2Tina/</link>
+		<link>http://www.eclipse.org/atl/usecases/SimplePDL2Tina/</link>
 		<description>
 			<p align="justify">
 			This work presents a use case of model transformation using ATL rules to validate MDD's models.
@@ -635,7 +635,7 @@
 			<a href="http://www.irit.fr">IRIT</a> and <a href="http://www.laas.fr/">LAAS</a> labs in Toulouse, France.
 			</p>
 			<p align="justify">
-				The use case is available at: <a href="http://www.eclipse.org/m2m/atl/usecases/SimplePDL2Tina/">http://www.eclipse.org/m2m/atl/usecases/SimplePDL2Tina/</a>.
+				The use case is available at: <a href="http://www.eclipse.org/atl/usecases/SimplePDL2Tina/">http://www.eclipse.org/atl/usecases/SimplePDL2Tina/</a>.
 			</p>
 		</description>
 		<pubDate>Wed, 21 Feb 2007 14:00:00 CET</pubDate>
@@ -653,7 +653,7 @@
 
 	<item>
 		<title>New ATL use case: Software Build Tools Interoperability (Make, Ant, Maven)</title>
-      	<link>http://www.eclipse.org/m2m/atl/usecases/BridgeBetweenBuildTools/</link>
+      	<link>http://www.eclipse.org/atl/usecases/BridgeBetweenBuildTools/</link>
 		<description>
 			<p align="justify">
 				Make is one of the most common build tool. It remains widely used but essentially in Unix-based 
@@ -663,7 +663,7 @@
 				management project and automated software build).
 			</p>
 			<p align="justify">
-				The use case is available at: <a href="http://www.eclipse.org/m2m/atl/usecases/BridgeBetweenBuildTools/">http://www.eclipse.org/m2m/atl/usecases/BridgeBetweenBuildTools/</a>.
+				The use case is available at: <a href="http://www.eclipse.org/atl/usecases/BridgeBetweenBuildTools/">http://www.eclipse.org/atl/usecases/BridgeBetweenBuildTools/</a>.
 			</p>
 		</description>
 		<pubDate>Wed, 14 Feb 2007 11:35:00 CET</pubDate>
@@ -671,7 +671,7 @@
 
 	<item>
 		<title>New ATL use case: Software Quality Control Tools Interoperability (Bugzilla, Mantis, Excel)</title>
-      	<link>http://www.eclipse.org/m2m/atl/usecases/SoftwareQualityControlToolsInteroperability/</link>
+      	<link>http://www.eclipse.org/atl/usecases/SoftwareQualityControlToolsInteroperability/</link>
 		<description>
 			<p align="justify">
 				Problems of tools interoperability can be found in various domains. Software quality control is one 
@@ -680,7 +680,7 @@
 				generic tool like Excel.
 			</p>
 			<p align="justify">
-				The use case is available at: <a href="http://www.eclipse.org/m2m/atl/usecases/SoftwareQualityControlToolsInteroperability/">http://www.eclipse.org/m2m/atl/usecases/SoftwareQualityControlToolsInteroperability/</a>.
+				The use case is available at: <a href="http://www.eclipse.org/atl/usecases/SoftwareQualityControlToolsInteroperability/">http://www.eclipse.org/atl/usecases/SoftwareQualityControlToolsInteroperability/</a>.
 			</p>
 		</description>
 		<pubDate>Wed, 14 Feb 2007 11:30:00 CET</pubDate>
@@ -703,14 +703,14 @@
 
 	<item>
 		<title>New ATL use case: DSLs coordination for Telephony</title>
-      	<link>http://www.eclipse.org/m2m/atl/usecases/DSLsTelephony/</link>
+      	<link>http://www.eclipse.org/atl/usecases/DSLsTelephony/</link>
 		<description>
 			<p align="justify">
 				A new ATL use case is available: DSLs coordination for Telephony. This work presents a case study of implementing two telephony languages: SPL and CPL.
 				They are partially based on similar vocabularies. However they are very different and have been designed to be used by different people.
 			</p>
 			<p align="justify">
-				The use case is available at: <a href="http://www.eclipse.org/m2m/atl/usecases/DSLsTelephony/">http://www.eclipse.org/m2m/atl/usecases/DSLsTelephony/</a>.
+				The use case is available at: <a href="http://www.eclipse.org/atl/usecases/DSLsTelephony/">http://www.eclipse.org/atl/usecases/DSLsTelephony/</a>.
 			</p>
 		</description>
 		<pubDate>Thu, 1 Feb 2007 11:45:00 CET</pubDate>
@@ -718,7 +718,7 @@
 
 	<item>
 		<title>Creation of a section "ATL Use Cases"</title>
-      	<link>http://www.eclipse.org/m2m/atl/usecases/</link>
+      	<link>http://www.eclipse.org/atl/usecases/</link>
 		<description>
 			<p align="justify">
 				A section "ATL Use Cases" has been opened. The use cases will be updated regularly with improved description, new documentation, and implementation.
@@ -729,7 +729,7 @@
 				Contributions from the community of new use cases will be welcome. We are also always interested by new ideas and proposals of possible other use cases.
 			</p>
 			<p align="justify">
-				See <a href="http://www.eclipse.org/m2m/atl/usecases/">http://www.eclipse.org/m2m/atl/usecases/</a> for consulting the use cases list.
+				See <a href="http://www.eclipse.org/atl/usecases/">http://www.eclipse.org/atl/usecases/</a> for consulting the use cases list.
 			</p>
 		</description>
 		<pubDate>Thu, 1 Feb 2007 11:45:00 CET</pubDate>
@@ -758,7 +758,7 @@
 				<a href="../doc/ATLUseCase_Families2Persons.ppt">Powerpoint</a> formats.
 				This presentation describes a very simple model transformation example, some kind of ATL "hello world". This is not a recommendation on how to program in ATL, just an initial example.
 				Other presentations and exercise questions that could be based on this example will be created. Please, do not hesitate to provide some feedbacks on this presentation or to contribute.
-				The source code is available in the ATL transformations zoo: <a href="http://www.eclipse.org/m2m/atl/atlTransformations/Families2Persons/Families2Persons.zip">Families2Persons.zip</a>.
+				The source code is available in the ATL transformations zoo: <a href="http://www.eclipse.org/atl/atlTransformations/Families2Persons/Families2Persons.zip">Families2Persons.zip</a>.
 			</p>
 		</description>
 		<pubDate>Tue, 16 Jan 2007 11:30:00 CET</pubDate>
