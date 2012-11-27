@@ -1,0 +1,392 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+	<title>ATL Basic Examples and Patterns - The Side effect example</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+	<link rel="stylesheet" type="text/css" href="../layout.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="../article.css" media="screen" />
+</head>
+
+<body>
+	<h1>The side effect example</h1>
+	
+	<div class="summary">
+		<h2>Summary</h2>
+		<p align="justify">
+			This case deals with the way to handle side effects induced while transforming an element. We will start from an imperative algorithm to create a transformation between two 
+			metamodels.	This algorithm will introduce a side effect problem. After several iteration a solution will be provided following ATL philosophy.
+		</p>
+		
+		<p align="justify">
+			In this example, we discover how: to use ATL imperative parts for dealing with complex situation, and
+			to use a chain of ATL transformations to divide transformation complexity and to avoid imperative parts.
+		</p>
+		<div class="author">By Cyril Faure (CS) and Freddy Allilaire (INRIA)</div>
+		<div class="copyright">Copyright &copy; 2007-2008 CS and INRIA.</div>
+		
+		<div class="date">January, 2008</div>
+	</div>
+	
+	<div class="content">
+
+		<h2>Introduction</h2>
+		<p align="justify">
+			This case deals with the way to handle side effects induced while transforming an element. We will start from an imperative algorithm to create a transformation between two 
+			metamodels. This algorithm will introduce a side effect problem. After several iteration we will provide a solution following ATL philosophy.
+		</p>
+
+		<h2>The Metamodels</h2>
+		<p align="center">
+			<img src="img/TypeA.PNG" />
+			<br /><br />
+			<b>Metamodel A</b>
+		</p>
+		<p align="justify">
+			The metamodel <b>A</b> is composed of two concepts which represent a simple list of named elements. Different <i>ElementA</i> can have the same name.
+		</p>
+		<p align="center">
+			<img src="img/TypeB.PNG" />
+			<br /><br />
+			<b>Metamodel B</b>
+		</p>
+		<p align="justify">
+			The metamodel <b>B</b> defines a slightly different concept with a third concept called <i>DefinitionB</i>. In this metamodel, a <i>RootB</i> element has a set of <i>DefinitionB</i> 
+			whose role is to gather and to factorize all <i>ElementB</i> name. All <i>DefinitionB</i> elements (in the context of the same <i>RootB</i> element) must have different name 
+			attribute value.
+		</p>
+			
+		<h2>Goal of the transformation</h2>
+
+		<p align="justify">
+			The goal of this example is to transform a <i>RootA</i> element into a <i>RootB</i> one and an <i>ElementA</i> into an <i>ElementB</i> one. Created <i>ElementB</i> will not contain 
+			the name from the <i>ElementA</i>. The name will be used to create a <i>DefinitionB</i> element with the requirement that each <i>DefinitionB</i> (i.e. name value) is unique.
+		</p>
+
+		<p align="justify">
+			The figure below illustrates transformation goal with an example:
+		</p>
+
+		<p align="center">
+			<img src="img/SideEffect_bigPicture.PNG" />
+			<br /><br />
+			<b>Transformation Big Picture</b>
+		</p>
+
+		<h2>A first implementation</h2>
+
+		<p align="justify">
+			In this example, we will start with the "point of view" of an "imperative language developer" to create our transformation from metamodel A to metamodel B.
+			Here is an algorithm we can propose in "imperative way":
+		</p>
+		<table STYLE="border : 1px dotted #AAAAAA;" width="100%" cellspacing="0" cellpadding="20">
+			<td>
+				<code>
+			<i>RootA</i> element is transformed into <i>RootB</i> and for each <i>ElementA</i>,
+			<ul>
+				<li>we create an <i>ElementB</i></li> 
+				<li>we store b in the <i>RootB.elms</i> containment relation</li>
+				<li>we make a traversal of <i>RootB.defs</i>. For each <i>d : DefinitionB</i>,
+					<ul>
+						<li>if <i>a.name = d.name</i>, then we put the <i>d</i> reference as <i>b</i> 's definition : <i>b.def <- d</i> and end the traversal</li>
+						<li>else, we carry on the traversal to the next element</li>
+					</ul>
+				</li>
+				<li>if no definition <i>d</i> has been found such as <i>a.name = d.name</i>:
+					<ul>
+						<li>we create a <i>newD : DefinitionB</i> where <i>newD.name = a.name</i></li>
+						<li>we put the <i>newD</i> reference as <i>b</i> 's definition : <i>b.def <- newD</i></li>
+					</ul>
+				</li>
+			</ul>
+				</code>
+			</td>
+		</table>			
+		<p align="justify">
+			As one can see, for each <i>ElementB</i> created whose definition is not already available, the algorithm creates it on-the-fly, inducing a side effect.
+		</p>
+
+		<p align="justify">
+			The following implementation succeeded to reproduce the algorithm described above by writing a single rule transforming the source root object into the target root 
+			object. Note this rule may be dangerous as it assumes the ATL engine executes the bindings in the order they are written in the code.
+		</p>
+		<p align="justify">
+			<b>Remark:</b> The target model is browsed in this transformation, this is <b>strongly discouraged in ATL</b>.
+		</p>
+		<table STYLE="border : 1px dotted #AAAAAA;" width="100%" cellspacing="0" cellpadding="20">
+			<td>
+				<code>
+<pre>
+<font class="ATL_Keyword">module</font> TypeA2TypeB;
+<font class="ATL_Keyword">create</font> b : TypeB <font class="ATL_Keyword">from</font> a : TypeA;
+
+<font class="ATL_Comment">-- This helper retrieves all names and removes all duplicates</font>
+<font class="ATL_Keyword">helper context</font> TypeA!RootA <font class="ATL_Keyword">def</font> : getDefNameSet() : <font class="ATL_OCLType">Set</font>(<font class="ATL_OCLType">String</font>) =
+	self.elms->collect(e|e.name).asSet();
+
+<font class="ATL_Keyword">rule</font> RootA2RootB {
+	<font class="ATL_Keyword">from</font>
+		rtA : TypeA!RootA
+	<font class="ATL_Keyword">to</font>
+		<font class="ATL_Comment">-- this rule is dangerous as we suppose the ATL engine executes...</font>
+		rtB : TypeB!RootB (
+			<font class="ATL_Comment">-- this line before...</font>
+			defs <- defBLst,
+			<font class="ATL_Comment">-- this one.</font>
+			elms <- elmBLst
+		),
+		defBLst : <font class="ATL_Keyword">distinct</font> TypeB!DefinitionB <font class="ATL_Keyword">foreach</font>(defName <font class="ATL_Keyword">in</font> rtA.getDefNameSet ())(
+			name <- defName
+		),
+		elmBLst : <font class="ATL_Keyword">distinct</font> TypeB!ElementB <font class="ATL_Keyword">foreach</font> (elmA <font class="ATL_Keyword">in</font> rtA.elms) (
+			<font class="ATL_Comment">-- here the target model is browsed</font>
+			definition <- rtB.defs->select (d | d.name = elmA.name )->first()
+		)
+}
+</pre>
+				</code>
+			</td>
+		</table>
+
+		<p align="justify">
+			As one can see, the described algorithm contains a side effect where the <i>DefinitionB</i> elements creation are made on-the-fly. This implementation makes 
+			a dangerous assertion as the ATL engine does not ensure the bindings execution order (this is a consequence of target model browsing).
+		</p>
+		
+		<h2>How to follow the ATL philosophy</h2>
+		<p align="justify">
+			In respect of the ATL philosophy, we would like to have a rule where:
+		</p>
+						
+		<table STYLE="border : 1px dotted #AAAAAA;" width="100%" cellspacing="0" cellpadding="20">
+			<td>
+				<code>
+<pre>
+<font class="ATL_Keyword">rule</font> ElmA2ElmB {
+	<font class="ATL_Keyword">from</font>
+		elmA : A!ElementA
+	<font class="ATL_Keyword">to</font>
+		elmB : B!ElementB(
+
+		)
+}
+</pre>
+				</code>
+			</td>
+		</table>
+						
+		<p align="justify">
+			However if we plan to use such a rule, how can we set the <i>def</i> reference and reproduce the associated side effect (on-the-fly <i>DefinitionB</i> creation) in a more 
+			functional way?
+		</p>
+		
+		<p align="justify">
+			The following ATL code proposed an other solution to reach transformation goal:
+		</p>
+		
+		<table STYLE="border : 1px dotted #AAAAAA;" width="100%" cellspacing="0" cellpadding="20">
+			<td>
+				<code>
+<pre>
+<font class="ATL_Keyword">module</font> TypeA2TypeB;
+<font class="ATL_Keyword">create</font> b : TypeB <font class="ATL_Keyword">from</font> a : TypeA;
+
+<font class="ATL_Keyword">rule</font> RootA2RootB {
+	<font class="ATL_Keyword">from</font>
+		rtA : TypeA!RootA
+	<font class="ATL_Keyword">to</font>
+		rtB : TypeB!RootB (
+			defs <- rtA.elms->iterate(e; res : <font class="ATL_OCLType">Set</font>(TypeA!ElementA) = <font class="ATL_OCLType">Set</font> {} |
+				<font class="ATL_Keyword">if</font> (res->collect(f | f.name)->includes(e.name)) <font class="ATL_Keyword">then</font>
+					res
+				<font class="ATL_Keyword">else</font>
+					res->including(e)
+				<font class="ATL_Keyword">endif</font>
+				)<font class="ATL_Comment">-- here we keep only one element of each name value</font>
+				->collect(e | thisModule.Definition(e)),
+				<font class="ATL_Comment">-- then we create a DefinitionB from each selected element</font>
+			elms <- rtA.elms 
+		)
+}
+
+<font class="ATL_Keyword">lazy rule</font> Definition {
+	<font class="ATL_Keyword">from</font>
+		s : TypeA!ElementA
+	<font class="ATL_Keyword">to</font>
+		t : TypeB!DefinitionB(
+			name <- s.name
+		)
+}
+
+<font class="ATL_Keyword">helper def</font>: nameToAssignHistory : <font class="ATL_OCLType">Sequence</font>(<font class="ATL_OCLType">TupleType</font>(e : TypeB!ElementB, s : <font class="ATL_OCLType">String</font>)) =
+	<font class="ATL_OCLType">Sequence</font> {};
+	
+<font class="ATL_Keyword">rule</font> NameToAssign (e : TypeB!ElementB, s : <font class="ATL_OCLType">String</font>) {
+	<font class="ATL_Keyword">do</font> {
+		thisModule.nameToAssignHistory <- thisModule.nameToAssignHistory->append(<font class="ATL_OCLType">Tuple</font> {e = e, s = s});
+	}
+}
+
+<font class="ATL_Keyword">rule</font> Element {
+	<font class="ATL_Keyword">from</font>
+		s : TypeA!ElementA
+	<font class="ATL_Keyword">to</font>
+		t : TypeB!ElementB(
+		)
+	<font class="ATL_Keyword">do</font> {
+		<font class="ATL_Comment">-- The corresponding name for the current ElementB is added in the map.</font>
+		<font class="ATL_Comment">-- This map will be used at the end of the transformation to create a link between ElementB and DefinitionB</font>
+		thisModule.NameToAssign(t, s.name);
+	}
+}
+
+<font class="ATL_Comment">-- execute delayed actions</font>
+<font class="ATL_Keyword">endpoint rule</font> EndRule() {
+	<font class="ATL_Keyword">do</font> {
+		<font class="ATL_Keyword">for</font>(dta <font class="ATL_Keyword">in</font> thisModule.nameToAssignHistory) {
+			<font class="ATL_Comment">-- We create a link between an ElementB and the corresponding DefinitionB</font>
+			dta.e.definition <- TypeB!DefinitionB.allInstancesFrom(<font class="ATL_Enum">'b'</font>)->any(e | e.name = dta.s);
+		}
+	}
+}
+</pre>
+				</code>
+			</td>
+		</table>
+
+		<p align="justify">
+			This ATL transformation also required target models browsing (even this is done in the endpoint). This solution may be consider better than the first one. But it does not 
+			give satisfaction. As you can see, it uses some imperative constructs that made it more difficult to understand and to maintain. As it seems not possible to solve 
+			this by using only one transformation without imperative code, we should consider to solve it by using a chain of transformations. This will allow us to
+			solve each problem in a different transformation.
+		</p>
+		
+		<p align="justify">
+			The general overview of our approach is presented in the following figure:
+		</p>
+		
+		<p align="center">
+			<img src="img/SideEffect_lastVersionScenario.png" />
+		</p>
+		
+		<h3>First step: A to Partial_B</h3>
+		<p align="justify">
+			In the first step, we create a partial model B containing the list of <i>DefinitionB</i> elements.
+		</p>
+		
+		<table STYLE="border : 1px dotted #AAAAAA;" width="100%" cellspacing="0" cellpadding="20">
+			<td>
+				<code>
+<pre>
+<font class="ATL_Keyword">module</font> TypeA2TypeB;
+<font class="ATL_Keyword">create</font> b : TypeB <font class="ATL_Keyword">from</font> a : TypeA;
+
+<font class="ATL_Keyword">rule</font> RootA2RootB {
+	<font class="ATL_Keyword">from</font>
+		rtA : TypeA!RootA
+	<font class="ATL_Keyword">to</font>
+		rtB : TypeB!RootB (
+			defs <- rtA.elms->iterate(e; res : <font class="ATL_OCLType">Set</font>(TypeA!ElementA) = <font class="ATL_OCLType">Set</font> {} |
+				<font class="ATL_Keyword">if</font> (res->collect(f | f.name)->includes(e.name)) <font class="ATL_Keyword">then</font>
+					res
+				<font class="ATL_Keyword">else</font>
+					res->including(e)
+				<font class="ATL_Keyword">endif</font>
+				)->collect(e | thisModule.Definition(e))
+		)
+}
+
+<font class="ATL_Keyword">lazy rule</font> Definition {
+	<font class="ATL_Keyword">from</font>
+		s : TypeA!ElementA
+	<font class="ATL_Keyword">to</font>
+		t : TypeB!DefinitionB(
+			name <- s.name
+		)
+}
+</pre>
+				</code>
+			</td>
+		</table>
+
+		<h3>Second step: A and Partial_B to B</h3>
+		<p align="justify">
+			In the second step, we can easily solve the problem by using in input parameter the output model created by the first step transformation.
+		</p>
+
+		<table STYLE="border : 1px dotted #AAAAAA;" width="100%" cellspacing="0" cellpadding="20">
+			<td>
+				<code>
+<pre>
+<font class="ATL_Keyword">module</font> TypeA2TypeB;
+<font class="ATL_Keyword">create</font> b : TypeB <font class="ATL_Keyword">from</font> a : TypeA, bIn : TypeB;
+
+<font class="ATL_Keyword">rule</font> RootA2RootB {
+	<font class="ATL_Keyword">from</font>
+		rtA : TypeA!RootA, rtBIN : TypeB!RootB
+	<font class="ATL_Keyword">to</font>
+		rtB : TypeB!RootB (
+			defs <- rtBIN.defs,
+			elms <- rtA.elms
+		)
+}
+
+<font class="ATL_Keyword">rule</font> Definition {
+	<font class="ATL_Keyword">from</font>
+		s : TypeB!DefinitionB
+	<font class="ATL_Keyword">to</font>
+		t : TypeB!DefinitionB(
+			name <- s.name
+		)
+}
+
+<font class="ATL_Keyword">rule</font> Element {
+	<font class="ATL_Keyword">from</font>
+		s : TypeA!ElementA
+	<font class="ATL_Keyword">to</font>
+		t : TypeB!ElementB(
+			definition <- TypeB!DefinitionB.allInstancesFrom(<font class="ATL_Enum">'bIn'</font>)->any(e | e.name = s.name)
+		)
+}
+</pre>
+				</code>
+			</td>
+		</table>
+
+		<h2>Conclusion</h2>
+		<p align="justify">
+			What we have learnt with this example:
+			<ul>
+				<li>Using ATL imperative parts for dealing with complex situation.</li>
+				<li>Using a chain of ATL transformations to divide transformation complexity and to avoid imperative parts.</li>
+			</ul>
+		</p>
+
+		<h2>Download</h2>
+
+		<table width="100%">
+			<COLGROUP>
+				<COL width="10%">
+				<COL width="25%">
+				<COL width="65%">
+			</COLGROUP>
+			<tr>
+				<td align="right">
+					<a href="http://www.eclipse.org/atl/atlTransformations/ManyToMore/ManyToMore.zip">
+						<img style="vertical-align:text-top;" src="/resources/images/code.png"/>
+					</a>
+				</td>
+				<td align="left">
+					<a href="http://www.eclipse.org/atl/atlTransformations/SideEffect/SideEffect.zip"><h3>SideEffect</h3></a>
+				</td>
+					<td align="left">Source code for the scenario SideEffect.</td>
+			</tr>
+		</table>
+			
+		<h2><a name="acknowledgement"></a>Acknowledgement</h2>
+		The present work is being supported by the <a href="http://www.usine-logicielle.org">Usine Logicielle project of the System@tic Paris Region Cluster</a>.
+			
+	</div>
+
+</body>
+</html>

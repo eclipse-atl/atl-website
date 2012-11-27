@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+	<title>ATL Basic Examples and Patterns - The Many To More example</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+	<link rel="stylesheet" type="text/css" href="../layout.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="../article.css" media="screen" />
+</head>
+
+<body>
+
+	<h1>The List Metamodel Refactoring example</h1>
+	<div class="summary">
+		<h2>Summary</h2>
+		<p align="justify">
+			In this example, we present some basic concepts of ATL through a simple use case. Our working context is the creation of a bridge between 
+			two different versions of a List metamodel (A and B). This bridge consists on an ATL transformation from the version A to the version B. 
+		</p>
+		<p align="justify">
+			In this example, we discover how: 
+			to use automatic traceability support in ATL, to create an ordered set, to use operation on string type.
+		</p>
+		<div class="author">By Cyril Faure (CS) and Freddy Allilaire (INRIA)</div>
+		<div class="copyright">Copyright &copy; 2007 CS and INRIA.</div>
+		
+		<div class="date">December, 2007</div>
+	</div>
+
+	<div class="content">
+
+		<h2>Introduction</h2>
+		<p align="justify">
+			This example deals with the refactoring of a simple metamodel. We want to bridge two different versions of a metamodel thanks to a model transformation.
+		</p>
+
+		<h2>The Metamodels</h2>
+		<p align="center">
+			<img src="img/TypeA.PNG" />
+			<br /><br />
+			<b>Metamodel A</b>
+		</p>
+		<p align="justify">
+			The metamodel <b>A</b> is composed of two elements which represent a simple list of named elements.
+		</p>
+		<p align="center">
+			<img src="img/TypeB.PNG" />
+			<br /><br />
+			<b>Metamodel B</b>
+		</p>
+		<p align="justify">
+			The metamodel <b>B</b> is a evolution of metamodel <b>A</b>. It defines the same concepts except <i>RootB</i> lost its name.
+		</p>
+		
+		<h2>Refactoring Transformation</h2>
+		<h3 STYLE="font-size: 10pt; border-bottom: 2px solid;">Transformation principles</h3>
+		<p align="justify">
+			In this transformation, we want to transform an element <i>RootA</i> into a <i>RootB</i> and to transform an element <i>ElementA</i> into a <i>ElementB</i>. 
+			Some additional constraints should be respected:
+			<ul>
+				<li>The elements order in the list should be kept.</li>
+				<li>An <i>ElementB</i> should be created from the name of a <i>RootA</i>. This element is added at the first list position.</li>
+				<li>The name of each <i>ElementB</i> should start with 'B_'</li>
+			</ul>
+		</p>
+		<p align="justify">
+			To sum up, the created list will contain one more element than the initial list. This additional element is created from the name of the list root. It will be placed at the 
+			first position of the list.
+		</p>
+
+		<h3 STYLE="font-size: 10pt; border-bottom: 2px solid;">Transformation step by step</h3>
+		<p align="justify">
+			First, we create the skeleton of the rule "Root". A <i>RootB</i> element is created from a <i>RootA</i> element. 
+		</p>
+					
+	 	<table STYLE="border : 1px dotted #AAAAAA;" width="100%" cellspacing="0" cellpadding="20">
+	 		<tr><td><code>
+<pre>
+<font class="ATL_Keyword">rule</font> Root { 
+	<font class="ATL_Keyword">from</font>
+		s : A!RootA 
+	<font class="ATL_Keyword">to</font>
+		t : B!RootB (
+
+		)
+}
+
+</pre>
+			</code></td></tr>
+		</table>
+
+		<p align="justify">
+			We create now the rule called "Element". This rule transforms an <i>ElementA</i> into an <i>ElementB</i>. For the name of each <i>ElementB</i>, the name of the matching 
+			<i>ElementA</i> is reused and 'B_' is added to respect our constraint defined in the transformation requirements.
+		</p>
+	 	<table STYLE="border : 1px dotted #AAAAAA;" width="100%" cellspacing="0" cellpadding="20">
+			<tr><td><code>
+<pre>
+<font class="ATL_Keyword">rule</font> Element {
+	<font class="ATL_Keyword">from</font>
+		s : A!ElementA
+	<font class="ATL_Keyword">to</font>
+		t : B!ElementB (
+			name <- <font class="ATL_Enum">'B_'</font> + s.name
+		)
+}
+</pre>
+			</code></td></tr>
+		</table>
+		<p align="justify">
+			For both metamodels, the root element contains the list elements. We can update the rule "Root" with the following code
+			to use automatic traceability support in ATL (i.e. ATL Resolve Algorithm).
+		</p>
+	 	<table STYLE="border : 1px dotted #AAAAAA;" width="100%" cellspacing="0" cellpadding="20">
+			<tr><td><code>
+<pre>
+<font class="ATL_Keyword">rule</font> Root { 
+	<font class="ATL_Keyword">from</font>
+		s : A!RootA 
+	<font class="ATL_Keyword">to</font>
+		t : B!RootB (
+			elms <- s.elms
+		)
+}
+</pre>
+			</code></td></tr>
+		</table>
+		<p align="justify">
+			Thanks to this code, all elements <i>ElementB</i> will be contained in the <i>RootB</i>.
+		</p>
+		<p align="justify">
+			The last requirement of our transformation is to create an additional <i>ElementB</i> from the name of the <i>RootA</i>. This element
+			will be added at the first position of the list.
+		</p>
+	 	<table STYLE="border : 1px dotted #AAAAAA;" width="100%" cellspacing="0" cellpadding="20">
+			<tr><td><code>
+<pre>
+<font class="ATL_Keyword">rule</font> Root { 
+	<font class="ATL_Keyword">from</font>
+		s : A!RootA 
+	<font class="ATL_Keyword">to</font>
+		t : B!RootB (
+			elms <- <font class="ATL_OCLType">OrderedSet</font> {first_element, s.elms}
+		),
+		first_element : B!ElementB (
+			name <- <font class="ATL_Enum">'B_'</font> + s.name
+		)
+}
+</pre>
+			</code></td></tr>
+		</table>
+		<p align="justify">
+			Here is now the complete ATL module transforming a model A into a model B.
+		</p>
+	 	<table STYLE="border : 1px dotted #AAAAAA;" width="100%" cellspacing="0" cellpadding="20">
+			<tr><td><code>
+<pre>
+<font class="ATL_Keyword">rule</font> Root { 
+	<font class="ATL_Keyword">from</font>
+		s : A!RootA 
+	<font class="ATL_Keyword">to</font>
+		t : B!RootB (
+			elms <- <font class="ATL_OCLType">OrderedSet</font> {first_element, s.elms}
+		),
+		first_element : B!ElementB (
+			name <- <font class="ATL_Enum">'B_'</font> + s.name
+		)
+}
+
+<font class="ATL_Keyword">rule</font> Element {
+	<font class="ATL_Keyword">from</font>
+		s : A!ElementA
+	<font class="ATL_Keyword">to</font>
+		t : B!ElementB (
+			name <- <font class="ATL_Enum">'B_'</font> + s.name
+		)
+}
+</pre>
+			</code></td></tr>
+		</table>
+		
+		<h2>Conclusion</h2>
+		 <p align="justify">
+			What we have learnt with this example:
+			<ul>
+				<li>using automatic traceability support in ATL.</li>
+				<li>creating an ordered set.</li>
+				<li>using operation on string type.</li>
+			</ul> 
+		</p>
+		<p align="justify">
+		 	Some improvements can be done. For example, a helper could be used to factorize the <i>ElementB</i> name creation.
+		 </p>
+		
+		<h2>Download</h2>
+
+		<table width="100%">
+			<COLGROUP>
+				<COL width="10%">
+				<COL width="25%">
+				<COL width="65%">
+			</COLGROUP>
+			<tr>
+				<td align="right">
+					<a href="http://www.eclipse.org/atl/atlTransformations/ManyToMore/ManyToMore.zip">
+						<img style="vertical-align:text-top;" src="/resources/images/code.png"/>
+					</a>
+				</td>
+				<td align="left">
+					<a href="http://www.eclipse.org/atl/atlTransformations/ListMetamodelRefactoring/ListMetamodelRefactoring.zip"><h3>ListMetamodelRefactoring</h3></a>
+				</td>
+				<td align="left">Source code for the scenario List Metamodel Refactoring.</td>
+			</tr>
+		</table>
+			
+		<h2>Acknowledgement</h2>
+		The present work is being supported by the <a href="http://www.usine-logicielle.org">Usine Logicielle project of the System@tic Paris Region Cluster</a>.
+			
+	</div>
+
+</body>
+</html>

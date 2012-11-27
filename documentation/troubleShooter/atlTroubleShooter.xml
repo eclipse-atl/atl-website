@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'ISO-8859-1' ?>
+<troubleShooter>
+	<trouble>
+		<label>Debug mode does not work correctly. No display in Variables View</label>
+		<problem>
+			<label>Your version of Eclipse is not compliant with your version of ADT</label>
+			<solution>
+				<label>
+					Using Eclipse 3.0.x. with 
+					<a href="http://www.eclipse.org/downloads/download.php?file=/technology/gmt/atl/binaries/ADT-20060113/adt-20060113(Eclipse_3.0).zip">
+					adt-20060113(Eclipse_3.0).zip</a>
+				</label>
+			</solution>
+			<solution>
+				<label>
+					Using Eclipse 3.1.x. with 
+					<a href="http://www.eclipse.org/downloads/download.php?file=/technology/gmt/atl/binaries/ADT-20060113/adt-20060113(Eclipse_3.1).zip">
+					adt-20060113(Eclipse_3.1).zip</a>
+				</label>
+			</solution>
+		</problem>
+	</trouble>
+	<trouble>
+		<label>java.lang.NoClassDefFoundError: org/atl/engine/injectors/Injector</label>
+		<problem>
+			<label>Libs are missing</label>
+			<solution>
+				<label>Check if all required libs are installed</label>
+			</solution>
+		</problem>
+	</trouble>
+	<trouble>
+		<label>ANTLR error (e.g. java.lang.NoClassDefFoundError: antlr/CharScanner)</label>
+		<problem>
+			<label>Problem to find lib called antlr</label>
+			<solution>
+				<label>Installed antlr.jar</label>
+			</solution>
+			<solution>
+				<label>Renamed antlr.jar</label>
+			</solution>
+		</problem>
+	</trouble>
+	<trouble>
+		<label>During export of ATL sources, there are errors (e.g. The import org.atl.engine cannot be resolved)</label>
+		<problem>
+			<label>Maybe you use of Eclipse 3.0.0</label>
+			<solution>
+				<label>Use Eclipse 3.0.1 or latest</label>
+			</solution>
+		</problem>
+	</trouble>
+	<trouble>
+		<label>ATL is well installed. I try to execute my transformation but it does not work</label>
+		<problem>
+			<label>Maybe there is a problem with the launch configuration</label>
+			<solution>
+				<label>Panel case sensitive</label>
+			</solution>
+		</problem>
+	</trouble>
+	<trouble>
+		<label>Problem during execution or compilation referencing package org.eclipse.emf.*</label>
+		<problem>
+			<label>Problem with EMF version</label>
+			<solution>
+				<label>Check if your EMF version is compatible with your Eclipse version</label>
+			</solution>
+		</problem>
+	</trouble>
+	<trouble>
+		<label>java.lang.NoClassDefFoundError If plugins do not do what they are supposed to do If plugins are not visible even they are installed</label>
+		<problem>
+			<label>Problem of metadata</label>
+			<solution>
+				<label>Launch a runtime workbench</label>
+			</solution>
+			<solution>
+				<label>resume from scratch</label>
+			</solution>
+			<solution>
+				<label>launch Eclipse with -clean option</label>
+			</solution>
+		</problem>
+	</trouble>
+</troubleShooter>

@@ -1,0 +1,274 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+	<title>ATL Basic Examples and Patterns - The Tree to List example</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+	<link rel="stylesheet" type="text/css" href="../layout.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="../article.css" media="screen" />
+</head>
+
+<body>
+
+	<h1>The in/out ports example</h1>
+	<div class="summary">
+		<h2>Summary</h2>
+		<p align="justify">
+			In this example, we present some basic concepts of ATL through a simple use case.
+			This use case deals with situations where the source element meta type could not be simply matched with the target meta type.
+			The only way to resolve the target meta type is to browse source model.
+		</p>
+		<p align="justify">			
+			We will discover how: to use matched rules and lazy (matched) rules, to avoid some imperative constructs, and to make a first code optimization.
+		</p>
+		<div class="author">By Cyril Faure (CS) and Freddy Allilaire (INRIA)</div>
+		<div class="copyright">Copyright &copy; 2007-2008 CS and INRIA.</div>
+		
+		<div class="date">January, 2008</div>
+	</div>
+
+	<div class="content">
+
+		<h2>Introduction</h2>
+		<p align="justify">
+			This use case deals with situations where the source element meta type could not be simply matched with the target meta type.
+			The only way to resolve the target meta type is to browse source model.
+		</p>
+
+		<h2>The Metamodels</h2>
+		<p align="center">
+	  		<img src="img/TypeA.PNG" />
+			<br /><br />
+			<b>Metamodel A</b>
+		</p>
+		<p align="justify">
+			The metamodel <b>A</b> describes a block/port structure where a block can have several input and/or output ports. The port type direction is distinguished via its container 
+			relation's name: <i>inputPorts</i> or <i>outputPorts</i>. Both input and output ports are represented via the <i>PortA</i> concept.
+		</p>
+		<p align="center">
+			<img src="img/TypeB.PNG" />
+			<br /><br />
+			<b>Metamodel B</b>
+		</p>
+		<p align="justify">
+			The metamodel <b>B</b> describes the same basic concepts but differentiates input and output ports via two new concepts: <i>InPortB</i> and <i>OutPortB</i>.
+		</p>
+			
+		<h2>Transformation principles</h2>
+		<p align="justify">
+			These transformation principles are pretty straightforward as both metamodels strictly represent the same block/port concept.
+		</p>
+		<p align="justify">
+			For a <i>BlockA</i>, we create a <i>BlockB</i> and:
+			<ul>
+				<li>for each input port of <i>aBlock.inputPorts</i>, we create an <i>InPortB</i>.</li>
+				<li>for each output port of <i>aBlock.outputPorts</i>, we create an <i>OutPortB</i>.</li>
+			</ul>
+		</p>
+
+		<h2>A first implementation</h2>
+
+		<p align="justify">
+			A first idea to transform <b>A</b> to <b>B</b> could be to use the <b>distinct</b> clause as shown in the following piece of code (each element is "manually" transformed by 
+			iterating on each source port element):
+		</p>
+	 	<table STYLE="border : 1px dotted #AAAAAA;" width="100%" cellspacing="0" cellpadding="20">
+			<tr><td><code>
+<pre>
+<font class="ATL_Keyword">rule</font> BlkA2BlkB {
+	<font class="ATL_Keyword">from</font>
+		blkA : TypeA!BlockA
+	<font class="ATL_Keyword">to</font>
+		blkB : TypeB!BlockB (
+			inputPorts <- inPts,
+			outputPorts <- outPts
+		),
+		inPts : <font class="ATL_Keyword">distinct</font> TypeB!InPortB <font class="ATL_Keyword">foreach</font>(ptA <font class="ATL_Keyword">in</font> blkA.inputPorts)(
+				name <- ptA.name),
+		outPts : <font class="ATL_Keyword">distinct</font> TypeB!OutPortB <font class="ATL_Keyword">foreach</font>(ptA <font class="ATL_Keyword">in</font> blkA.outputPorts)(
+				name <- ptA.name)
+				
+}
+</pre>
+			</code></td></tr>
+		</table>
+		<p align="justify">
+			Even if the distinct-foreach is not an imperative instruction. It could be considered as a bad practice when it is a translation of imperative algorithms. 
+		</p>
+
+		<h2>How to follow the ATL philosophy</h2>						
+		<p align="justify">
+			In ATL, developers should avoid bad habits of imperative programming i.e. explicit creation of elements. They should focus on the <b>What</b> and not the <b>How</b>.
+		</p>
+		<p>
+			What kind of rule(s) do we have to write? The common way to replace distinct-foreach instruction is to use lazy rules instead. So the previous code could be updated as follow:
+		</p>
+
+		<table STYLE="border : 1px dotted #AAAAAA;" width="100%" cellspacing="0" cellpadding="20">
+			<tr><td><code>
+<pre>
+<font class="ATL_Keyword">rule</font> BlkA2BlkB {
+	<font class="ATL_Keyword">from</font>
+		blkA : TypeA!BlockA
+	<font class="ATL_Keyword">to</font>
+		blkB : TypeB!BlockB (
+			inputPorts <- blkA.inputPorts->
+							collect(e | thisModule.PortA2InPortB(e)),
+			outputPorts <- blkA.outputPorts->
+							collect(e | thisModule.PortA2OutPortB(e))
+		)
+}
+
+<font class="ATL_Keyword">lazy rule</font> PortA2InPortB {
+	<font class="ATL_Keyword">from</font>
+		s : TypeA!PortA
+	<font class="ATL_Keyword">to</font>
+		t : TypeB!InPortB (
+			name <- s.name
+		)
+}
+
+<font class="ATL_Keyword">lazy rule</font> PortA2OutPortB {
+	<font class="ATL_Keyword">from</font>
+		s : TypeA!PortA
+	<font class="ATL_Keyword">to</font>
+		t : TypeB!OutPortB (
+			name <- s.name
+		)
+}
+</pre>
+			</code></td></tr>
+		</table>
+
+		<p align="justify">
+			Lazy rules should be used when it is not possible to directly match an element from the source model. In our case, an input port is created from an input port and an output is 
+			created from an output port. It clearly appears that a simple solution is possible by using only automatic traceability links (i.e. we can avoid to explicitly call matched 
+			rules dealing with Port as done in the previous code with lazy rules).
+		</p>
+		
+	 	<table STYLE="border : 1px dotted #AAAAAA;" width="100%" cellspacing="0" cellpadding="20">
+			<tr><td><code>
+<pre>
+<font class="ATL_Keyword">rule</font> BlkA2BlkB {
+	<font class="ATL_Keyword">from</font>
+		blkA : TypeA!BlockA
+	<font class="ATL_Keyword">to</font>
+		blkB : TypeB!BlockB (
+			inputPorts <- blkA.inputPorts,
+			outputPorts <- blkA.outputPorts
+		)
+}
+
+<font class="ATL_Keyword">rule</font> PortA2InPortB {
+	<font class="ATL_Keyword">from</font>
+		s : TypeA!PortA (
+			TypeA!BlockA.allInstances()->
+				select(e | e.inputPorts->includes(s))->notEmpty()
+		)
+	<font class="ATL_Keyword">to</font>
+		t : TypeB!InPortB (
+			name <- s.name
+		)
+}
+
+<font class="ATL_Keyword">rule</font> PortA2OutPortB {
+	<font class="ATL_Keyword">from</font>
+		s : TypeA!PortA (
+			TypeA!BlockA.allInstances()->
+				select(e | e.outputPorts->includes(s))->notEmpty()
+		)
+	<font class="ATL_Keyword">to</font>
+		t : TypeB!OutPortB (
+			name <- s.name
+		)
+}
+</pre>
+			</code></td></tr>
+		</table>
+
+		<p align="justify">
+			The matched rule PortA2OutPortB has a guard filtering only output ports and the matched rule PortA2InPortB has a guard filtering only input ports from the input model.
+		</p>
+
+		<p align="justify">
+			When this transformation will be applied on big models, evaluation of the guard could be time-consuming. Some optimizations in each guard could be done by 
+			using <b>refImmediateComposite()</b> operation. <b>refImmediateComposite()</b> is a reflective operation that returns the immediate composite (e.g. the immediate container).
+		</p>
+
+	 	<table STYLE="border : 1px dotted #AAAAAA;" width="100%" cellspacing="0" cellpadding="20">
+			<tr><td><code>
+<pre>
+<font class="ATL_Keyword">rule</font> BlkA2BlkB {
+	<font class="ATL_Keyword">from</font>
+		blkA : TypeA!BlockA
+	<font class="ATL_Keyword">to</font>
+		blkB : TypeB!BlockB (
+			inputPorts <- blkA.inputPorts,
+			outputPorts <- blkA.outputPorts
+		)
+}
+
+<font class="ATL_Keyword">rule</font> PortA2InPortB {
+	<font class="ATL_Keyword">from</font>
+		s : TypeA!PortA (
+			s.refImmediateComposite().inputPorts->includes(s)
+		)
+	<font class="ATL_Keyword">to</font>
+		t : TypeB!InPortB (
+			name <- s.name
+		)
+}
+
+<font class="ATL_Keyword">rule</font> PortA2OutPortB {
+	<font class="ATL_Keyword">from</font>
+		s : TypeA!PortA (
+			s.refImmediateComposite().outputPorts->includes(s)
+		)
+	<font class="ATL_Keyword">to</font>
+		t : TypeB!OutPortB (
+			name <- s.name
+		)
+}
+</pre>
+			</code></td></tr>
+		</table>
+
+		<h2>Conclusion</h2>
+		 <p align="justify">
+			What we have learnt with this example:
+			<ul>
+				<li>using matched rules.</li>
+				<li>using lazy (matched) rules.</li>
+				<li>avoiding some imperative constructs.</li>
+				<li>making a first code optimization.</li>
+			</ul> 
+		</p>
+
+		<h2>Download</h2>
+
+		<table width="100%">
+			<COLGROUP>
+				<COL width="10%">
+				<COL width="25%">
+				<COL width="65%">
+			</COLGROUP>
+			<tr>
+				<td align="right">
+					<a href="http://www.eclipse.org/atl/atlTransformations/Port/Port.zip">
+						<img style="vertical-align:text-top;" src="/resources/images/code.png"/>
+					</a>
+				</td>
+				<td align="left">
+					<a href="http://www.eclipse.org/atl/atlTransformations/Port/Port.zip"><h3>Port</h3></a>
+				</td>
+				<td align="left">Source code for the scenario Port.</td>
+			</tr>
+		</table>
+			
+		<h2>Acknowledgement</h2>
+		The present work is being supported by the <a href="http://www.usine-logicielle.org">Usine Logicielle project of the System@tic Paris Region Cluster</a>.
+			
+	</div>
+
+</body>
+</html>
