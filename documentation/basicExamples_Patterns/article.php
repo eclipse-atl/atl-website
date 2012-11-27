@@ -23,7 +23,7 @@
 	#
 	#****************************************************************************
 	
-    $root = $_SERVER['DOCUMENT_ROOT'] . '/atl/basicExamples_Patterns/';
+    $root = $_SERVER['DOCUMENT_ROOT'] . '/atl/documentation/basicExamples_Patterns/';
 	$file = $_GET['file'];
 	
 	// If the requested article does not exist, redirect to a warning page.
@@ -39,7 +39,7 @@
 	
 	# End: page-specific settings
 	#
-	$App->ExtraHtmlHeaders = "<link rel=\"stylesheet\" type=\"text/css\" href=\"layout.css\" media=\"screen\" />\n<base href=\"http://$host/atl/basicExamples_Patterns/$file\"/>\n";
+	$App->ExtraHtmlHeaders = "<link rel=\"stylesheet\" type=\"text/css\" href=\"layout.css\" media=\"screen\" />\n<base href=\"http://$host/atl/documentation/basicExamples_Patterns/$file\"/>\n";
 
 	$charset = $App->getHTTPParameter('charset');
 	if ($charset) header("Content-Type: text/html; charset=$charset");
@@ -47,10 +47,10 @@
 	ob_start();
 ?>
 	<div style="float: left;">
-		<a href="/atl/basicExamples_Patterns/index.php"><img src="/articles/images/back.gif"/> Back to ATL Basic Examples and Patterns</a>
+		<a href="/atl/documentation/basicExamples_Patterns/index.php"><img src="/articles/images/back.gif"/> Back to ATL Basic Examples and Patterns</a>
 	</div>
 	<div style="float: right;">
-		<a target="_blank" href="/atl/basicExamples_Patterns/printable.php?file=<?= $file ?>"><img src="/articles/images/printer.gif"/> Printer-friendly version</a>
+		<a target="_blank" href="/atl/documentation/basicExamples_Patterns/printable.php?file=<?= $file ?>"><img src="/articles/images/printer.gif"/> Printer-friendly version</a>
 	</div>
 
 	<div style="clear:both;"/>

@@ -23,7 +23,7 @@
 	#
 	#****************************************************************************
 	
-	$root = $_SERVER['DOCUMENT_ROOT'] . '/atl/basicExamples_Patterns/';
+	$root = $_SERVER['DOCUMENT_ROOT'] . '/atl/documentation/basicExamples_Patterns/';
 	$file = $_GET['file'];
 	
 	// If the requested article does not exist, redirect to a warning page.
@@ -42,7 +42,7 @@
 ?>
 <html>
 <head>
-	<base href="http://<?= $host ?>/atl/basicExamples_Patterns/<?= $file ?>"/>
+	<base href="http://<?= $host ?>/atl/documentation/basicExamples_Patterns/<?= $file ?>"/>
 	<title>ATL Basic Examples and Patterns</title>
 </head>
 <body onLoad="window.print();">
