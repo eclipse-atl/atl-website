@@ -58,9 +58,8 @@
 		
 			<ul>
 				<li>
-					<a title="Update Site Zip" href="http://www.eclipse.org/downloads/download.php?file=/modeling/m2m/atl/archivedSite/atl-ArchivedSite_2.0.0RC2.zip">
+					<a title="Update Site Zip" href="http://download.eclipse.org/modeling/mmt/atl/archivedSite/atl-ArchivedSite_2.0.0RC2.zip">
 						<img border=0 src="../images/icon-zip.gif"></a>
-					<b>download.eclipse.org/modeling/m2m/atl/updates/2.0.0</b> (Eclipse 3.3 & EMF 2.3)
 					<br /><i>ATL Toolkit (Engine and IDE), AM3, and optionally additional drivers for ATL (UML2 and MDR)</i>
 					| <a href="http://wiki.eclipse.org/index.php?title=ATL_ReleaseNotes">Release Notes</a>
 					| <a href="../old/">Documentation</a>
@@ -82,17 +81,17 @@
 		
 			<ul>
 				<li>
-					<a title="Binaries Build" href="http://www.eclipse.org/downloads/download.php?file=/modeling/m2m/atl/binaries/2.0.0RC2/ATL-AM3_2.0RC2.zip">
+					<a title="Binaries Build" href="http://download.eclipse.org/modeling/mmt/atl/binaries/2.0.0RC2/ATL-AM3_2.0RC2.zip">
 						<img border=0 src="../images/icon-zip.gif"></a>
 					<b>ATL Toolkit</b>: <i>Engine, IDE, Ant Tasks and AM3</i> (Eclipse 3.3 & EMF 2.3)
 	        	</li>
 				<li>
-					<a title="UML24ATL Binaries Build" href="http://www.eclipse.org/downloads/download.php?file=/modeling/m2m/atl/binaries/2.0.0RC2/Driver-UML24ATL_2.0RC2.zip">
+					<a title="UML24ATL Binaries Build" href="http://download.eclipse.org/modeling/mmt/atl/binaries/2.0.0RC2/Driver-UML24ATL_2.0RC2.zip">
 						<img border=0 src="../images/icon-zip.gif"></a>
 					<b>UML2 driver for ATL</b>
 	        	</li>
 				<li>
-					<a title="MDR4ATL Binaries Build" href="http://www.eclipse.org/downloads/download.php?file=/modeling/m2m/atl/binaries/2.0.0RC2/Driver-MDR4ATL_2.0RC2.zip">
+					<a title="MDR4ATL Binaries Build" href="http://download.eclipse.org/modeling/mmt/atl/binaries/2.0.0RC2/Driver-MDR4ATL_2.0RC2.zip">
 						<img border=0 src="../images/icon-zip.gif"></a>
 					<b>MDR driver for ATL</b>
 	        	</li>
