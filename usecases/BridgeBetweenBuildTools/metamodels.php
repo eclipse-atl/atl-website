@@ -29,7 +29,7 @@
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 
-		<img align="right" src="../../resources/atlLogoSmall.png" valign="top" style="padding-left: 10px;" alt="ATL Logo" />
+		<img align="right" src="../../images/atlLogoSmall.png" valign="top" style="padding-left: 10px;" alt="ATL Logo" />
     	<p>
 	    	We provide here the links to all the metamodels which have been developped and/or used within this use case. 
     		These metamodels are available resources that may be used within other use cases, in other different contexts or for other purposes.

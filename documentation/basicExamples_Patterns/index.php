@@ -34,7 +34,7 @@
 					<table width="100%" cellspacing="0">
 						<tr>
 							<td width="80%">
-								<h2><a href="../doc/ATLUseCase_Families2Persons.pdf">Families to Persons</a></h2>
+								<h2><a href="../old/ATLUseCase_Families2Persons.pdf">Families to Persons</a></h2>
 							</td>
 							<td width="20%" align="right">
 								<b>February 2007</b>
@@ -58,7 +58,7 @@
 												ATL IDE (ADT)
 											</p>
 											<p style="margin-left:3em;text-indent:-2em;">
-												<a href="../doc/ATLUseCase_Families2Persons.pdf">
+												<a href="../old/ATLUseCase_Families2Persons.pdf">
 													<img style="vertical-align:text-top;" src="/resources/images/presentation.png"/> Presentation Families to Persons
 												</a>
 												<br/>

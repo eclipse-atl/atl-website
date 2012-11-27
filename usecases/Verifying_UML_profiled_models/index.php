@@ -29,8 +29,8 @@
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 
-		<img align="right" src="../../resources/atlLogoSmall.png" valign="top" style="padding-left: 10px;" alt="ATL Logo" />
-		<a href="http://www.papyrusuml.org/"><img align="right" src="../../resources/Papyrus_48x48.gif" valign="top" style="padding-left: 10px;" alt="Papyrus" /></a>
+		<img align="right" src="../../images/atlLogoSmall.png" valign="top" style="padding-left: 10px;" alt="ATL Logo" />
+		<a href="http://www.papyrusuml.org/"><img align="right" src="../../images/Papyrus_48x48.gif" valign="top" style="padding-left: 10px;" alt="Papyrus" /></a>
 		<blockquote>
 			<ul>
 				<li><a href="#keywords"><b>Keywords</b></a></li>
@@ -164,7 +164,7 @@
 					<COL width="75%">
 				</COLGROUP>
 				<tr>
-					<td align="center"><a href="http://www.papyrusuml.org/"><img src="../../resources/Papyrus_48x48.gif" /></a></td>
+					<td align="center"><a href="http://www.papyrusuml.org/"><img src="../../images/Papyrus_48x48.gif" /></a></td>
 					<td><a href="http://www.papyrusuml.org/"><b>Papyrus</b></a>, an open-source graphical modeler tool for UML2 and based on Eclipse</a>.</td>
 				</tr>
 				<tr>

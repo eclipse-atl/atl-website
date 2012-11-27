@@ -29,7 +29,7 @@
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 
-		<img align="right" src="../../resources/atlLogoSmall.png" valign="top" style="padding-left: 10px;" alt="ATL Logo" />
+		<img align="right" src="../../images/atlLogoSmall.png" valign="top" style="padding-left: 10px;" alt="ATL Logo" />
 		<blockquote>
 			<ul>
 				<li><a href="#keywords"><b>Keywords</b></a></li>

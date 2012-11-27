@@ -28,7 +28,7 @@
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 
-		<img align="right" src="../../resources/atlLogoSmall.png" valign="top" style="padding-left: 10px;" alt="ATL Logo" />
+		<img align="right" src="../../images/atlLogoSmall.png" valign="top" style="padding-left: 10px;" alt="ATL Logo" />
     	<p>
 	    	We provide here the links to the different scenarios which have been used to create this complete use case.
 	    	These scenarios are available from the <a href="http://www.eclipse.org/atl/atlTransformations/">ATL Transformation Zoo</a>.

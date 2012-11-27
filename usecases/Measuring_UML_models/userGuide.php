@@ -28,8 +28,8 @@
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 
-		<img align="right" src="../../resources/atlLogoSmall.png" valign="top" style="padding-left: 10px;" alt="ATL Logo" />
-		<a href="http://www.papyrusuml.org/"><img align="right" src="../../resources/Papyrus_48x48.gif" valign="top" style="padding-left: 10px;" alt="Papyrus" /></a>
+		<img align="right" src="../../images/atlLogoSmall.png" valign="top" style="padding-left: 10px;" alt="ATL Logo" />
+		<a href="http://www.papyrusuml.org/"><img align="right" src="../../images/Papyrus_48x48.gif" valign="top" style="padding-left: 10px;" alt="Papyrus" /></a>
 			   	
 		<hr class="clearer" />
 
