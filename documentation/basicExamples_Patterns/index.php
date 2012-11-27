@@ -29,7 +29,6 @@
 		<hr class="clearer" />
 
 	    <div class="homeitem3col" >
-			<h3>Title</h3>
 	    	<ul>	
 				<li style="list-style:none">
 					<table width="100%" cellspacing="0">
