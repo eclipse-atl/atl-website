@@ -14,7 +14,7 @@
 	$projectTitle = "ATL";
 	$pageTitle = "ATL - Download";
 	// Path to the downloads area under http://downloads.eclipse.org (will be used by custom-scripts and various "eclipse" scripts)
-	$PR = "modeling/mmt/atl";
+	$PR = "mmt/atl";
 	// absolute path to the site's home page (will be used by custom-scripts for images... should probably use css instead)
 	$websiteRoot = "/atl";
 	
