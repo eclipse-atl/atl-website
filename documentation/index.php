@@ -3,7 +3,7 @@
 
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
-	$Nav->addNavSeparator("Documentation", null);
+	#$Nav->addNavSeparator("Documentation", null);
 	
 	$html  = '<div id="midcolumn">';
 	$html .= file_get_contents('_index.html');

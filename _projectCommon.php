@@ -12,12 +12,12 @@
 
 	$Menu->setMenuItemList(array());
 	$Menu->addMenuItem("Home", "/atl", "_self");
-	$Menu->addMenuItem("Download", "/atl/download", "_self");
+	$Menu->addMenuItem("Download", "/atl/downloads", "_self");
 	$Menu->addMenuItem("Documentation", "/atl/documentation", "_self");
 	$Menu->addMenuItem("Support", "/atl/support", "_self");
 	$Menu->addMenuItem("Developers", "/atl/developers", "_self");
 	
-	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="style_atl.css"/>' . "\n\t");
+	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/atl/style_atl.css"/>' . "\n\t");
 	
 	$App->Promotion = TRUE;
 
