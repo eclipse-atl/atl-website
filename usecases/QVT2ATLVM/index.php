@@ -16,7 +16,7 @@
 	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "ATL Use Case - QVT to ATL Virtual Machine Compiler";
 	$pageKeywords	= "OMG, QVT, ATL, Virtual Machine, VM, Compiler";
-	$pageAuthor		= "Frédéric Jouault";
+	$pageAuthor		= "FrÃ©dÃ©ric Jouault";
 	
 	# End: page-specific settings
 	#
@@ -189,7 +189,7 @@
 				<li style="list-style:none">June 2007</li>
 				<li style="list-style:none">
 					By 
-					<a href="http://www.sciences.univ-nantes.fr/lina/atl/contrib/jouault">Frédéric Jouault</a> (INRIA)
+					<a href="http://www.sciences.univ-nantes.fr/lina/atl/contrib/jouault">FrÃ©dÃ©ric Jouault</a> (INRIA)
 				</li>
 				<li style="list-style:none"><br />Please, ask your questions on the <a href="news://news.eclipse.org/eclipse.modeling.m2m">M2M newsgroup</a></li>
 			</ul>

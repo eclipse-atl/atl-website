@@ -234,7 +234,7 @@
 			<h6>General Information</h6>
 			<ul>
 				<li style="list-style:none">February 2007</li>
-				<li style="list-style:none">By <a href="http://www.sciences.univ-nantes.fr/lina/atl/contrib/allilaire">Freddy Allilaire</a>, <a href="http://www.sciences.univ-nantes.fr/lina/atl/contrib/jouault">Frédéric Jouault</a> (INRIA)</li>
+				<li style="list-style:none">By <a href="http://www.sciences.univ-nantes.fr/lina/atl/contrib/allilaire">Freddy Allilaire</a>, <a href="http://www.sciences.univ-nantes.fr/lina/atl/contrib/jouault">FrÃ©dÃ©ric Jouault</a> (INRIA)</li>
 				<li style="list-style:none"><br />Please, ask your questions on the <a href="news://news.eclipse.org/eclipse.modeling.m2m">M2M newsgroup</a></li>
 			</ul>
 		</div>

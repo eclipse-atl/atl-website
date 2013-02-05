@@ -29,6 +29,32 @@ ob_start();
 		}
 	</script>
 
+<div id="primaryLinks">
+	<h3>Primary Links</h3>
+	<ul>
+		<li>
+			<a id="buttonDownload" href="../../downloads" title="Download">
+				<strong>Download</strong> Eclipse Distribution, Update Site, Dropins
+			</a>
+		</li>
+		<li>
+			<a id="buttonDocumentation" href="../../documentation" title="Documentation">
+				<strong>Documentation</strong> Tutorials, Examples, Videos, Reference Documentation
+			</a>
+		</li>
+		<li>
+			<a id="buttonSupport" href="../../support" title="Support">
+				<strong>Support</strong> Bug Tracker, Newsgroup, Support
+			</a>
+		</li>
+		<li>
+			<a id="buttonInvolved" href="../../developers" title="Getting Involved">
+				<strong>Getting Involved</strong> Git, Workspace Setup, Wiki, Committers
+			</a>
+		</li>
+	</ul>
+</div>
+
 	<div id="midcolumn" style="height: 800px; width: 750px;">
 		<iframe src="http://wiki.eclipse.org/transclude.php?page=ATL_Publications" frameborder="0" 
 			width="100%" height="100%" scrolling="auto"	name="myframe" id="myframe" onload="iframe_loaded();">

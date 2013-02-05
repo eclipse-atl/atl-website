@@ -16,7 +16,7 @@
 	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "ATL Use Case - Compiling a new formal verification language to LOTOS (ISO 8807)";
 	$pageKeywords	= "LOTOS, ISO 8807, FIACRE, formal verification, model-checking";
-	$pageAuthor		= "Frédéric Jouault";
+	$pageAuthor		= "FrÃ©dÃ©ric Jouault";
 	
 	# End: page-specific settings
 	#

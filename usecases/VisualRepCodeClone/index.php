@@ -4,7 +4,7 @@
 	#
 	# template.php
 	#
-	# Author: 		Yu Sun, Frédéric Jouault
+	# Author: 		Yu Sun, FrÃ©dÃ©ric Jouault
 	# Date:			2007-12-11
 	#
 	# Description: This is the ATL contribution page for the project: Visual Representation for Code Clone Tools
@@ -214,7 +214,7 @@
 						</a>
 					</td>
 					<td>
-						Kurtev, I, Bézivin, J, Jouault, F, and Valduriez, P :
+						Kurtev, I, Bï¿½zivin, J, Jouault, F, and Valduriez, P :
 						<em>Model-based DSL Frameworks</em>.
 						In: Companion to the 21st Annual ACM SIGPLAN Conference on Object-Oriented Programming, Systems, Languages, and Applications, OOPSLA 2006, October 22-26, 2006, Portland, OR, USA. ACM, pages 602--616.  2006.
 					</td>
@@ -226,7 +226,7 @@
 						</a>
 					</td>
 					<td>
-						Jouault, F, and Bézivin, J :
+						Jouault, F, and Bï¿½zivin, J :
 						<em>KM3: a DSL for Metamodel Specification</em>,
 						In: Proceedings of 8th IFIP International Conference on Formal Methods for Open Object-Based Distributed Systems, LNCS 4037, Bologna, Italy, pages 171--185.
 					</td>
@@ -250,7 +250,7 @@
 						</a>
 					</td>
 					<td>
-						Jouault, F, Bézivin, J, and Kurtev, I :
+						Jouault, F, Bï¿½zivin, J, and Kurtev, I :
 						<em>TCS: a DSL for the Specification of Textual Concrete Syntaxes in Model Engineering</em>,
 						In: GPCE'06: Proceedings of the fifth international conference on Generative programming and Component Engineering, Portland, Oregon, USA, pages 249--254.  2006.
 					</td>
@@ -302,7 +302,7 @@
 			<ul>
 				<li style="list-style:none">December 2007</li>
 				<li style="list-style:none">
-					By <a href="http://www.cis.uab.edu/yusun">Yu Sun</a>, <a href="http://www.sciences.univ-nantes.fr/lina/atl/contrib/jouault">Frédéric Jouault</a>
+					By <a href="http://www.cis.uab.edu/yusun">Yu Sun</a>, <a href="http://www.sciences.univ-nantes.fr/lina/atl/contrib/jouault">FrÃ©dÃ©ric Jouault</a>
 				</li>
 				<li style="list-style:none"><br />Please, ask your questions on the <a href="news://news.eclipse.org/eclipse.modeling.m2m">M2M newsgroup</a></li>
 			</ul>

@@ -272,7 +272,7 @@
 				<li style="list-style:none">Januray 2008</li>
 				<li style="list-style:none">
 					By <a href="http://brlouk2008.teamsoftsuite.com">Brahim Khalil Loukil</a> and
-					<a href="http://www.sciences.univ-nantes.fr/lina/atl/contrib/jouault">Frédéric Jouault</a> (INRIA)
+					<a href="http://www.sciences.univ-nantes.fr/lina/atl/contrib/jouault">FrÃ©dÃ©ric Jouault</a> (INRIA)
 				</li>
 				<li style="list-style:none"><br />Please, ask your questions on the <a href="news://news.eclipse.org/eclipse.modeling.m2m">M2M newsgroup</a>.</li>
 			</ul>

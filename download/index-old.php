@@ -30,6 +30,32 @@
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
 
+<div id="primaryLinks">
+	<h3>Primary Links</h3>
+	<ul>
+		<li>
+			<a id="buttonDownload" href="../downloads" title="Download">
+				<strong>Download</strong> Eclipse Distribution, Update Site, Dropins
+			</a>
+		</li>
+		<li>
+			<a id="buttonDocumentation" href="../documentation" title="Documentation">
+				<strong>Documentation</strong> Tutorials, Examples, Videos, Reference Documentation
+			</a>
+		</li>
+		<li>
+			<a id="buttonSupport" href="../support" title="Support">
+				<strong>Support</strong> Bug Tracker, Newsgroup, Support
+			</a>
+		</li>
+		<li>
+			<a id="buttonInvolved" href="../developers" title="Getting Involved">
+				<strong>Getting Involved</strong> Git, Workspace Setup, Wiki, Committers
+			</a>
+		</li>
+	</ul>
+</div>
+
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 
@@ -100,17 +126,6 @@
 		</div>
 		<hr class="clearer" />
 
-	</div>
-
-	<div id="rightcolumn">
-		<div class="sideitem">
-			<h6>Additional resources</h6>
-			<ul>
-				<li><a href="archive.php">Previous releases</a></li>
-				<li><a href="../old/ATL_Installation_Guide[v0.1].pdf">Installation instructions</a></li>
-				<li><a href="http://wiki.eclipse.org/index.php?title=ATL_ReleaseNotes">Release Notes</a></li>
-			</ul>
-		</div>
 	</div>
 
 EOHTML;

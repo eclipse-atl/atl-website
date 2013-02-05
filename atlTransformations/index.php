@@ -27,6 +27,32 @@
 	# Paste your HTML content between the EOHTML markers!	
 	$html = <<<EOHTML
 
+<div id="primaryLinks">
+	<h3>Primary Links</h3>
+	<ul>
+		<li>
+			<a id="buttonDownload" href="../downloads" title="Download">
+				<strong>Download</strong> Eclipse Distribution, Update Site, Dropins
+			</a>
+		</li>
+		<li>
+			<a id="buttonDocumentation" href="../documentation" title="Documentation">
+				<strong>Documentation</strong> Tutorials, Examples, Videos, Reference Documentation
+			</a>
+		</li>
+		<li>
+			<a id="buttonSupport" href="../support" title="Support">
+				<strong>Support</strong> Bug Tracker, Newsgroup, Support
+			</a>
+		</li>
+		<li>
+			<a id="buttonInvolved" href="../developers" title="Getting Involved">
+				<strong>Getting Involved</strong> Git, Workspace Setup, Wiki, Committers
+			</a>
+		</li>
+	</ul>
+</div>
+
 	<div id="midcolumn">
 	
 		<h1>$pageTitle</h1>
