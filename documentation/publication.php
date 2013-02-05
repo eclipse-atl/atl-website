@@ -55,8 +55,9 @@ ob_start();
 	</ul>
 </div>
 
-	<div id="midcolumn">
-		<iframe src="http://wiki.eclipse.org/transclude.php?page=ATL_Publications" onload="iframe_loaded();">
+	<div id="midcolumn" style="height: 800px; width: 750px;">
+		<iframe src="http://wiki.eclipse.org/transclude.php?page=ATL_Publications" frameborder="0" 
+			width="100%" height="100%" scrolling="auto"	name="myframe" id="myframe" onload="iframe_loaded();">
 		</iframe>
 	</div>
 	

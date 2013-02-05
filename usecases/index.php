@@ -31,22 +31,22 @@
 	<h3>Primary Links</h3>
 	<ul>
 		<li>
-			<a id="buttonDownload" href="../../downloads" title="Download">
+			<a id="buttonDownload" href="../downloads" title="Download">
 				<strong>Download</strong> Eclipse Distribution, Update Site, Dropins
 			</a>
 		</li>
 		<li>
-			<a id="buttonDocumentation" href="../../documentation" title="Documentation">
+			<a id="buttonDocumentation" href="../documentation" title="Documentation">
 				<strong>Documentation</strong> Tutorials, Examples, Videos, Reference Documentation
 			</a>
 		</li>
 		<li>
-			<a id="buttonSupport" href="../../support" title="Support">
+			<a id="buttonSupport" href="../support" title="Support">
 				<strong>Support</strong> Bug Tracker, Newsgroup, Support
 			</a>
 		</li>
 		<li>
-			<a id="buttonInvolved" href="../../developers" title="Getting Involved">
+			<a id="buttonInvolved" href="../developers" title="Getting Involved">
 				<strong>Getting Involved</strong> Git, Workspace Setup, Wiki, Committers
 			</a>
 		</li>
@@ -78,9 +78,9 @@
 			The general status of each of the provided use cases is indicated by one of the following icon:
 			<table width="100%">
 				<tr>
-					<td align="center"><img src="../../images/specification.png" /> <b>Specification Only</b></td>
-		    		<td align="center"><img src="../../images/implementation.png" /> <b>Partially Implemented</b></td>
-		    		<td align="center"><img src="../../images/completion.png" /> <b>Reaching Completion</b></td>
+					<td align="center"><img src="../images/specification.png" /> <b>Specification Only</b></td>
+		    		<td align="center"><img src="../images/implementation.png" /> <b>Partially Implemented</b></td>
+		    		<td align="center"><img src="../images/completion.png" /> <b>Reaching Completion</b></td>
 				</tr>
 			</table>
 		</p>
@@ -101,7 +101,7 @@
 							The use case shows how M2M transformations may be used to map programs conforming to SPL or CPL at different abstraction levels.
 						</td>
 						<td width="10%" valign="middle" align="right">
-					   		<img src="../../images/completion.png" />
+					   		<img src="../images/completion.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -119,7 +119,7 @@
 							 of ATL and AMW. The running example is the Petrinet models.
 						</td>
 						<td width="10%" valign="middle" align="right">
-					   		<img src="../../images/completion.png" />
+					   		<img src="../images/completion.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -140,7 +140,7 @@
 							<a href="http://www.irit.fr">IRIT</a> and <a href="http://www.laas.fr/">LAAS</a> labs in Toulouse, France.
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/completion.png" />
+					    	<img src="../images/completion.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -163,7 +163,7 @@
 					    	<a href="http://www.tu-cottbus.de/">Brandenburg University of Technology at Cottbus</a> in Germany.
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/completion.png" />
+					    	<img src="../images/completion.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -181,7 +181,7 @@
 							in the context of the <a href="http://openembedd.inria.fr/">OpenEmbeDD</a> project.
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/completion.png" />
+					    	<img src="../images/completion.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -199,7 +199,7 @@
 							The online measurement service is available at: <a href="http://www.mdworkbench.com/measuring.php">http://www.mdworkbench.com/measuring.php</a>
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/completion.png" />
+					    	<img src="../images/completion.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -216,7 +216,7 @@
 							<b>annotation</b>. This process can be thought of as a way to <i>parameterize</i> the model transformation.
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/completion.png" />
+					    	<img src="../images/completion.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -233,7 +233,7 @@
 							and then into SVG model. Finally, the SVG code can be automatically extracted from SVG model.
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/completion.png" />
+					    	<img src="../images/completion.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -249,7 +249,7 @@
 							In this use case, we only support UML class diagrams. In practice, this use case was applied to the QVT metamodel available on the OMG site.
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/completion.png" />
+					    	<img src="../images/completion.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -268,7 +268,7 @@
 							This use case has been done by <a href="http://jjohannes.de/">Jendrik Johannes</a> (<a href="http://tu-dresden.de/">TU Dresden</a>) and its development has been supported by the <a href="http://www.modelplex-ist.org">IST European MODELPLEX project</a> (MODELing solution for comPLEX software systems, FP6-IP 34081).
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/completion.png" />
+					    	<img src="../images/completion.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -285,7 +285,7 @@
 							This work has been done in collaboration between the ATLANMOD team in Nantes and the ILOG company.
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/completion.png" />
+					    	<img src="../images/completion.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -303,7 +303,7 @@
 							The output of the code generator is a ".asm" file similar to the ones generated by the ATL compiler, or the ACG compiler (both also written in ACG).
 						</td>
 						<td width="10%" valign="middle" align="right">
-					   		<img src="../../images/implementation.png" />
+					   		<img src="../images/implementation.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -324,7 +324,7 @@
 							<a href="http://www.di.univaq.it/~alfonso">Alfonso Pierantonio</a> (Universit&agrave; dell'Aquila).
 						</td>
 						<td width="10%" valign="middle" align="right">
-					   		<img src="../../images/implementation.png" />
+					   		<img src="../images/implementation.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -341,7 +341,7 @@
 							We also consider that bug tracking information may be handled in a generic tool like Excel.
 						</td>
 						<td width="10%" valign="middle" align="right">
-					   		<img src="../../images/implementation.png" />
+					   		<img src="../images/implementation.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -358,7 +358,7 @@
 							and uses an XML file format) and <i>Maven</i> (a Java tool for management project and automated software build).
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/implementation.png" />
+					    	<img src="../images/implementation.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -374,7 +374,7 @@
 							The goal of this case study is to provide a bridge between both formats by using a light and flexible interoperability solution.
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/implementation.png" />
+					    	<img src="../images/implementation.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -392,7 +392,7 @@
 							This work is made by the SIDo Group from the <a href="http://www.univ-lr.fr/labo/l3i/site_statique/Index.html">L3I</a> lab in La Rochelle.
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/implementation.png" />
+					    	<img src="../images/implementation.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -410,7 +410,7 @@
 							A <b>web service PRR to IRL</b> is available here: <a href="http://www.sciences.univ-nantes.fr/lina/atl/atldemo/prronline/">http://www.sciences.univ-nantes.fr/lina/atl/atldemo/prronline/</a>.
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/implementation.png" />
+					    	<img src="../images/implementation.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -428,7 +428,7 @@
 							<a href="http://www.acm.org/classics/feb96/">http://www.acm.org/classics/feb96/</a>.
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/implementation.png" />
+					    	<img src="../images/implementation.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -445,7 +445,7 @@
 							detailed logic of a business rule. Microsoft Project is a project management software program developed by Microsoft.
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/implementation.png" />
+					    	<img src="../images/implementation.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -461,7 +461,7 @@
 							The used UML Modeler is <a href="http://www.papyrusuml.org/">Papyrus</a> (<a href="http://www-list.cea.fr/">CEA LIST</a>).
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/specification.png" />
+					    	<img src="../images/specification.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -477,7 +477,7 @@
 							The used UML Modeler is <a href="http://www.papyrusuml.org/">Papyrus</a> (<a href="http://www-list.cea.fr/">CEA LIST</a>).
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/specification.png" />
+					    	<img src="../images/specification.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -493,7 +493,7 @@
 							The used UML Modeler is <a href="http://www.papyrusuml.org/">Papyrus</a> (<a href="http://www-list.cea.fr/">CEA LIST</a>).
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/specification.png" />
+					    	<img src="../images/specification.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -510,7 +510,7 @@
 					 	</p>
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/specification.png" />
+					    	<img src="../images/specification.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -529,7 +529,7 @@
 					 	</p>
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/specification.png" />
+					    	<img src="../images/specification.png" />
 		  				</td>
 					</tr>
 				</table>
@@ -547,7 +547,7 @@
 					 	</p>
 						</td>
 						<td width="10%" valign="middle" align="right">
-					    	<img src="../../images/specification.png" />
+					    	<img src="../images/specification.png" />
 		  				</td>
 					</tr>
 				</table>
