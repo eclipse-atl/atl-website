@@ -76,7 +76,7 @@ function rss_to_html($news, $rss_file, $format, $count, $headerSize=3) {
  * Private function. This is used to generate the output in
  * short format.
  */
-function rss_item_to_html_short(& $item, & $html) {
+function rss_item_to_html_short($item, $html) {
 	// The date is formatted day-month-year using numbers
 	// The &#8209 is a non-breaking en dash.
 	$date = date("d&#8209;m&#8209;Y", $item->pubDate);
@@ -87,7 +87,7 @@ function rss_item_to_html_short(& $item, & $html) {
  * Private function. This is used to generate the output in
  * long format.
  */
-function rss_item_to_html_long(& $item, & $html) {
+function rss_item_to_html_long($item, $html) {
 	rss_item_to_html_short($item, $html);
 	$html .= "<blockquote><p align=\"justify\">$item->description</p></blockquote>";
 }
@@ -103,7 +103,7 @@ class Feed {
 		$this->channel = array();
 	}
 	
-	function add_channel(&$channel) {
+	function add_channel($channel) {
 		array_push($this->channel, $channel);
 	}
 }
