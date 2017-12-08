@@ -122,7 +122,7 @@ class Channel {
 		$this->item = array();
 	}
 	
-	function add_item(&$item) {
+	function add_item($item) {
 		array_push($this->item, $item);
 	}
 }
