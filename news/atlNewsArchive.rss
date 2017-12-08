@@ -755,7 +755,7 @@
 			<a name="newsATL_20070116_A" />
 			<p align="justify">
 				A new ATL Use Case "Families to Persons" has been created. It is available in <a href="http://www.eclipse.org/atl/documentation/old/ATLUseCase_Families2Persons.pdf">PDF</a> and 
-				<a href=http://www.eclipse.org/atl/documentation/old/ATLUseCase_Families2Persons.ppt">Powerpoint</a> formats.
+				<a href="http://www.eclipse.org/atl/documentation/old/ATLUseCase_Families2Persons.ppt">Powerpoint</a> formats.
 				This presentation describes a very simple model transformation example, some kind of ATL "hello world". This is not a recommendation on how to program in ATL, just an initial example.
 				Other presentations and exercise questions that could be based on this example will be created. Please, do not hesitate to provide some feedbacks on this presentation or to contribute.
 				The source code is available in the ATL transformations zoo: <a href="http://www.eclipse.org/atl/atlTransformations/Families2Persons/Families2Persons.zip">Families2Persons.zip</a>.
