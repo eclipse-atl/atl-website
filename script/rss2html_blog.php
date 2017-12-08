@@ -110,7 +110,7 @@ class RSS2HTML_Blog {
 			$result = "";
 
 			$ip = gethostbyname($host);
-			$handle = @fsockopen($ip, 80, &$errno, &$errstr, 10);
+			$handle = fsockopen($ip, 80, $errno, $errstr, 10);
 			if(!$handle) {
 				$this->readError = $errstr;
 				return FALSE;
