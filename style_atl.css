@@ -38,7 +38,7 @@
 #primaryLinks {
 	position: relative;
 	padding-left: 420px;
-	width: 560px;
+	width: 1100px;
 }
 
 #primaryLinks h3{
@@ -66,10 +66,11 @@
 #primaryLinks a {
    display: inline-block;
    list-style-type: none;
-   width: 180px;
+   width: 260px;
    height: 77px;
    padding-top: 10px;
    padding-left: 70px;
+   padding-right: 20px;
    margin: 0;
    color: black;
 }
@@ -223,6 +224,7 @@ customizing of yahoo pipes
 	padding: 0 10px 10px 10px;
 	background: transparent;
 	float: left;
+	margin-left: 80px;
 	margin-right: 20px;
 }
 
@@ -232,6 +234,7 @@ customizing of yahoo pipes
 }
 
 #rightcolumn {
+	padding: 40px 10px 10px 10px; 
 	width: 260px;
 }
 
