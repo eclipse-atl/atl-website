@@ -9,14 +9,6 @@ include("script/rss2html_blog.php");
 	
 	$html = file_get_contents('_index.html');
 
-	$atlNewsConverter = new RSS2HTML();
-	$atlnews = $atlNewsConverter->convert("news/atlNewsArchive.rss", "/atl/news/index.php");
-	$html = str_replace("%%NEWS%%", $atlnews, $html);
-
-	$newsConverter = new RSS2HTML_Blog();
-	$headlines = $newsConverter->convert();
-	$html = str_replace("%%HEADLINES%%", $headlines, $html);
-
 	# Generate the web page
 	$App->generatePage($theme, $Menu, null, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
