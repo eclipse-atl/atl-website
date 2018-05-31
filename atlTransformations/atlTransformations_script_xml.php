@@ -9,7 +9,7 @@
 #
 #****************************************************************************
 
-require_once($_SERVER['DOCUMENT_ROOT'] . "/gmt/resources/scripts/xml_sax_parsing_extension.php");
+require_once("../script/xml_sax_parsing_extension.php");
 
 function & getAtlTransformationsParsed($file_name) {
 	$handler = new ATLFileHandler();
