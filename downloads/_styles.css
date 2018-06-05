@@ -2,14 +2,17 @@
 	padding-top: 10px;
 }
 
-#midcolumn li .repo-item {
+#midcolumn ul .repo-item {
 	margin-bottom: 0px;
 	padding-bottom: 0px;
+	padding-left: 20px;
+	list-style-type: none;
 }
 
 .repo-item {
 	margin-top: 2px;
 	margin-bottom: 2px;
+	text-align: left;
 }
 
 .repo-label1 { 
