@@ -302,7 +302,11 @@
 		// UPDATE SITE
 		$buildHTML .= "<tr class=\"repo-info\">";
 		$buildHTML .= "<td><img src=\"" . $websiteRoot . "/images/22/package-x-generic.png\" alt=\"composite update site\"/></td>";
-		$buildHTML .= "<td><b><a href=\"http://download.eclipse.org/" . $PR . "/updates/" . $typeUpdateSite . "/" . $version . "/" . $ID . "\">Update Site</a></b> for use with <a href=\"http://help.eclipse.org/indigo/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-127.htm\">p2</a>.</td>";
+		if (is_dir(getPWD("updates/" . $typeUpdateSite . "/" . $branch)) {
+			$buildHTML .= "<td><b><a href=\"http://download.eclipse.org/" . $PR . "/updates/" . $typeUpdateSite . "/" . $branch . "/" . $ID . "\">Update Site</a></b> for use with <a href=\"http://help.eclipse.org/indigo/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-127.htm\">p2</a>.</td>";
+		} else {
+			$buildHTML .= "<td><b><a href=\"http://download.eclipse.org/" . $PR . "/updates/" . $typeUpdateSite . "/" . $version . "/" . $ID . "\">Update Site</a></b> for use with <a href=\"http://help.eclipse.org/indigo/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-127.htm\">p2</a>.</td>";
+		}
 		$buildHTML .= "<td class=\"file-size level3\"></td>";
 		$buildHTML .= "</tr>\n";
 		
