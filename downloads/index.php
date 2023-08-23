@@ -24,32 +24,33 @@
 	);
 	#### End variables ####
 	
-	$PWD = getPWD("downloads/drops");
-	$branches = loadDirSimple($PWD, ".*", "d");
-	rsort($branches);
-	
-	$buildtypes = array(
-		"R" => "Release",
-		"S" => "Stable",
-		"I" => "Integration",
-		"M" => "Maintenance",
-		"N" => "Nightly"
-	);
-	$buildTypes = getBuildTypes($branches, $buildtypes);
-	
-	// Retrieve the list of builds from the disk (folder list only)
-	$builds = getBuildsFrom($branches, $PWD);
-	
-	$builds = reorderAndSplitBuilds($builds, $buildTypes, $hiddenBuilds);
-	$releases = $builds[1];
-	$builds = $builds[0];
+	# $PWD = getPWD("downloads/drops");
+	# $branches = loadDirSimple($PWD, ".*", "d");
+	# rsort($branches);
+	# 
+	# $buildtypes = array(
+	# 	"R" => "Release",
+	# 	"S" => "Stable",
+	# 	"I" => "Integration",
+	# 	"M" => "Maintenance",
+	# 	"N" => "Nightly"
+	# );
+	# $buildTypes = getBuildTypes($branches, $buildtypes);
+	# 
+	# // Retrieve the list of builds from the disk (folder list only)
+	# $builds = getBuildsFrom($branches, $PWD);
+	# 
+	# $builds = reorderAndSplitBuilds($builds, $buildTypes, $hiddenBuilds);
+	# $releases = $builds[1];
+	# $builds = $builds[0];
 	
 	$html = file_get_contents('_index.html');
 	$html .= "<div id=\"midcolumn\">\n";
-	$html .= "<ul>\n";
-	$html .= generateHTMLReleaseList($releases, $projectTitle, $PR, $PWD, $websiteRoot);
-	$html .= generateHTMLBuildList($builds, $projectTitle, $PR, $PWD, $websiteRoot);
-	$html .= "</ul>\n";
+	# $html .= "<ul>\n";
+	# $html .= generateHTMLReleaseList($releases, $projectTitle, $PR, $PWD, $websiteRoot);
+	# $html .= generateHTMLBuildList($builds, $projectTitle, $PR, $PWD, $websiteRoot);
+	# $html .= "</ul>\n";
+	$html .= file_get_contents('_releases.html');
 	$html .= file_get_contents('_old_builds.html');
 	$html .= "</div>\n\n";
 	
