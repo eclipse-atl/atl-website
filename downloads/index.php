@@ -50,6 +50,7 @@
 	# $html .= generateHTMLReleaseList($releases, $projectTitle, $PR, $PWD, $websiteRoot);
 	# $html .= generateHTMLBuildList($builds, $projectTitle, $PR, $PWD, $websiteRoot);
 	# $html .= "</ul>\n";
+	$html .= file_get_contents('_recent_builds.html');
 	$html .= file_get_contents('_releases.html');
 	$html .= file_get_contents('_old_builds.html');
 	$html .= "</div>\n\n";
