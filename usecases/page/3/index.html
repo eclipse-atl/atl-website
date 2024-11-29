@@ -1,0 +1,2651 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Use Cases | The Eclipse Foundation</title>
+<meta property="og:title" content="Use Cases | The Eclipse Foundation" />
+<meta name="twitter:title" content="Use Cases | The Eclipse Foundation" />
+
+<meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta name="twitter:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<link href='https://www.eclipse.org/favicon.ico' rel='icon' type='image/x-icon'/>
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@eclipsefdn" />
+<meta name="twitter:creator" content="@eclipsefdn" />
+<meta property="og:url" content="https://eclipse.dev/atl/usecases/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="The Community for Open Innovation and Collaboration" />
+<meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
+
+
+<meta name="generator" content="Hugo 0.121.2">
+
+<link rel="canonical" href="https://eclipse.dev/atl/usecases/" />
+
+<link rel="alternate" href="/atl/usecases/index.xml" type="application/rss+xml" title="">
+
+
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1732894318">
+  
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5WLCZXC');</script>
+  
+<script>
+	
+		var tableClasses = "table";
+	
+</script>
+
+
+
+
+  
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" type="text/css"/>
+
+  
+
+</head>
+<body>
+  
+
+
+
+
+
+
+
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WLCZXC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<a class="sr-only" href="#content">Skip to main content</a>
+<header class="header-wrapper header_wrapper_class" id="header">
+  
+
+
+
+
+
+<div class="header-toolbar">
+    <div class="container">
+        <div class="header-toolbar-row">
+            <div class="toolbar-btn toolbar-search-btn dropdown">
+                <button 
+                    class="dropdown-toggle" 
+                    id="toolbar-search" 
+                    type="button" 
+                    data-toggle="dropdown"
+                    tabindex="0"
+                    aria-label="Search"
+                >
+                    <i class="fa fa-search fa-lg" aria-role="none"></i>
+                </button>
+                <div 
+                    class="toolbar-search-bar-wrapper dropdown-menu dropdown-menu-right"
+                    aria-labelledby="toolbar-search"
+                >
+                      <form action="https://www.eclipse.org/home/search" method="get">
+                    <div class="search-bar">
+                        <input class="search-bar-input" name="q" placeholder="Search" />
+                        <button>
+                            <i class="fa fa-search" type="submit"></i>
+                        </button>
+                    </div>
+                      </form>
+                </div>
+            </div>
+            <div class="toolbar-btn toolbar-user-menu-btn dropdown">
+                <button 
+                    class="dropdown-toggle" 
+                    id="toolbar-user-menu" 
+                    type="button" 
+                    data-toggle="dropdown"
+                    tabindex="0"
+                    aria-label="User Menu"
+                >
+                    <i class="fa fa-user fa-lg"></i>
+                </button>
+                <ul class="toolbar-user-menu dropdown-menu dropdown-menu-right text-center"
+                    aria-labelledby="toolbar-user-menu">
+                    <li>
+                        <a href="https://accounts.eclipse.org/user">
+                            <i class="fa fa-user"></i>
+                            View My Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://accounts.eclipse.org/user/edit">
+                            <i class="fa fa-edit"></i>
+                            Edit My Account
+                        </a>
+                    </li>
+                    <li>
+                        <a class="toolbar-manage-cookies">
+                            <i class="fa fa-wrench"></i>
+                            Manage Cookies
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="header-navbar-wrapper">
+    <div class="container">
+        <div class="header-navbar">
+            <div class="header-navbar-brand">
+                <a class="logo-wrapper" href="/" title="The Community for Open Innovation and Collaboration">
+                    <img src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/images/logo/eclipse-foundation-grey-orange.svg" alt="" width="150" />
+                </a>
+            </div>
+            
+
+
+  
+
+
+
+
+
+
+
+
+
+<nav class="header-navbar-nav">
+    <ul class="header-navbar-nav-links">
+        
+            
+               
+            
+            
+
+            
+            
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+
+            <li class="navbar-nav-links-item ">
+                
+                  <button 
+                      class="nav-link-js btn-link link-unstyled" 
+                      type="button"
+                      aria-expanded="true" 
+                      data-menu-target="projects-menu"
+                  >
+                      Projects
+                  </button>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            
+            
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+
+            <li class="navbar-nav-links-item ">
+                
+                  <button 
+                      class="nav-link-js btn-link link-unstyled" 
+                      type="button"
+                      aria-expanded="true" 
+                      data-menu-target="supporters-menu"
+                  >
+                      Supporters
+                  </button>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            
+            
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+
+            <li class="navbar-nav-links-item ">
+                
+                  <button 
+                      class="nav-link-js btn-link link-unstyled" 
+                      type="button"
+                      aria-expanded="true" 
+                      data-menu-target="collaborations-menu"
+                  >
+                      Collaborations
+                  </button>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            
+            
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+
+            <li class="navbar-nav-links-item ">
+                
+                  <button 
+                      class="nav-link-js btn-link link-unstyled" 
+                      type="button"
+                      aria-expanded="true" 
+                      data-menu-target="resources-menu"
+                  >
+                      Resources
+                  </button>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            
+            
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+
+            <li class="navbar-nav-links-item ">
+                
+                  <button 
+                      class="nav-link-js btn-link link-unstyled" 
+                      type="button"
+                      aria-expanded="true" 
+                      data-menu-target="the-foundation-menu"
+                  >
+                      The Foundation
+                  </button>
+                
+            </li>
+        
+    </ul>
+</nav>
+
+
+            <div class="header-navbar-end">
+                
+                  <a class="header-navbar-end-download-btn btn btn-primary" href="//eclipse.org/download/">
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                      Download
+                  </a>
+                
+                <button class="mobile-menu-btn" aria-label="Toggle mobile navigation menu" aria-expanded="false">
+                    <i class="fa fa-bars fa-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+
+
+
+
+
+    
+
+
+
+
+<nav class="mobile-menu hidden" aria-expanded="false">
+    <ul>
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="projects-menu">
+      <span>Projects</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="projects-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="projects-technologies-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Technologies</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="projects-technologies-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/topics/ide/">
+                      Developer Tools &amp; IDEs
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/topics/cloud-native/">
+                      Cloud Native
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/topics/edge-and-iot/">
+                      Edge &amp; IoT
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/topics/automotive-and-mobility/">
+                      Automotive &amp; Mobility
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="projects-projects-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Projects</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="projects-projects-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://projects.eclipse.org/">
+                      Project Finder
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/projects/project_activity.php">
+                      Project Activity
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/projects/resources/">
+                      Project Resources
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/specifications/">
+                      Specifications
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/contribute/">
+                      Contribute
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="supporters-menu">
+      <span>Supporters</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="supporters-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="supporters-membership-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Membership</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="supporters-membership-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/membership/explore-membership/">
+                      Our Members
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/membership/">
+                      Member Benefits
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/membership/#tab-levels">
+                      Membership Levels &amp; Fees
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/membership/#tab-membership">
+                      Membership Application
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/membership/#tab-resources">
+                      Member Resources
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://membership.eclipse.org/portal">
+                      Member Portal
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="supporters-sponsorship-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Sponsorship</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="supporters-sponsorship-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/sponsor/">
+                      Sponsor
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/org/corporate-sponsors/">
+                      Corporate Sponsorship
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/sponsor/collaboration/">
+                      Sponsor a Collaboration
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="collaborations-menu">
+      <span>Collaborations</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="collaborations-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="collaborations-industry-collaborations-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Industry Collaborations</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="collaborations-industry-collaborations-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/collaborations/">
+                      About Industry Collaborations
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/org/workinggroups/explore.php">
+                      Current Collaborations
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/org/workinggroups/about.php">
+                      About Working Groups
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/collaborations/interest-groups/">
+                      About Interest Groups
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="collaborations-research-collaborations-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Research Collaborations</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="collaborations-research-collaborations-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/research/">
+                      Research @ Eclipse
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="resources-menu">
+      <span>Resources</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="resources-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="resources-open-source-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Open Source for Business</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="resources-open-source-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/org/value/">
+                      Business Value of Open Source
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/os4biz/ospo/">
+                      Open Source Program Offices
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="resources-happening-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>What&#39;s Happening</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="resources-happening-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://newsroom.eclipse.org/">
+                      News
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://events.eclipse.org/">
+                      Events
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/community/eclipse_newsletter/">
+                      Newsletter
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://newsroom.eclipse.org/news/press-releases">
+                      Press Releases
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/org/foundation/eclipseawards/">
+                      Awards &amp; Recognition
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="resources-developer-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Developer Resources</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="resources-developer-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://eclipse.org/forums/">
+                      Forum
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://accounts.eclipse.org/mailing-list">
+                      Mailing Lists
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/blogs-and-videos/">
+                      Blogs &amp; Videos
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/resources/marketplaces/">
+                      Marketplaces
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="the-foundation-menu">
+      <span>The Foundation</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="the-foundation-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="the-foundation-about-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>About</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="the-foundation-about-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/org/">
+                      About the Eclipse Foundation
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/org/governance/">
+                      Board &amp; Governance
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/org/foundation/staff.php">
+                      Staff
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/org/services/">
+                      Services
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="the-foundation-legal-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Legal</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="the-foundation-legal-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/legal/">
+                      Legal Policies
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/legal/privacy/">
+                      Privacy Policy
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/legal/terms-of-use/">
+                      Terms of Use
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/legal/compliance/">
+                      Compliance
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/legal/epl-2.0/">
+                      Eclipse Public License
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="the-foundation-more-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>More</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="the-foundation-more-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://newsroom.eclipse.org/news/press-releases">
+                      Press Releases 
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/careers/">
+                      Careers
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/org/artwork/">
+                      Logos &amp; Artwork
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://www.eclipse.org/org/foundation/contact.php">
+                      Contact Us
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+    </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eclipsefdn-mega-menu">
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="projects-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Projects</p>
+                <p class="mega-menu-submenu-featured-story-text">      The Eclipse Foundation is home to the Eclipse IDE, Jakarta EE, and
+      hundreds of open source projects, including runtimes, tools,
+      specifications, and frameworks for cloud and edge applications, IoT, AI,
+      automotive, systems engineering, open processor designs, and many others.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Technologies</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/topics/ide/">Developer Tools &amp; IDEs</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/topics/cloud-native/">Cloud Native</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/topics/edge-and-iot/">Edge &amp; IoT</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/topics/automotive-and-mobility/">Automotive &amp; Mobility</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Projects</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="https://projects.eclipse.org/">Project Finder</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/projects/project_activity.php">Project Activity</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/projects/resources/">Project Resources</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/specifications/">Specifications</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/contribute/">Contribute</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+                <div
+                  class="eclipsefdn-mega-menu-promo-content mega-menu-promo-content"
+                  data-ad-format="ads_square"
+                  data-ad-publish-to="eclipse_org_home"
+                >
+                </div>
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="supporters-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Supporters</p>
+                <p class="mega-menu-submenu-featured-story-text">      The Eclipse Foundation is an international non-profit association
+      supported by our members, including industry leaders who value open
+      source as a key enabler for their business strategies.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Membership</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/membership/explore-membership/">Our Members</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/membership/">Member Benefits</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/membership/#tab-levels">Membership Levels &amp; Fees</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/membership/#tab-membership">Membership Application</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/membership/#tab-resources">Member Resources</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://membership.eclipse.org/portal">Member Portal</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Sponsorship</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/sponsor/">Sponsor</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/org/corporate-sponsors/">Corporate Sponsorship</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/sponsor/collaboration/">Sponsor a Collaboration</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+                <div
+                  class="eclipsefdn-mega-menu-promo-content mega-menu-promo-content"
+                  data-ad-format="ads_square"
+                  data-ad-publish-to="eclipse_org_home"
+                >
+                </div>
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="collaborations-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Collaborations</p>
+                <p class="mega-menu-submenu-featured-story-text">      Whether you intend on contributing to Eclipse technologies that are
+      important to your product strategy, or simply want to explore a specific
+      innovation area with like-minded organisations, the Eclipse Foundation is
+      the open source home for industry collaboration.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Industry Collaborations</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/collaborations/">About Industry Collaborations</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/org/workinggroups/explore.php">Current Collaborations</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/org/workinggroups/about.php">About Working Groups</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/collaborations/interest-groups/">About Interest Groups</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Research Collaborations</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/research/">Research @ Eclipse</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+                <div
+                  class="eclipsefdn-mega-menu-promo-content mega-menu-promo-content"
+                  data-ad-format="ads_square"
+                  data-ad-publish-to="eclipse_org_home"
+                >
+                </div>
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="resources-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Resources</p>
+                <p class="mega-menu-submenu-featured-story-text">      The Eclipse community consists of individual developers and organisations
+      spanning many industries. Stay up to date on our open source community
+      and find resources to support your journey.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Open Source for Business</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/org/value/">Business Value of Open Source</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/os4biz/ospo/">Open Source Program Offices</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">What&#39;s Happening</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="https://newsroom.eclipse.org/">News</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://events.eclipse.org/">Events</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/community/eclipse_newsletter/">Newsletter</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://newsroom.eclipse.org/news/press-releases">Press Releases</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/org/foundation/eclipseawards/">Awards &amp; Recognition</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Developer Resources</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="https://eclipse.org/forums/">Forum</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://accounts.eclipse.org/mailing-list">Mailing Lists</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/blogs-and-videos/">Blogs &amp; Videos</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/resources/marketplaces/">Marketplaces</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+                <div
+                  class="eclipsefdn-mega-menu-promo-content mega-menu-promo-content"
+                  data-ad-format="ads_square"
+                  data-ad-publish-to="eclipse_org_home"
+                >
+                </div>
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="the-foundation-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">The Foundation</p>
+                <p class="mega-menu-submenu-featured-story-text">      The Eclipse Foundation provides our global community of individuals and
+      organisations with a mature, scalable, and vendor-neutral environment for
+      open source software collaboration and innovation.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">About</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/org/">About the Eclipse Foundation</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/org/governance/">Board &amp; Governance</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/org/foundation/staff.php">Staff</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/org/services/">Services</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Legal</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/legal/">Legal Policies</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/legal/compliance/">Compliance</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/legal/epl-2.0/">Eclipse Public License</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">More</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="https://newsroom.eclipse.org/news/press-releases">Press Releases </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/careers/">Careers</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/org/artwork/">Logos &amp; Artwork</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+                <div
+                  class="eclipsefdn-mega-menu-promo-content mega-menu-promo-content"
+                  data-ad-format="ads_square"
+                  data-ad-publish-to="eclipse_org_home"
+                >
+                </div>
+              
+            </div>
+        </div>
+    
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</header>
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<main>
+  <div class="container padding-bottom-30">
+    
+    
+      
+
+
+
+
+
+
+
+<div class="default-breadcrumbs hidden-print" id="breadcrumb">
+  <div class="">
+    <div class="row">
+      <div class="col-sm-24">
+        <ol aria-label="Breadcrumb" class="breadcrumb">
+          
+            
+              
+            
+            <li >
+              <a href="https://eclipse.dev/atl/">ATL</a>
+            </li>
+          
+            
+            <li  class="active" aria-current="page">
+              <a href="https://eclipse.dev/atl/usecases/">Use Cases</a>
+            </li>
+          
+          </ol>
+          
+        </div>
+    </div>
+  </div>
+</div>
+
+
+    
+    
+
+    
+
+
+
+  
+  <div class="header_nav">
+  <div class="col-xs-24 col-md-10 vcenter row">
+    <a href="/atl/" title="ATL" target="_self">
+      <img src="/atl/images/logo/logoATL-transparent.png" alt="The ATL logo" class="img-responsive header_nav_logo">
+    </a>
+  </div>
+  <div class="col-xs-24 col-md-14 vcenter">
+    <ul class="clearfix">
+      <li class="col-xs-24 col-md-12">
+        <a class="row" href="/atl/downloads/" title="Download: Eclipse Distribution, Update Site, Dropins" target="_self">
+          <i class="col-xs-3 col-md-6 fa fa-download"></i>
+          <span class="col-xs-21 c col-md-17">
+            Download
+            <p>Eclipse Distribution, Update Site, Dropins</p>
+          </span>
+        </a>
+      </li>
+      <li class="col-xs-24 col-md-12">
+        <a class="row" href="/atl/developers/" title="Geting Involved: CVS, Workspace Setup, Wiki, Committers" target="_self">
+          <i class="col-xs-3 col-md-6 fa fa-users"></i>
+          <span class="col-xs-21 c col-md-17">
+            Geting Involved
+            <p>Git, Workspace Setup, Wiki, Committers</p>
+          </span>
+        </a>
+      </li>
+      <li class="col-xs-24 col-md-12">
+        <a class="row" href="/atl/documentation/" title="Documentation: Tutorials, Examples, Videos, Online Reference" target="_self">
+          <i class="col-xs-3 col-md-6 fa fa-book"></i>
+          <span class="col-xs-21 c col-md-17">
+            Documentation
+            <p>Tutorials, Examples, Videos, Online Reference</p>
+          </span>
+        </a>
+      </li>
+      <li class="col-xs-24 col-md-12">
+        <a class="row" href="/atl/support/" title="Support: Bug Tracker, Newsgroup Professional Support" target="_self">
+          <i class="col-xs-3 col-md-6 fa fa-support"></i>
+          <span class="col-xs-21 c col-md-17">
+            Support
+            <p>Bug Tracker, Newsgroup Professional Support</p>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<h1 id="atl-use-cases">ATL Use Cases</h1>
+<p>This section provides a set of ATL model transformation use cases covering different domains of application. These use cases are concrete examples of how model to model transformation (M2M) can be applied. Some of these use cases will be simple ones, some others will be more elaborated and will reuse basic use cases or parts of other ones.</p>
+<p>A general description is given for each of these use cases, as well as some more precise documentations. For many of them, prototypes have already been implemented and are directly downloadable from this website.1</p>
+<p>The general status of each of the provided use cases is indicated by one of the following icon:</p>
+<p>
+<div class="col-md-6">
+ 
+   <img src="../images/specification.png" alt="Specification Only"> <strong>Specification Only</strong>
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/implementation.png" alt="Partially Implemented"> <strong>Partially Implemented</strong>
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/completion.png" alt="Reaching Completion"> <strong>Reaching Completion</strong>
+ 
+</div></p>
+<p> </p>
+<hr>
+<h2 id="list-of-use-cases">List of use cases</h2>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="dsls-coordination-for-telephonydslstelephony"><a href="dslstelephony/">DSLs coordination for Telephony</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This work presents a case study of implementing two telephony languages: SPL and CPL. They are partially based on similar vocabularies. However they are very different and have been designed to be used by different people. The use case shows how M2M transformations may be used to map programs conforming to SPL or CPL at different abstraction levels.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/completion.png" alt="Reaching Completion">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="model-adaptationmodeladaptation"><a href="modeladaptation/">Model Adaptation</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   The evolution of a metamodel may render its related terminal models invalid. This use case proposes a three-step solution that automatically adapts terminal models to their evolving metamodels. The main contribution is the precise detection of metamodel changes by using the AtlanMod Matching Language (AML), a DSL built on top of ATL and AMW. The running example is the Petrinet models.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/completion.png" alt="Reaching Completion">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="models-validation-through-petri-netssimplepdl2tina"><a href="simplepdl2tina/">Models Validation through Petri nets</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This work presents a use case of model transformation using ATL rules to validate MDD&rsquo;s models. This use case considers a simplified process description language, SimplePDL. It then presents a property-driven approach in which SimplePDL process models are translated into Petri nets. SimplePDL behavioral properties are expressed on corresponding Petri nets in LTL (Linear Temporal Logic). The Tina toolkit and, in particular, its model-checker, are used to validate process models by checking the expressed properties. This use case has been done by Benoit Combemale (<a href="http://www.irit.fr/">IRIT</a>). This is a collaboration between <a href="http://www.irit.fr/">IRIT</a> and <a href="http://www.laas.fr/">LAAS</a> labs in Toulouse, France.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/completion.png" alt="Reaching Completion">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="sharing-rules-between-ocluml-and-swrlowlsharingrulesbetweenocluml_swrlowl"><a href="sharingrulesbetweenocluml_swrlowl/">Sharing Rules Between OCL/UML and SWRL/OWL</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This work presents an implementation of sharing rules between two rule languages from different domains: OCL (Object Constraint Language) together with UML and SWRL (Semantic Web Rule Language) together with OWL. For this integration we used the R2ML (REWERSE I1 Rule Markup Language) metamodel as pivotal metamodel. The R2ML is a general Web rule markup language and it can represent different rule types: integrity, reaction, derivation and production. This work has been done by <a href="https://milan.milanovic.org/">Milan Milanović</a> in collaboration between the GOOD OLD AI Laboratory at University of Belgrade, <a href="https://www.sfu.ca/siat">School of Interactive Arts and Technology</a> at <a href="https://www.surrey.sfu.ca/">Simon Fraser University Surrey</a> in Canada and Chair of Internet Technology at Brandenburg University of Technology at Cottbus in Germany.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/completion.png" alt="Reaching Completion">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="compiling-a-new-formal-verification-language-to-lotos-iso-8807fiacre2lotos"><a href="fiacre2lotos/">Compiling a new formal verification language to LOTOS (ISO 8807)</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   In this use case, we translate <a href="https://www-sop.inria.fr/oasis/fiacre/">FIACRE</a> programs into LOTOS (<a href="https://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=16258">ISO 8807</a>) programs, which can then be verified using the <a href="http://www.inrialpes.fr/vasy/cadp/">CADP</a> toolbox. This work is the result of the cooperation of two INRIA teams: ATLAS (Nantes), and <a href="http://www.inrialpes.fr/vasy/">VASY</a> (Grenoble), in the context of the <a href="https://openembedd.inria.fr/">OpenEmbeDD</a> project.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/completion.png" alt="Reaching Completion">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="models-measurementmodelsmeasurement"><a href="modelsmeasurement/">Models Measurement</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This use case shows how to compute and generate measures on KM3 metamodels or UML2 models, and how to display them in different way (HTML, and SVG). This work has been done in collaboration between <a href="https://www.sodius.com">SODIUS</a> and the ATLAS Group. As a complementary application to this contribution, an online service is provided at <a href="https://www.sodius.com">SODIUS</a>&rsquo;s web site under the name &ldquo;MC-Meter&rdquo;.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/completion.png" alt="Reaching Completion">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="modeling-web-applicationswebappmodeling"><a href="webapp.modeling/">Modeling Web applications</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This use case shows how model weaving is used to help in the development of model transformations. In some cases, the gap between the input and output metamodels makes it difficult to develop a model transformation that works for every input model. In such cases a weaving model can be used to enrich the input model by <strong>annotation</strong>. This process can be thought of as a way to <em>parameterize</em> the model transformation.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/completion.png" alt="Reaching Completion">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="visual-representation-for-code-clone-toolsvisualrepcodeclone"><a href="visualrepcodeclone/">Visual Representation for Code Clone Tools</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   The aim of this use case is to realize a uniform visual representation for different code clone detection tools. Different analysis results provided by different code clone detection tools can be injected into models. These models will be transformed to a generic Code Clone DSL model, and then into SVG model. Finally, the SVG code can be automatically extracted from SVG model.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/completion.png" alt="Reaching Completion">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="rational-rose-to-uml2-toolsmdl2gmf"><a href="mdl2gmf/">Rational Rose to UML2 Tools</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This use case shows how we can reuse UML projects created with Rational Rose and import them in GMF (specifically in UML2 Tools) using ATL transformations. In this use case, we only support UML class diagrams. In practice, this use case was applied to the QVT metamodel available on the OMG site.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/completion.png" alt="Reaching Completion">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="model-driven-performance-engineering-from-umlspt-to-anylogicuml2anylogic"><a href="uml2anylogic/">Model Driven Performance Engineering: From UML/SPT to AnyLogic</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This use case presents a transformation from annotated UML activity diagrams to AnyLogic simulation models. The actions and control flows in activity diagrams are annotated with performance information utilizing the UML profile for schedulability, performance, and timing (SPT). This information is used to generate a simulation model that can be executed by the AnyLogic simulation tool from XJ Technologies. Such simulations can help to identify performance issues early in a software design process. This use case has been done by <a href="https://onepiece.software/">Jendrik Johannes</a> (<a href="https://tu-dresden.de/">TU Dresden</a>) and its development has been supported by the IST European MODELPLEX project (MODELing solution for comPLEX software systems, FP6-IP 34081).
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/completion.png" alt="Reaching Completion">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="production-of-uml-class-diagrams-from-syntactical-models-of-english-text-or-sbvr-modelssyntax2sbvr2uml"><a href="syntax2sbvr2uml/">Production of UML class diagrams from syntactical models of english text or SBVR models</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This work presents a case study of obtaining a UML class diagram from a syntactical analysis of a text using SBVR as an intermediate layer. We show how it is possible, with the help of model engineering, to realize two transformations: from a syntactical model into a SBVR model, and from a SBVR model into a UML model. This work has been done in collaboration between the ATLANMOD team in Nantes and the ILOG company.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/completion.png" alt="Reaching Completion">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="qvt-to-atl-virtual-machine-compilerqvt2atlvm"><a href="qvt2atlvm/">QVT to ATL Virtual Machine Compiler</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This work provides a QVT compiler that targets the ATL Virtual Machine (ATL VM), and thus provides executability of QVT programs on top of the ATL VM. The code generator is written in the ACG (Atl Code Generation) Domain-Specific Language (DSL). It takes as input a QVT model (typically in XMI format) that may have been created by a QVT front-end (i.e., a parser and type checker) like <a href="https://eclipse.dev/mmt/?project=qvto#qvto">Eclipse/modeling/mmt/Procedural QVT</a>, or SmartQVT. The output of the code generator is a &ldquo;.asm&rdquo; file similar to the ones generated by the ATL compiler, or the ACG compiler (both also written in ACG).
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/implementation.png" alt="Partially Implemented">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="a-metamodel-independent-approach-to-difference-representationmmindapproachtodiffrep"><a href="mmindapproachtodiffrep/">A Metamodel Independent Approach to Difference Representation</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This work presents an ATL implementation of a metamodel independent approach to the representation of model differences which is agnostic of the calculation method. Given two models being differenced which conform to a metamodel, their difference is conforming to another metamodel derived from the former by an automated transformation. Interestingly, difference models are first-class artifacts which in turn induce other transformations, such that they can be applied to one of the differenced models to automatically obtain the other one. This work has been done by Antonio Cicchetti, Davide Di Ruscio and Alfonso Pierantonio (Università dell&rsquo;Aquila).
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/implementation.png" alt="Partially Implemented">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="software-quality-control-tools-interoperability-bugzilla-mantis-excelsoftwarequalitycontroltoolsinteroperability"><a href="softwarequalitycontroltoolsinteroperability/">Software Quality Control Tools Interoperability (Bugzilla, Mantis, Excel)</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   Problems of tools interoperability can be found in various domains. Software quality control is one of these. This use case presents an implementation of bridges between different bug tracking tools like Bugzilla, and Mantis. We also consider that bug tracking information may be handled in a generic tool like Excel.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/implementation.png" alt="Partially Implemented">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="software-build-tools-interoperability-make-ant-mavenbridgebetweenbuildtools"><a href="bridgebetweenbuildtools/">Software Build Tools Interoperability (Make, Ant, Maven)</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   Make is one of the most common build tool. It remains widely used but essentially in Unix-based platforms. Many problems have surfaced with scaling Make to work with modern, large software projects. So, it is interesting to provide some bridges from Make to other build tools like Ant (which is popular for Java development and uses an XML file format) and Maven (a Java tool for management project and automated software build).
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/implementation.png" alt="Partially Implemented">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="web-syndication-interoperability-rss-and-atomwebsyndicationinteroperability"><a href="websyndicationinteroperability/">Web Syndication Interoperability (RSS and Atom)</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   People who generate web syndication feeds have a choice of formats. Today, the two most likely candidates are RSS 2.0 and Atom 1.0. The goal of this case study is to provide a bridge between both formats by using a light and flexible interoperability solution.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/implementation.png" alt="Partially Implemented">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="odm-implementation-bridging-uml-and-owlodmimplementation"><a href="odmimplementation/">ODM Implementation (Bridging UML and OWL)</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This use case presents an implemented solution to the OMG Ontology Definition Metamodel (ODM) specification. ODM offers a set of metamodels and mappings for bridging the metamodeling world and the ontologies. The present solution supports the UML 2.0 metamodel and the OWL metamodel as defined in ODM. This work is made by the SIDo Group from the L3I lab in La Rochelle.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/implementation.png" alt="Partially Implemented">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="implementing-two-business-rule-languages-prr-and-irlprr2irl"><a href="prr2irl/">Implementing two business rule languages: PRR and IRL</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This work presents a case study of implementing two business rule languages: Production Rule Representation (PRR) and ILOG Rule Language (IRL). We show how a pivot language can be translated into a concrete one with the help of model engineering. The outcome of this experiment also provides an interesting example of DSLs coordination. This work has been done in collaboration between the ATLAS Group in Nantes and ILOG.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/implementation.png" alt="Partially Implemented">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="from-hoares-monitors-to-dijkstras-semaphoresmonitortosemaphore"><a href="monitortosemaphore/">From Hoare&rsquo;s Monitors to Dijkstra&rsquo;s Semaphores</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This is a classic in synchronization. We propose an automatic translation from Hoare&rsquo;s monitors as defined in <a href="monitortosemaphore/#references">[1]</a> into Dijkstra&rsquo;s semaphores as initially introduced in <a href="monitortosemaphore/#references">[2]</a>. The ATL transformation code follows the rules given in <a href="monitortosemaphore/#references">[1]</a>. A complete reprint of this paper is available at: <a href="https://www.acm.org/classics/feb96/">https://www.acm.org/classics/feb96/</a>.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/implementation.png" alt="Partially Implemented">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="from-uml-activity-diagram-to-project-management-softwareuml2msproject"><a href="uml2msproject/">From UML Activity Diagram to Project Management Software</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This use case shows the possibility to have interoperability between an UML activity diagram and a project management software like MsProject. UML Activity Diagrams are typically used for business process modeling, for modeling the logic captured by a single use case or usage scenario, or for modeling the detailed logic of a business rule. Microsoft Project is a project management software program developed by Microsoft.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/implementation.png" alt="Partially Implemented">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="using-a-uml-modeler-to-generate-metamodelsuml2mof"><a href="uml2mof/">Using a UML modeler to generate metamodels</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This use case shows how to use and integrate a model transformation service in a UML Modeler to generate metamodels conforming to KM3, MOF 1.4, and Ecore. The used UML Modeler is <a href="https://eclipse.dev/papyrus/">Papyrus</a> (<a href="https://list.cea.fr/fr/">CEA LIST</a>).
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/specification.png" alt="Specification Only">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="measuring-uml-modelsmeasuring_uml_models"><a href="measuring_uml_models/">Measuring UML models</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This use case shows how to use and integrate a model transformation service in a UML Modeler to compute and generate quality measures on UML models. The used UML Modeler is <a href="https://eclipse.dev/papyrus/">Papyrus</a> (<a href="https://list.cea.fr/">CEA LIST</a>).
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/specification.png" alt="Specification Only">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="verifying-uml-profiled-modelsverifying_uml_profiled_models"><a href="verifying_uml_profiled_models/">Verifying UML profiled models</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This use case shows how to use and integrate a model transformation service in a UML Modeler to verify a UML profiled model. The used UML Modeler is <a href="https://eclipse.dev/papyrus/">Papyrus</a> (<a href="https://list.cea.fr/">CEA LIST</a>).
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/specification.png" alt="Specification Only">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="rsm-to-topcased-uml2-editorrsm2topcased"><a href="rsm2topcased/">RSM to Topcased UML2 Editor</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   TOPCASED currently relies on the ATL model transformation toolkit. Model transformations have been mainly used in order to access models defined using other editors than TOPCASED one&rsquo;s. This use case presents an operational application of ATL to bridge RSM and TOPCASED.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/specification.png" alt="Specification Only">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="sildex-to-topcased-samsildex2sam"><a href="sildex2sam/">Sildex to Topcased SAM</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This use case presents the import of SILDEX models (a synchronous language based graphical modelling formalism developed by TNI and currently in use at <a href="https://www.airbus.com/en/">AIRBUS</a>) in the TOPCASED SAM modelling language. SAM represents the new TOPCASED business metamodel for functional and automaton parts of SILDEX. This use case was implemented by <a href="https://www.csgroup.eu/fr/">C-S</a> in the context of the TOPCASED project.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/specification.png" alt="Specification Only">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>
+<div class="col-md-6">
+ 
+   <h3 id="sildex-to-topcased-aadlcotresildex2aadl"><a href="sildex2aadl/">Sildex to Topcased AADL/COTRE</a></h3>
+
+ 
+</div>
+
+<div class="col-md-12">
+ 
+   This use case presents the import of SILDEX models (a synchronous language based graphical modelling formalism developed by TNI and currently in use at <a href="https://www.airbus.com/en/">AIRBUS</a>) in AADL/COTRE. It was implemented by <a href="https://www.csgroup.eu/fr/">C-S</a> in the context of the TOPCASED project.
+ 
+</div>
+
+<div class="col-md-6">
+ 
+   <img src="../images/specification.png" alt="Specification Only">
+ 
+</div></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<h2 id="latest-changes">Latest changes</h2>
+ 
+  
+  
+    
+      
+<div class="news-list">
+  <a href=" /atl/usecases/bridgebetweenbuildtools/" class="media media-link">
+    <p class="media-date">Monday, Jan 1, 0001</p>
+    <h4 class="media-heading">Software Build Tools Interoperability (Make, Ant, Maven)</h4>
+    <p class="media-text">Software Build Tools Interoperability (Make, Ant, Maven) By Freddy Allilaire, Frédéric Jouault (INRIA) February 2007
+Keywords Interoperability, Build Tools, Ant, Make, Maven.
+Overview In this use case we present how to bridge different build tools between themselves: Make, Ant, and Maven. Make, one of the most common build tool, has its own syntax and can be used only on UNIX platform. Ant is platform-independent and its syntax is XML-based. It is extended using Java classes.</p>
+  </a>
+</div>
+    
+      
+<div class="news-list">
+  <a href=" /atl/usecases/softwarequalitycontroltoolsinteroperability/" class="media media-link">
+    <p class="media-date">Monday, Jan 1, 0001</p>
+    <h4 class="media-heading">Software Quality Control Tools Interoperability (Bugzilla, Mantis, Excel)</h4>
+    <p class="media-text">Software Quality Control Tools Interoperability (Bugzilla, Mantis, Excel) By Freddy Allilaire, Frédéric Jouault (INRIA) February 2007
+Keywords Tool Interoperability, Software Quality Control, Bug-Tracking, Excel, Bugzilla, Mantis.
+Overview Problems of tools interoperability can be found in various domains. Software quality control is one of these. This use case presents an implementation of bridges between different bug tracking tools like Bugzilla, and Mantis. We also consider that bug tracking information may be handled in a generic tool like Excel.</p>
+  </a>
+</div>
+    
+      
+<div class="news-list">
+  <a href=" /atl/usecases/uml2mof/" class="media media-link">
+    <p class="media-date">Monday, Jan 1, 0001</p>
+    <h4 class="media-heading">Using a UML modeler to generate metamodels</h4>
+    <p class="media-text">Using a UML modeler to generate metamodels By Freddy Allilaire (INRIA), Rémi Schnekenburger (CEA LIST) May 2007
+This use case shows how to use and integrate a model transformation service in a UML Modeler to generate metamodels conforming to KM3, MOF 1.4, and Ecore.
+Keywords UML Modeler, UML 2, Metamodels, Ecore, MOF 1.4, KM3.
+Overview This use case presents how the Papyrus UML Modeler could be used to generate metamodels. Papyrus is a dedicated tool for modelling within UML2 developed by CEA LIST.</p>
+  </a>
+</div>
+    
+      
+<div class="news-list">
+  <a href=" /atl/usecases/verifying_uml_profiled_models/" class="media media-link">
+    <p class="media-date">Monday, Jan 1, 0001</p>
+    <h4 class="media-heading">Verifying UML profiled models</h4>
+    <p class="media-text">Verifying UML profiled models By Freddy Allilaire (INRIA), Rémi Schnekenburger (CEA LIST) May 2007
+This use case shows how to integrate a model transformation service in a UML Modeler to verify a UML profiled model.
+Keywords UML Modeler, UML 2, UML Profile, Verification, Naming convention, Error reporting.
+Overview Papyrus is a dedicated tool for UML2 graphical modelling mainly developed by CEA LIST. It integrates the ATL engine. This use case shows how the coupling of ATL and Papyrus may allow to verify UML profiled models.</p>
+  </a>
+</div>
+    
+      
+<div class="news-list">
+  <a href=" /atl/usecases/visualrepcodeclone/" class="media media-link">
+    <p class="media-date">Monday, Jan 1, 0001</p>
+    <h4 class="media-heading">Visual Representation for Code Clone Tools</h4>
+    <p class="media-text">Visual Representation for Code Clone Tools By Yu Sun, Frédéric Jouault December 2007
+The aim of this project is to realize a uniform visual representation for different code clone detection tools. Different analysis results provided by different code clone detection tools can be injected into models. These models will be transformed to a generic Code Clone DSL model, and then into SVG model. Finally, the SVG code can be automatically extracted from SVG model.</p>
+  </a>
+</div>
+    
+      
+<div class="news-list">
+  <a href=" /atl/usecases/websyndicationinteroperability/" class="media media-link">
+    <p class="media-date">Monday, Jan 1, 0001</p>
+    <h4 class="media-heading">Web Syndication Interoperability (RSS and Atom)</h4>
+    <p class="media-text">Web Syndication Interoperability (RSS and Atom) By Freddy Allilaire (INRIA) February 2007
+This use case shows how to translate between Atom and RSS formats. All transformations code in ATL and metamodels code in KM3 is available from the zoos.
+Keywords Web Feed Format, Syndication, Interoperability, RSS, Atom, XML.
+Overview A web feed is a data format used for serving users frequently updated content. Content distributors syndicate a web feed, thereby allowing users to subscribe to it.</p>
+  </a>
+</div>
+    
+    
+    <ul class="pagination pagination-default">
+      <li class="page-item">
+        <a href="/atl/usecases/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/atl/usecases/page/2/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/atl/usecases/" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
+        <a href="/atl/usecases/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 3" class="page-link" role="button">3</a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
+  
+
+  
+
+    
+
+
+    
+  </div>
+</main>
+  
+  
+  <div class="eclipsefdn-featured-footer featured-footer" id="featured-footer" data-publish-target="eclipse_org">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-24 featured-container">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+
+  
+
+<p id="back-to-top">
+  <a class="visible-xs" href="#">Back to the top</a>
+</p>
+<footer class="footer" id="footer">
+  <div class="container">
+    
+
+<div class="footer-end-social-container margin-bottom-30">
+  
+
+
+
+
+
+
+
+
+
+
+<div class="footer-end-social">
+    <p class="footer-end-social-text hidden-xs">Follow Us:</p>
+    <ul class="footer-end-social-links list-inline">
+        <li>
+            <a class="link-unstyled" href="https://twitter.com/EclipseFdn" title="Twitter account">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter account</span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="link-unstyled" href="https://www.facebook.com/eclipse.org" title="Facebook account">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook account</span>
+                </span>
+            </a>
+        </li> 
+        <li>
+            <a class="link-unstyled" href="https://www.youtube.com/user/EclipseFdn" title="Youtube account">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-youtube-play fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only">Youtube account</span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="link-unstyled" href="https://www.linkedin.com/company/eclipse-foundation" title="Linkedin account">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only">Linkedin account</span>
+                </span>
+            </a>
+        </li> 
+    </ul>
+</div>
+
+
+</div>
+
+
+    <div class="footer-sections row equal-height-md font-bold">
+        
+        <div class="col-md-15">
+          <div class="row">
+            
+
+
+
+
+  
+  <section id="footer-eclipse-foundation" class="footer-section col-sm-8">
+    <div class="menu-heading">Eclipse Foundation</div>
+    <ul class="nav">
+      <li><a href="https://www.eclipse.org/org/">About</a></li>
+      <li><a href="https://projects.eclipse.org/">Projects</a></li>
+      <li><a href="https://www.eclipse.org/collaborations/">Collaborations</a></li>
+      <li><a href="https://www.eclipse.org/membership/">Membership</a></li>
+      <li><a href="https://www.eclipse.org/sponsor/">Sponsor</a></li>
+    </ul>
+  </section>
+
+
+
+
+
+  
+  <section id="footer-legal" class="footer-section col-sm-8">
+    <div class="menu-heading">Legal</div>
+    <ul class="nav">
+      <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+      <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+      <li><a href="https://www.eclipse.org/legal/compliance/">Compliance</a></li>
+      <li><a href="https://www.eclipse.org/org/documents/Community_Code_of_Conduct.php">Code of Conduct</a></li>
+      <li><a href="https://www.eclipse.org/legal/">Legal Resources</a></li>
+      <li><a class="toolbar-manage-cookies" href="#" onclick="event.preventDefault()">Manage Cookies</a></li>
+    </ul>
+  </section>
+
+
+
+
+
+
+  
+  <section id="footer-more" class="footer-section col-sm-8">
+    <div class="menu-heading">More</div>
+    <ul class="nav">
+      <li><a href="https://www.eclipse.org/security/">Report a Vulnerability</a></li>
+      <li><a href="https://status.eclipse.org/">Service Status</a></li>
+      <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+      <li><a href="https://www.eclipse.org/projects/support/">Support</a></li>
+    </ul>
+  </section>
+
+
+
+
+          </div>
+        </div>
+        
+
+
+
+
+  <div id="footer-end" class="footer-section col-md-8 col-md-offset-1 col-sm-24">
+    
+      <div class="footer-end-newsletter">
+        <form id="mc-embedded-subscribe-form" action="https://eclipsecon.us6.list-manage.com/subscribe/post" method="post" novalidate target="_blank">
+          <label class="footer-end-newsletter-label" for="email">Subscribe to our Newsletter</label>
+          <div class="footer-end-newsletter-input-wrapper">
+            <input class="footer-end-newsletter-input" type="email" id="email" name="EMAIL" autocomplete="email" placeholder="Enter your email address" />
+            <div>
+              <i class="fa fa-solid fa-envelope fa-lg" aria-hidden="true"></i>
+            </div>
+          </div>
+          <input type="hidden" name="u" value="eaf9e1f06f194eadc66788a85" />
+          <input type="hidden" name="id" value="46e57eacf1" />
+          <input id="mc-embedded-subscribe" type="submit" name="subscribe" hidden />
+        </form>
+      </div>
+    
+  </div>
+
+
+    </div>
+    
+
+
+
+<div class="col-sm-24 margin-top-20">
+  <div class="row">
+    <div id="copyright" class="col-md-16">
+      <p id="copyright-text">Copyright &copy; Eclipse Foundation AISBL. All Rights Reserved.</p>
+    </div>
+    
+  </div>
+</div>
+
+    <a href="#" class="scrollup">Back to the top</a>
+  </div>
+</footer>
+
+
+
+
+  
+  <div id="footer-js">
+  
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1732894318"></script>
+  
+
+  
+  
+
+  
+  <script>
+  (function($, document) {
+    
+    
+  })(jQuery, document);
+  </script>
+
+  
+</div>
+
+</body>
+</html>
+

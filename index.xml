@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ATL on The Community for Open Innovation and Collaboration</title>
+    <link>https://eclipse.dev/atl/</link>
+    <description>Recent content in ATL on The Community for Open Innovation and Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>webdev@eclipse-foundation.org (Eclipse Foundation)</managingEditor>
+    <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster><atom:link href="https://eclipse.dev/atl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Measuring UML models - User Guide</title>
+      <link>https://eclipse.dev/atl/usecases/measuring_uml_models/userguide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/atl/usecases/measuring_uml_models/userguide/</guid>
+      <description>Measuring UML models - User Guide By Freddy Allilaire (INRIA), Rémi Schnekenburger (CEA LIST) May 2007
+This user guide explains how to configure and launch the Measuring UML models ATL service in Papyrus.
+User Guide First step is to create a new transformation configuration, using the Run As button.
+Thanks to the pop-up menu available on Papyrus transformation, you can create a new transformation configuration. This transformation configuration will contain all necessary parameters for your transformation.</description>
+    </item>
+    
+    <item>
+      <title>Modeling Web applications - Detailed description</title>
+      <link>https://eclipse.dev/atl/usecases/webapp.modeling/description/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/atl/usecases/webapp.modeling/description/</guid>
+      <description>Modeling Web applications - Detailed description This document explains how model annotation has been applied in this Use Case. It gives a description of the models implied and the context in which they are developed. For a more detailed explanation on this as well as on how to execute the example provided, see the User Guide.
+Application Context Service-Oriented Computing [1] is a new paradigm for application development whose main proposal is the use of services as fundamental elements.</description>
+    </item>
+    
+    <item>
+      <title>Software Build Tools Interoperability: Complete Scenario</title>
+      <link>https://eclipse.dev/atl/usecases/bridgebetweenbuildtools/scenario/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/atl/usecases/bridgebetweenbuildtools/scenario/</guid>
+      <description>Software Build Tools Interoperability: Complete Scenario We provide here the links to the different scenarios which have been used to create this complete use case. These scenarios are available from the ATL Transformation Zoo. Each of them may be used within other use cases, in other different contexts or for other purposes.
+List of scenarios used in this use case ATL Scenario Make to Ant Ant to Maven </description>
+    </item>
+    
+    <item>
+      <title>Software Build Tools Interoperability: Used Metamodels</title>
+      <link>https://eclipse.dev/atl/usecases/bridgebetweenbuildtools/metamodels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/atl/usecases/bridgebetweenbuildtools/metamodels/</guid>
+      <description>Software Build Tools Interoperability: Used Metamodels We provide here the links to all the metamodels which have been developped and/or used within this use case. These metamodels are available resources that may be used within other use cases, in other different contexts or for other purposes. Each of them is provided in the Eclipse Ecore standard format and also in the KM3 textual format.
+Metamodels Ecore format KM3 format XML XML Ant Ant Make Make Maven (maven.</description>
+    </item>
+    
+    <item>
+      <title>Software Quality Control Tools Interoperability (Bugzilla, Mantis, Excel): Complete Scenario</title>
+      <link>https://eclipse.dev/atl/usecases/softwarequalitycontroltoolsinteroperability/scenario/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/atl/usecases/softwarequalitycontroltoolsinteroperability/scenario/</guid>
+      <description>Software Quality Control Tools Interoperability (Bugzilla, Mantis, Excel): Complete Scenario We provide here the links to the different scenarios which have been used to create this complete use case. These scenarios are available from the ATL Transformation Zoo. Each of them may be used within other use cases, in other different contexts or for other purposes.
+List of scenarios used in this use case ATL Scenario Microsoft Office Excel SpreadsheetML Injector Microsoft Office Excel SpreadsheetML to Software Quality Control Software Quality Control to Bugzilla Software Quality Control to Mantis </description>
+    </item>
+    
+    <item>
+      <title>Software Quality Control Tools Interoperability (Bugzilla, Mantis, Excel): Used Metamodels</title>
+      <link>https://eclipse.dev/atl/usecases/softwarequalitycontroltoolsinteroperability/metamodels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/atl/usecases/softwarequalitycontroltoolsinteroperability/metamodels/</guid>
+      <description>Software Quality Control Tools Interoperability (Bugzilla, Mantis, Excel): Used Metamodels We provide here the links to all the metamodels which have been developped and/or used within this use case. These metamodels are available resources that may be used within other use cases, in other different contexts or for other purposes. Each of them is provided in the Eclipse Ecore standard format and also in the KM3 textual format.
+Metamodels Ecore format KM3 format XML XML MS Office Excel SpreadsheetML MS Office Excel SpreadsheetML Software Quality Control Software Quality Control Bugzilla Bugzilla Mantis Mantis </description>
+    </item>
+    
+    <item>
+      <title>Using a UML modeler to generate metamodels - User Guide</title>
+      <link>https://eclipse.dev/atl/usecases/uml2mof/userguide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/atl/usecases/uml2mof/userguide/</guid>
+      <description>Using a UML modeler to generate metamodels - User Guide By Freddy Allilaire (INRIA), Rémi Schnekenburger (CEA LIST) May 2007
+This user guide explains how to configure and launch the Using a UML modeler to generate metamodels ATL service in Papyrus.
+User Guide First step is to create a new transformation configuration, using the Run As button.
+Thanks to the pop-up menu available on Papyrus transformation, you can create a new transformation configuration.</description>
+    </item>
+    
+    <item>
+      <title>Verifying UML profiled models - User Guide</title>
+      <link>https://eclipse.dev/atl/usecases/verifying_uml_profiled_models/userguide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/atl/usecases/verifying_uml_profiled_models/userguide/</guid>
+      <description>Verifying UML profiled models - User Guide By Freddy Allilaire (INRIA), Rémi Schnekenburger (CEA LIST) May 2007
+This user guide explains how to configure and launch the Verifying UML profiled models ATL service in Papyrus.
+User Guide The following procedure will configure and launch the transformation that validates the model against previously defined rules.
+First step is to create a new transformation configuration, using the Run As button.
+Thanks to the pop-up menu available on Papyrus transformation, you can create a new transformation configuration.</description>
+    </item>
+    
+  </channel>
+</rss>

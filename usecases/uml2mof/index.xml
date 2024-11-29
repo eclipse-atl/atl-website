@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Using a UML modeler to generate metamodels on The Community for Open Innovation and Collaboration</title>
+    <link>https://eclipse.dev/atl/usecases/uml2mof/</link>
+    <description>Recent content in Using a UML modeler to generate metamodels on The Community for Open Innovation and Collaboration</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>webdev@eclipse-foundation.org (Eclipse Foundation)</managingEditor>
+    <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster><atom:link href="https://eclipse.dev/atl/usecases/uml2mof/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using a UML modeler to generate metamodels - User Guide</title>
+      <link>https://eclipse.dev/atl/usecases/uml2mof/userguide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/atl/usecases/uml2mof/userguide/</guid>
+      <description>Using a UML modeler to generate metamodels - User Guide By Freddy Allilaire (INRIA), Rémi Schnekenburger (CEA LIST) May 2007
+This user guide explains how to configure and launch the Using a UML modeler to generate metamodels ATL service in Papyrus.
+User Guide First step is to create a new transformation configuration, using the Run As button.
+Thanks to the pop-up menu available on Papyrus transformation, you can create a new transformation configuration.</description>
+    </item>
+    
+  </channel>
+</rss>
